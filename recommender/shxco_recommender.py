@@ -1,5 +1,6 @@
-from dataset import get_data, get_model
+import numpy as np
 
+from dataset import get_data, get_model
 
 # sample recommendation code adapted from lightfm quickstart example
 
