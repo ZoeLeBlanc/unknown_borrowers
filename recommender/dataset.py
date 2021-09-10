@@ -34,39 +34,59 @@ def get_user_features(member):
         # "organization" if member.is_organization else "person",     # probably not meaningful
     ]
     if pd.notna(member.arrondissements):
-        features.extend(["arrondissement_%s" % i for i in member.arrondissements.split(';') if i])
+        features.extend(
+            ["arrondissement_%s" % i for i in member.arrondissements.split(";") if i]
+        )
     return features
 
 
-def get_data():
-    # load members, books, events as csv
+def get_shxco_data():
+    # load S&co datasets and return as pandas dataframes
+    # returns members, books, events
+
     members_df = pd.read_csv(csv_urls["members"])
     books_df = pd.read_csv(csv_urls["books"])
     events_df = pd.read_csv(csv_urls["events"])
 
-    # get list of user ids and book ids for dataset
+    # datasets use URIs for identifiers; generate short-form versions
+    # across all datasets for easier display/use
+
     # - generate short id from book uri
     books_df["id"] = books_df.uri.apply(lambda x: x.split("/")[-2])
+    # - generate short form member id
+    members_df["member_id"] = members_df.uri.apply(lambda x: x.split("/")[-2])
+
+    # split multiple members for shared accounts in events
+    events_df[
+        ["first_member_uri", "second_member_uri"]
+    ] = events_df.member_uris.str.split(";", expand=True)
+    # working with the first member for now...
+    # generate short ids equivalent to those in member and book dfn
+    events_df["member_id"] = events_df.first_member_uri.apply(
+        lambda x: x.split("/")[-2]
+    )
+    events_df["item_uri"] = events_df.item_uri.apply(
+        lambda x: x.split("/")[-2] if pd.notna(x) else None
+    )
+
+    return (members_df, books_df, events_df)
+
+
+
+def get_data():
+    # load members, books, events as csv
+    members_df, books_df, events_df = get_shxco_data()
+
+    # get list of user ids and book ids for dataset
 
     # get all member-book interactions from events
     # shorten URIs for readability in output
     interactions_df = events_df[events_df.item_uri.notna()].copy()
-    # split multiple members for shared accounts
-    interactions_df[
-        ["first_member_uri", "second_member_uri"]
-    ] = interactions_df.member_uris.str.split(";", expand=True)
-    # working with the first member for now...
-    interactions_df["member_id"] = interactions_df.first_member_uri.apply(
-        lambda x: x.split("/")[-2]
-    )
-    interactions_df["item_uri"] = interactions_df.item_uri.apply(
-        lambda x: x.split("/")[-2]
-    )
-    # reduce to minimum user/item interaction fields and drop dupes
-    unique_interactions_df = interactions_df[['member_id', 'item_uri']].drop_duplicates()
 
-    # shorten member id
-    members_df["member_id"] = members_df.uri.apply(lambda x: x.split("/")[-2])
+    # reduce to minimum user/item interaction fields and drop dupes
+    unique_interactions_df = interactions_df[
+        ["member_id", "item_uri"]
+    ].drop_duplicates()
 
     # generate unique list of member ids with book interactions
     book_members = interactions_df.member_id.unique()
@@ -94,13 +114,18 @@ def get_data():
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
     # anything added here must be implemented in get_item_features
 
-    user_feature_list = [
-        "gender_%s" % (gender.lower() if pd.notna(gender) else "unknown")
-        for gender in members_df.gender.unique()
-    ] + ["person", "organization"] + [
-        # arrondissements are 1-20
-        "arrondissement_%d" % i for i in range(1, 21)
-    ]
+    user_feature_list = (
+        [
+            "gender_%s" % (gender.lower() if pd.notna(gender) else "unknown")
+            for gender in members_df.gender.unique()
+        ]
+        + ["person", "organization"]
+        + [
+            # arrondissements are 1-20
+            "arrondissement_%d" % i
+            for i in range(1, 21)
+        ]
+    )
 
     # consider adding:
     # - birth year  / birth decade
@@ -140,11 +165,12 @@ def get_data():
     )
 
     # create reverse lookup to get dataset numeric id from member id
+    # TODO: can we just add these into the dataframes?
     member_dataset_id = {member_id: i for i, member_id in enumerate(all_members)}
-
+    item_dataset_id = {item_id: i for i, item_id in enumerate(books_df.id)}
 
     return {
-        "dataset": dataset,   # lightfm dataset object
+        "dataset": dataset,  # lightfm dataset object
         "interactions": interactions,
         "user_features": user_features,
         "item_features": item_features,
@@ -153,7 +179,8 @@ def get_data():
         # dataframes currently needed for generating sample recommendations
         "items": books_df,
         "interactions_df": unique_interactions_df,
-        "member_dataset_id": member_dataset_id
+        "member_dataset_id": member_dataset_id,
+        "item_dataset_id": item_dataset_id,
     }
 
 
