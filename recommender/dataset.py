@@ -31,7 +31,6 @@ def get_user_features(member):
     # get features for an individual item
     features = [
         "gender_%s" % (member.gender.lower() if pd.notna(member.gender) else "unknown"),
-        # "organization" if member.is_organization else "person",     # probably not meaningful
     ]
     if pd.notna(member.arrondissements):
         features.extend(
@@ -60,17 +59,28 @@ def get_shxco_data():
     events_df[
         ["first_member_uri", "second_member_uri"]
     ] = events_df.member_uris.str.split(";", expand=True)
+
+    # remove events for organizations and shared accounts,
+    # since they are unlikely to be helpful or predictive in our model
+    # - remove shared accounts (any event with a second member uri)
+    events_df = events_df[events_df.second_member_uri.isna()]
+    # - remove organizations
+    org_uris = list(members_df[members_df.is_organization].uri)
+    events_df = events_df[events_df.first_member_uri.isin(org_uris)]
+    # TODO: should these also be removed from the members and books
+    # used as users and items in the model?
+
     # working with the first member for now...
-    # generate short ids equivalent to those in member and book dfn
+    # generate short ids equivalent to those in member and book dataframes
     events_df["member_id"] = events_df.first_member_uri.apply(
         lambda x: x.split("/")[-2]
     )
     events_df["item_uri"] = events_df.item_uri.apply(
         lambda x: x.split("/")[-2] if pd.notna(x) else None
     )
+    #
 
     return (members_df, books_df, events_df)
-
 
 
 def get_data():
