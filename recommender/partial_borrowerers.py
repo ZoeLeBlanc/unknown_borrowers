@@ -1,3 +1,5 @@
+import os.path
+
 import numpy as np
 import pandas as pd
 
@@ -14,6 +16,10 @@ from dataset import get_shxco_data, get_data, get_model
 
 
 def identify_partial_borrowers(date_events):
+    # if the file already exists, just load it and return
+    partial_borrowers_csv = "data/partial_borrowers.csv"
+    if os.path.isfile(partial_borrowers_csv):
+        return pd.read_csv(partial_borrowers_csv)
 
     # filter to subscription events with known start and end date
     subscription_events = date_events[
@@ -55,10 +61,12 @@ def identify_partial_borrowers(date_events):
                     }
                 )
 
-    # TODO: save this as csv so we don't have to recalculate every time
-    return pd.DataFrame(data=partial_borrowers)
+    df = pd.DataFrame(data=partial_borrowers)
+    # save this as as csv so we don't have to recalculate every time
+    df.to_csv(partial_borrowers_csv, index=False)
 
-    # for each partial borrower
+    return df
+
     #   for each subscription period
     #        get list of books that were circulating
     #        # run model.predict for that user over those items
@@ -108,7 +116,7 @@ def partial_borrowing():
                 bookless_sub.subscription_start,
                 bookless_sub.subscription_end,
                 bookless_sub.known_borrows,
-                "" if bookless_sub.known_borrows == 1 else "s"
+                "" if bookless_sub.known_borrows == 1 else "s",
             )
         )
         # are any of these multi year? just use start year for now
@@ -124,13 +132,13 @@ def partial_borrowing():
         # predict the interaction between this user and these items
         scores = model.predict(user_id, item_ids)
 
-        # get the highest ranked items
-        top_items = [
-            item_uris[index] for index in np.argsort(-scores)[:5]
-        ]
-        print("  recommended / speculated:")
-        for x in top_items[:3]:
-            print("\t%s" % x)
+        # get the highest ranked items & their scores
+        score_indices = np.argsort(-scores)[:5]
+        top_items = [item_uris[i] for i in score_indices]
+        top_scores = [scores[i] for i in score_indices]
+        # output item id & predicted score
+        for i, x in enumerate(top_items[:3]):
+            print("\t%s\t%s" % (x.ljust(35), top_scores[i]))
 
 
 if __name__ == "__main__":
