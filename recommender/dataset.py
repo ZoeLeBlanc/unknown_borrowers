@@ -1,3 +1,5 @@
+import itertools
+
 import numpy as np
 import pandas as pd
 from lightfm.data import Dataset
@@ -21,7 +23,6 @@ def get_item_features(item):
     # get features for an individual item
     # return {
     features = {
-        "author_%s" % (item.author if pd.notna(item.author) else "unknown"): 1,
         "multivol": 1 if pd.notna(item.volumes_issues) and item.volumes_issues else 0,
     }
 
@@ -29,6 +30,11 @@ def get_item_features(item):
         features["pubyear"] = item.pubyear_normalized
     else:
         features["pubyear_unknown"] = 1
+
+    if pd.notna(item.author):
+        features.update({'author %s' % a: 1 for a in item.author.split(';')})
+    else:
+        features['author unknown'] = 1
 
     return features
 
@@ -129,14 +135,23 @@ def get_data():
 
     print("fitting dataset...")
     # list of features to be used when defining the dataset
+
+    # generate a list of unique authors
+    # split multiple authors, use itertools to flatten the list of lists,
+    # use set to re-uniquify, then convert back to a list
+    authors = list(
+        set(
+            itertools.chain.from_iterable(
+                [a.split(";") if pd.notna(a) else [] for a in books_df.author.unique()]
+            )
+        )
+    )
+
     item_feature_list = (
-        ["pubyear", "pubyear_unknown", "multivol"]
+        ["pubyear", "pubyear_unknown", "multivol", "author unknown"]
         + [
-            # TODO: split out multi-author
-            "author_%s" % (author if pd.notna(author) else "unknown")
-            for author in books_df.author.unique()
+            "author %s" % author for author in authors
         ]
-        # + ["is_multivol", "non_multivol"]
     )
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
     # anything added here must be implemented in get_item_features
