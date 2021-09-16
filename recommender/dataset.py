@@ -54,6 +54,12 @@ def get_user_features(member):
     else:
         features["birth_year_unknown"] = 1
 
+    if pd.notna(member.nationalities):
+        features.update({'nationality %s' % c: 1 for c in member.nationalities.split(';')})
+    else:
+        features['nationality unknown'] = 1
+
+
     return features
 
 
@@ -156,23 +162,30 @@ def get_data():
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
     # anything added here must be implemented in get_item_features
 
+    # generate a list of unique nationalities; same process as for authors
+    countries = list(
+        set(
+            itertools.chain.from_iterable(
+                [c.split(";") if pd.notna(c) else [] for c in members_df.nationalities.unique()]
+            )
+        )
+    )
+
     user_feature_list = (
         [
             "gender_%s" % (gender.lower() if pd.notna(gender) else "unknown")
             for gender in members_df.gender.unique()
         ]
-        + ["birth_year", "birth_year_unknown"]
+        + ["birth_year", "birth_year_unknown", "nationality unknown"]
         + [
-            # arrondissements are 1-20
+            # Paris arrondissements are 1-20
             "arrondissement_%d" % i
             for i in range(1, 21)
+        ] + [
+            "nationality %s" % country for country in countries
         ]
     )
-
-    # consider adding:
-    # - birth year  / birth decade
-    # - nationality (could be multiple)
-    # anything added here must be implemented in get_user_features
+    # any features added here must be implemented in get_user_features
 
     dataset.fit(
         all_members,
@@ -183,7 +196,6 @@ def get_data():
 
     print("building interactions...")
     (interactions, weights) = dataset.build_interactions(
-        # ((x.member_id, x.item_uri) for x in interactions_df.itertuples())
         ((x.member_id, x.item_uri) for x in unique_interactions_df.itertuples())
     )
     print("building item features...")
