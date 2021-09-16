@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from lightfm.data import Dataset
 from lightfm import LightFM
+from sklearn.preprocessing import MinMaxScaler
 
 
 csv_urls = {
@@ -18,24 +19,35 @@ csv_urls = {
 
 def get_item_features(item):
     # get features for an individual item
-    return [
-        "pubyear_%s" % (item.year if pd.notna(item.year) else "unknown"),
-        "author_%s" % (item.author if pd.notna(item.author) else "unknown"),
-        "is_multivol"
-        if pd.notna(item.volumes_issues) and item.volumes_issues
-        else "non_multivol",
-    ]
+    # return {
+    features = {
+        "author_%s" % (item.author if pd.notna(item.author) else "unknown"): 1,
+        "multivol": 1 if pd.notna(item.volumes_issues) and item.volumes_issues else 0,
+    }
+
+    if pd.notna(item.pubyear_normalized):
+        features["pubyear"] = item.pubyear_normalized
+    else:
+        features["pubyear_unknown"] = 1
+
+    return features
 
 
 def get_user_features(member):
     # get features for an individual item
-    features = [
-        "gender_%s" % (member.gender.lower() if pd.notna(member.gender) else "unknown"),
-    ]
+    features = {
+        "gender_%s"
+        % (member.gender.lower() if pd.notna(member.gender) else "unknown"): 1,
+    }
     if pd.notna(member.arrondissements):
-        features.extend(
-            ["arrondissement_%s" % i for i in member.arrondissements.split(";") if i]
+        features.update(
+            {"arrondissement_%s" % i: 1 for i in member.arrondissements.split(";") if i}
         )
+    if pd.notna(member.birth_year):
+        features["birth_year"] = member.birthyear_normalized
+    else:
+        features["birth_year_unknown"] = 1
+
     return features
 
 
@@ -78,7 +90,6 @@ def get_shxco_data():
     events_df["item_uri"] = events_df.item_uri.apply(
         lambda x: x.split("/")[-2] if pd.notna(x) else None
     )
-    #
 
     return (members_df, books_df, events_df)
 
@@ -103,6 +114,15 @@ def get_data():
     # include all members, so we can make recommendations for members without documented interactions
     all_members = members_df.member_id.unique()
 
+    # normalize book publication year & member birth year
+    # copied from https://www.geeksforgeeks.org/normalize-a-column-in-pandas/
+    books_df["pubyear_normalized"] = MinMaxScaler().fit_transform(
+        np.array(books_df.year).reshape(-1, 1)
+    )
+    members_df["birthyear_normalized"] = MinMaxScaler().fit_transform(
+        np.array(members_df.birth_year).reshape(-1, 1)
+    )
+
     dataset = Dataset()
     # pass list of user ids and list of book ids
     # provide list of unique categorical features
@@ -110,16 +130,13 @@ def get_data():
     print("fitting dataset...")
     # list of features to be used when defining the dataset
     item_feature_list = (
-        [
-            "pubyear_%s" % (year if pd.notna(year) else "unknown")
-            for year in books_df.year.unique()
-        ]
+        ["pubyear", "pubyear_unknown", "multivol"]
         + [
             # TODO: split out multi-author
             "author_%s" % (author if pd.notna(author) else "unknown")
             for author in books_df.author.unique()
         ]
-        + ["is_multivol", "non_multivol"]
+        # + ["is_multivol", "non_multivol"]
     )
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
     # anything added here must be implemented in get_item_features
@@ -129,7 +146,7 @@ def get_data():
             "gender_%s" % (gender.lower() if pd.notna(gender) else "unknown")
             for gender in members_df.gender.unique()
         ]
-        + ["person", "organization"]
+        + ["birth_year", "birth_year_unknown"]
         + [
             # arrondissements are 1-20
             "arrondissement_%d" % i
