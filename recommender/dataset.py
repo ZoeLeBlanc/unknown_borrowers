@@ -61,6 +61,11 @@ def get_user_features(member):
     else:
         features["birth year unknown"] = 1
 
+    # known viaf or wikipedia indicates some degree of "fame"
+    # is this a useful feature to include?
+    if pd.notna(member.viaf_url) or pd.notna(member.wikipedia_url):
+        features['famousish'] = 1
+
     # split multiple nationalities and set feature indicator for each
     if pd.notna(member.nationalities):
         features.update(
@@ -226,6 +231,6 @@ def get_model():
         dataset["interactions"],
         item_features=dataset["item_features"],
         user_features=dataset["user_features"],
-        epochs=50,
+        epochs=1050,
     )
     return model
