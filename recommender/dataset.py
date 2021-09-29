@@ -19,7 +19,7 @@ csv_urls = {
 }
 
 
-def get_item_features(item):
+def get_item_features(item, books_genres):
     # get features for an individual item
     # return {
     features = {
@@ -29,12 +29,16 @@ def get_item_features(item):
     if pd.notna(item.pubyear_normalized):
         features["pubyear"] = item.pubyear_normalized
     else:
-        features["pubyear_unknown"] = 1
+        features["pubyear unknown"] = 1
 
     if pd.notna(item.author):
         features.update({'author %s' % a: 1 for a in item.author.split(';')})
     else:
         features['author unknown'] = 1
+
+    genres = books_genres[books_genres.item_id == item.id]
+    if genres.shape[0]:
+        features.update({"genre %s" % g: 1 for g in genres.genre})
 
     return features
 
@@ -42,17 +46,17 @@ def get_item_features(item):
 def get_user_features(member):
     # get features for an individual item
     features = {
-        "gender_%s"
+        "gender %s"
         % (member.gender.lower() if pd.notna(member.gender) else "unknown"): 1,
     }
     if pd.notna(member.arrondissements):
         features.update(
-            {"arrondissement_%s" % i: 1 for i in member.arrondissements.split(";") if i}
+            {"arrondissement %s" % i: 1 for i in member.arrondissements.split(";") if i}
         )
     if pd.notna(member.birth_year):
-        features["birth_year"] = member.birthyear_normalized
+        features["birth year"] = member.birthyear_normalized
     else:
-        features["birth_year_unknown"] = 1
+        features["birth year unknown"] = 1
 
     if pd.notna(member.nationalities):
         features.update({'nationality %s' % c: 1 for c in member.nationalities.split(';')})
@@ -135,6 +139,8 @@ def get_data():
         np.array(members_df.birth_year).reshape(-1, 1)
     )
 
+    books_genres = pd.read_csv("data/books_genres.csv")
+
     dataset = Dataset()
     # pass list of user ids and list of book ids
     # provide list of unique categorical features
@@ -148,15 +154,17 @@ def get_data():
     authors = list(
         set(
             itertools.chain.from_iterable(
-                [a.split(";") if pd.notna(a) else [] for a in books_df.author.unique()]
+                [a.split(";") for a in books_df.author.dropna().unique()]
             )
         )
     )
 
     item_feature_list = (
-        ["pubyear", "pubyear_unknown", "multivol", "author unknown"]
+        ["pubyear", "pubyear unknown", "multivol", "author unknown"]
         + [
             "author %s" % author for author in authors
+        ] + [
+            "genre %s" % genre for genre in books_genres.genre.unique()
         ]
     )
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
@@ -173,13 +181,13 @@ def get_data():
 
     user_feature_list = (
         [
-            "gender_%s" % (gender.lower() if pd.notna(gender) else "unknown")
+            "gender %s" % (gender.lower() if pd.notna(gender) else "unknown")
             for gender in members_df.gender.unique()
         ]
-        + ["birth_year", "birth_year_unknown", "nationality unknown"]
+        + ["birth year", "birth year unknown", "nationality unknown"]
         + [
             # Paris arrondissements are 1-20
-            "arrondissement_%d" % i
+            "arrondissement %d" % i
             for i in range(1, 21)
         ] + [
             "nationality %s" % country for country in countries
@@ -204,7 +212,7 @@ def get_data():
         (
             # for each book in our dataset, return tuple of
             # item id and list of features
-            (item.id, get_item_features(item))
+            (item.id, get_item_features(item, books_genres))
             for item in books_df.itertuples()
         )
     )
