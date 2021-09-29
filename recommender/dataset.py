@@ -19,7 +19,7 @@ csv_urls = {
 }
 
 
-def get_item_features(item, books_genres):
+def get_item_features(item, books_genres, books_subjects):
     # get features for an individual item
     # return {
     features = {
@@ -39,6 +39,9 @@ def get_item_features(item, books_genres):
     genres = books_genres[books_genres.item_id == item.id]
     if genres.shape[0]:
         features.update({"genre %s" % g: 1 for g in genres.genre})
+    subjects = books_subjects[books_subjects.item_id == item.id]
+    if subjects.shape[0]:
+        features.update({"subject %s" % s: 1 for s in subjects.subject})
 
     return features
 
@@ -142,6 +145,7 @@ def get_data():
     )
 
     books_genres = pd.read_csv("data/books_genres.csv")
+    books_subjects = pd.read_csv("data/books_subjects.csv")
 
     dataset = Dataset()
     # pass list of user ids and list of book ids
@@ -154,7 +158,7 @@ def get_data():
     # for each book in our dataset, return tuple of
     # item id and list of features
     item_feature_data = [
-        (item.id, get_item_features(item, books_genres))
+        (item.id, get_item_features(item, books_genres, books_subjects))
         for item in books_df.itertuples()
     ]
 
