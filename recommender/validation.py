@@ -14,12 +14,14 @@ def validate_model():
     dataset = get_data()
 
     # split into test/train set
+    # NOTE: there is no guarantee that users/members with interactions
+    # in the test set are included in the training set
     train, test = train_test_split(dataset["interactions"])
 
     # create a model and fit it
     # warp seems better for our data & goals than bpr
     # how to determine number of components? too many components == overfitting?
-    model = LightFM(loss="warp", no_components=50) #, item_alpha=0.1, user_alpha=0.1)
+    model = LightFM(loss="warp") #, no_components=24) #, item_alpha=0.1, user_alpha=0.1)
 
     print('fitting model...')
     model.fit(
@@ -27,7 +29,7 @@ def validate_model():
         # dataset['interactions'],  # train on everything
         item_features=dataset["item_features"],
         user_features=dataset["user_features"],
-        epochs=150,    # precision on the training set goes up significantly the more epochs we add
+        epochs=1050,    # precision on the training set goes up significantly the more epochs we add
     )
 
     # check test/train precision
