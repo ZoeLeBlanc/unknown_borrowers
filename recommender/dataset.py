@@ -25,16 +25,16 @@ def get_item_features(item, books_genres):
     features = {
         "multivol": 1 if pd.notna(item.volumes_issues) and item.volumes_issues else 0,
     }
-
     if pd.notna(item.pubyear_normalized):
         features["pubyear"] = item.pubyear_normalized
     else:
         features["pubyear unknown"] = 1
 
+    # split multiple authors and set feature indicator for each
     if pd.notna(item.author):
-        features.update({'author %s' % a: 1 for a in item.author.split(';')})
+        features.update({"author %s" % a: 1 for a in item.author.split(";")})
     else:
-        features['author unknown'] = 1
+        features["author unknown"] = 1
 
     genres = books_genres[books_genres.item_id == item.id]
     if genres.shape[0]:
@@ -58,11 +58,13 @@ def get_user_features(member):
     else:
         features["birth year unknown"] = 1
 
+    # split multiple nationalities and set feature indicator for each
     if pd.notna(member.nationalities):
-        features.update({'nationality %s' % c: 1 for c in member.nationalities.split(';')})
+        features.update(
+            {"nationality %s" % c: 1 for c in member.nationalities.split(";")}
+        )
     else:
-        features['nationality unknown'] = 1
-
+        features["nationality unknown"] = 1
 
     return features
 
@@ -148,52 +150,32 @@ def get_data():
     print("fitting dataset...")
     # list of features to be used when defining the dataset
 
-    # generate a list of unique authors
-    # split multiple authors, use itertools to flatten the list of lists,
-    # use set to re-uniquify, then convert back to a list
-    authors = list(
-        set(
-            itertools.chain.from_iterable(
-                [a.split(";") for a in books_df.author.dropna().unique()]
-            )
-        )
-    )
+    # generate list of item ids & item features to be passed to build_item_features
+    # for each book in our dataset, return tuple of
+    # item id and list of features
+    item_feature_data = [
+        (item.id, get_item_features(item, books_genres))
+        for item in books_df.itertuples()
+    ]
 
-    item_feature_list = (
-        ["pubyear", "pubyear unknown", "multivol", "author unknown"]
-        + [
-            "author %s" % author for author in authors
-        ] + [
-            "genre %s" % genre for genre in books_genres.genre.unique()
-        ]
-    )
+    # corresponding list of features for users
+    user_feature_data = [
+        # for each member in our dataset, return tuple of
+        # member id and list of features
+        (member.member_id, get_user_features(member))
+        for member in members_df.itertuples()
+    ]
+    # generate item feature list from unique keys in the item data
+    item_feature_list = set()
+    for item, features in item_feature_data:
+        item_feature_list |= set(features.keys())
+
+    # same for user feature list
+    user_feature_list = set()
+    for user, features in user_feature_data:
+        user_feature_list |= set(features.keys())
+
     # to add: subject/genre/ from oclc db export and/or wikidata reconcile work
-    # anything added here must be implemented in get_item_features
-
-    # generate a list of unique nationalities; same process as for authors
-    countries = list(
-        set(
-            itertools.chain.from_iterable(
-                [c.split(";") if pd.notna(c) else [] for c in members_df.nationalities.unique()]
-            )
-        )
-    )
-
-    user_feature_list = (
-        [
-            "gender %s" % (gender.lower() if pd.notna(gender) else "unknown")
-            for gender in members_df.gender.unique()
-        ]
-        + ["birth year", "birth year unknown", "nationality unknown"]
-        + [
-            # Paris arrondissements are 1-20
-            "arrondissement %d" % i
-            for i in range(1, 21)
-        ] + [
-            "nationality %s" % country for country in countries
-        ]
-    )
-    # any features added here must be implemented in get_user_features
 
     dataset.fit(
         all_members,
@@ -207,24 +189,8 @@ def get_data():
         ((x.member_id, x.item_uri) for x in unique_interactions_df.itertuples())
     )
     print("building item features...")
-
-    item_features = dataset.build_item_features(
-        (
-            # for each book in our dataset, return tuple of
-            # item id and list of features
-            (item.id, get_item_features(item, books_genres))
-            for item in books_df.itertuples()
-        )
-    )
-
-    user_features = dataset.build_user_features(
-        (
-            # for each member in our dataset, return tuple of
-            # member id and list of features
-            (member.member_id, get_user_features(member))
-            for member in members_df.itertuples()
-        )
-    )
+    item_features = dataset.build_item_features(item_feature_data)
+    user_features = dataset.build_user_features(user_feature_data)
 
     # create reverse lookup to get dataset numeric id from member id
     # TODO: can we just add these into the dataframes?
