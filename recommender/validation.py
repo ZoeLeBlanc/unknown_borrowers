@@ -4,6 +4,7 @@ from lightfm.evaluation import auc_score, precision_at_k, recall_at_k
 
 from sklearn.model_selection import train_test_split
 
+import pandas as pd
 from rich.console import Console
 from rich.table import Table
 
@@ -29,7 +30,7 @@ def validate_model():
         # dataset['interactions'],  # train on everything
         item_features=dataset["item_features"],
         user_features=dataset["user_features"],
-        epochs=1050,    # precision on the training set goes up significantly the more epochs we add
+        epochs=500,
     )
 
     # check test/train precision
@@ -99,6 +100,12 @@ def validate_model():
         "test", "%.2f" % test_precision, "%.2f" % test_recall, "%.2f" % test_auc
     )
     Console().print(table)
+
+    # put the data into a df so we can easily generate a markdown version of the table
+    results_df = pd.DataFrame(columns=['dataset', 'precision', 'recall', 'AUC'],
+        data=[('train', "%.3f" % train_precision, "%.3f" %  train_recall, "%.3f" %  train_auc),
+              ('test', "%.3f" % test_precision, "%.3f" % test_recall, "%.3f" % test_auc)])
+    print(results_df.to_markdown(index=False))
 
 if __name__ == "__main__":
     validate_model()
