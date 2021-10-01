@@ -7,7 +7,7 @@ This directory contains a python recommender script for [Shakespeare and Company
 Install the python packages needed for the recommender script:
 
 ```sh
-pip install numpy pandas lightfm rich
+pip install numpy pandas lightfm rich tabulate
 ```
 
 Once dependencies are installed, you can run the script::

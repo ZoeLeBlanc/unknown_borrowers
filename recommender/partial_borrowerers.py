@@ -120,12 +120,14 @@ def partial_borrowing():
             )
         )
         # are any of these multi year? just use start year for now
-        # identify books with events that year
-        circulating_books = book_events[
-            book_events.year == bookless_sub.subscription_start[:4]
+        # identify books with events that year.
+        # since we have filtered out some events (orgs, shared accounts),
+        # find circulating books from the full books dataset
+        circulating_books = books_df[
+            books_df.circulation_years.str.contains(bookless_sub.subscription_start[:4], na=False)
         ]
         # get a *unique* list of item uris
-        item_uris = circulating_books.item_uri.unique()
+        item_uris = circulating_books.id.unique()
         # get a list of dataset item ids
         item_ids = [dataset["item_dataset_id"][item_uri] for item_uri in item_uris]
 
