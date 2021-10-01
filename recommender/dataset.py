@@ -105,9 +105,10 @@ def get_shxco_data():
     # since they are unlikely to be helpful or predictive in our model
     # - remove shared accounts (any event with a second member uri)
     events_df = events_df[events_df.second_member_uri.isna()]
+
     # - remove organizations
     org_uris = list(members_df[members_df.is_organization].uri)
-    events_df = events_df[events_df.first_member_uri.isin(org_uris)]
+    events_df = events_df[~events_df.first_member_uri.isin(org_uris)]
     # TODO: should these also be removed from the members and books
     # used as users and items in the model?
 
@@ -142,6 +143,12 @@ def get_data():
     book_members = interactions_df.member_id.unique()
     # include all members, so we can make recommendations for members without documented interactions
     all_members = members_df.member_id.unique()
+
+    # what if we limit to members with at least N interactions?
+    # filter by count thanks to https://stackoverflow.com/a/32922418
+    min_borrows = 10
+    borrowing_count = unique_interactions_df.member_id.value_counts()
+    active_members = members_df[members_df.member_id.isin(borrowing_count[borrowing_count >= min_borrows].index)].member_id.unique()
 
     # normalize book publication year & member birth year
     # copied from https://www.geeksforgeeks.org/normalize-a-column-in-pandas/
@@ -196,10 +203,12 @@ def get_data():
         item_features=item_feature_list,
         user_features=user_feature_list,
     )
+    # optionally filter interactions
+    model_interactions = unique_interactions_df[unique_interactions_df.member_id.isin(active_members)]
 
-    print("building interactions...")
+    print(f"building interactions ({model_interactions.shape[0]:,} unique interactions)...")
     (interactions, weights) = dataset.build_interactions(
-        ((x.member_id, x.item_uri) for x in unique_interactions_df.itertuples())
+        ((x.member_id, x.item_uri) for x in model_interactions.itertuples())
     )
     print("building item features...")
     item_features = dataset.build_item_features(item_feature_data)
