@@ -1,0 +1,1050 @@
+book,bookLabel,authorLabel,genres,firstPublication,sco_uri
+http://www.wikidata.org/entity/Q1136104,Le Morte d'Arthur,Thomas Malory,chivalric romance,1485-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/malory-morte-darthur/
+http://www.wikidata.org/entity/Q404158,Utopia,Thomas More,literature;political philosophy,,https://shakespeareandco.princeton.edu/books/more-utopia/
+http://www.wikidata.org/entity/Q1038249,Gorboduc,Thomas Norton,,,https://shakespeareandco.princeton.edu/books/norton-gorboduc/
+http://www.wikidata.org/entity/Q128610,Love's Labour's Lost,William Shakespeare,,1598-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-loves-labours-lost/
+http://www.wikidata.org/entity/Q7712425,The Advancement of Learning,Francis Bacon,,1605-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bacon-advancement-learning/
+http://www.wikidata.org/entity/Q1117565,The White Devil,John Webster,revenge play,1612-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/webster-white-devil/
+http://www.wikidata.org/entity/Q480,Don Quixote,Miguel de Cervantes,novela naturalista;novela naturalista;adventure novel;chivalric romance;adventure novel;chivalric romance,1605-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cervantes-don-quixote/
+http://www.wikidata.org/entity/Q469755,The Anatomy of Melancholy,Robert Burton,essay,1621-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/burton-anatomy-melancholy/
+http://www.wikidata.org/entity/Q1771741,Religio Medici,Thomas Browne,,1643-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/browne-religio-medici/
+http://www.wikidata.org/entity/Q193034,Leviathan,Thomas Hobbes,philosophical literature,1651-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hobbes-leviathan/
+http://www.wikidata.org/entity/Q19022854,Paradise Lost,John Milton,,1667-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/milton-paradise-lost/
+http://www.wikidata.org/entity/Q268211,The Pilgrim's Progress,John Bunyan,allegory;science fiction novel,1678-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bunyan-pilgrims-progress/
+http://www.wikidata.org/entity/Q3142171,Hudibras,Samuel Butler,satire,,https://shakespeareandco.princeton.edu/books/butler-hudibras/
+http://www.wikidata.org/entity/Q2353123,A Tale of a Tub,Jonathan Swift,novel;satire,1704-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/swift-tale-tub/
+http://www.wikidata.org/entity/Q482427,An Essay on Criticism,Alexander Pope,essay,1711-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/pope-essay-criticism/
+http://www.wikidata.org/entity/Q1823920,The Rape of the Lock,Alexander Pope,,1712-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/pope-rape-lock/
+http://www.wikidata.org/entity/Q483034,Robinson Crusoe,Daniel Defoe,adventure novel;developmental novel;autobiography,1719-04-25 00:00:00,https://shakespeareandco.princeton.edu/books/defoe-robinson-crusoe/
+http://www.wikidata.org/entity/Q89590159,A Journal of the Plague Year,Daniel Defoe,,1722-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/defoe-journal-plague-year/
+http://www.wikidata.org/entity/Q612523,Moll Flanders,Daniel Defoe,crime novel,1722-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/defoe-moll-flanders/
+http://www.wikidata.org/entity/Q29053405,Moll Flanders and Roxana,Daniel Defoe,,,https://shakespeareandco.princeton.edu/books/defoe-moll-flanders-roxana/
+http://www.wikidata.org/entity/Q181488,Gulliver's Travels,Jonathan Swift,satirical novel;speculative fiction novel;science fiction novel;dystopian novel,1726-10-28 00:00:00,https://shakespeareandco.princeton.edu/books/swift-gullivers-travels/
+http://www.wikidata.org/entity/Q784226,Joseph Andrews,Henry Fielding,comic novel,1742-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fielding-joseph-andrews/
+http://www.wikidata.org/entity/Q7712626,The Adventures of Roderick Random,Tobias Smollett,novel,1748-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/smollett-adventures-roderick-random/
+http://www.wikidata.org/entity/Q2842656,Amelia,Henry Fielding,novel,,https://shakespeareandco.princeton.edu/books/fielding-amelia/
+http://www.wikidata.org/entity/Q7712607,The Adventures of Peregrine Pickle,Tobias Smollett,novel,1751-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/smollett-adventures-peregrine-pickle/
+http://www.wikidata.org/entity/Q24929084,The Life and Adventures of Peter Wilkins,Robert Paltock,adventure novel,1751-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/paltock-life-adventures-peter/
+http://www.wikidata.org/entity/Q215894,Candide,Voltaire,Bildungsroman;novella,1759-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/voltaire-candide/
+http://www.wikidata.org/entity/Q3419875,"The History of Rasselas, Prince of Abissinia",Samuel Johnson,apologue;novella,1759-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/johnson-history-rasselas-prince/
+http://www.wikidata.org/entity/Q1164083,"The Life and Opinions of Tristram Shandy, Gentleman",Laurence Sterne,satirical novel,1759-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sterne-life-opinions-tristram/
+http://www.wikidata.org/entity/Q7747148,The Life and Adventures of Sir Launcelot Greaves,Tobias Smollett,novel,,https://shakespeareandco.princeton.edu/books/smollett-life-adventures-sir/
+http://www.wikidata.org/entity/Q913599,"Emile, or On Education",Jean-Jacques Rousseau,treatise;education novel;philosophical novel,1762-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/rousseau-emile-education/
+http://www.wikidata.org/entity/Q1196205,The Vicar of Wakefield,Oliver Goldsmith,novel,1766-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/goldsmith-vicar-wakefield/
+http://www.wikidata.org/entity/Q3203413,The Expedition of Humphry Clinker,Tobias Smollett,epistolary novel,1771-06-17 00:00:00,https://shakespeareandco.princeton.edu/books/smollett-expedition-humphry-clinker/
+http://www.wikidata.org/entity/Q843940,Common Sense,Thomas Paine,pamphlet;essay,1776-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/paine-common-sense/
+http://www.wikidata.org/entity/Q313030,The History of the Decline and Fall of the Roman Empire,Edward Gibbon,non-fiction,1776-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gibbon-history-decline-fall/
+http://www.wikidata.org/entity/Q7714957,The Autobiography of Benjamin Franklin,Benjamin Franklin,memoir,1791-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/franklin-autobiography-benjamin-franklin/
+http://www.wikidata.org/entity/Q2600909,The Mysteries of Udolpho,Ann Radcliffe,thriller novel;speculative fiction novel;horror novel;Gothic fiction;romance novel,1794-05-08 00:00:00,https://shakespeareandco.princeton.edu/books/radcliffe-mysteries-udolpho/
+http://www.wikidata.org/entity/Q738958,Lyrical Ballads,William Wordsworth,,1798-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wordsworth-lyrical-ballads-poems/
+http://www.wikidata.org/entity/Q59768992,The Lady of the Lake,Walter Scott,,t470178894,https://shakespeareandco.princeton.edu/books/scott-lady-lake/
+http://www.wikidata.org/entity/Q2456670,The Lady of the Lake,Walter Scott,narrative poetry;poem,1810-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/scott-lady-lake/
+http://www.wikidata.org/entity/Q274744,Sense and Sensibility,Jane Austen,Bildungsroman;romance novel,1811-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/austen-sense-sensibility/
+http://www.wikidata.org/entity/Q665715,The Swiss Family Robinson,Johann David Wyss,adventure novel,1812-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wyss-swiss-family-robinson/
+http://www.wikidata.org/entity/Q170583,Pride and Prejudice,Jane Austen,satire;satire;psychological novel;novel of manners;romance novel;psychological novel;novel of manners;romance novel,1813-01-27 00:00:00,https://shakespeareandco.princeton.edu/books/austen-pride-prejudice/
+http://www.wikidata.org/entity/Q469690,Mansfield Park,Jane Austen,romance novel,1814-05-01 00:00:00,https://shakespeareandco.princeton.edu/books/austen-mansfield-park/
+http://www.wikidata.org/entity/Q678251,Waverley,Walter Scott,Bildungsroman;picaresque novel;historical novel,1814-07-07 00:00:00,https://shakespeareandco.princeton.edu/books/scott-waverley/
+http://www.wikidata.org/entity/Q223880,Emma,Jane Austen,romance novel,1815-12-23 00:00:00,https://shakespeareandco.princeton.edu/books/austen-emma/
+http://www.wikidata.org/entity/Q5689829,Headlong Hall,Thomas Love Peacock,novel,1816-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/peacock-headlong-hall/
+http://www.wikidata.org/entity/Q803863,Biographia Literaria,Samuel Taylor Coleridge,autobiography,,https://shakespeareandco.princeton.edu/books/coleridge-biographia-literaria/
+http://www.wikidata.org/entity/Q477508,Northanger Abbey,Jane Austen,romance novel,1817-12-01 00:00:00,https://shakespeareandco.princeton.edu/books/austen-northanger-abbey/
+http://www.wikidata.org/entity/Q20720825,Persuasion,Jane Austen,,1818-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/austen-persuasion/
+http://www.wikidata.org/entity/Q2156104,Rob Roy,Walter Scott,historical novel;Bildungsroman,1817-12-30 00:00:00,https://shakespeareandco.princeton.edu/books/scott-rob-roy/
+http://www.wikidata.org/entity/Q2091094,The Heart of Midlothian,Walter Scott,historical novel,1818-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/scott-heart-midlothian/
+http://www.wikidata.org/entity/Q1129589,Rip Van Winkle,Washington Irving,time-travel fiction,1819-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/irving-rip-van-winkle/
+http://www.wikidata.org/entity/Q2659725,The Bride of Lammermoor,Walter Scott,historical novel,1819-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/scott-bride-lammermoor/
+http://www.wikidata.org/entity/Q840974,Ivanhoe,Walter Scott,historical novel,1820-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/scott-ivanhoe/
+http://www.wikidata.org/entity/Q7673114,Table-Talk,William Hazlitt,"social commentary;list of anti-cultural, anti-national, and anti-ethnic terms",1821-04-06 00:00:00,https://shakespeareandco.princeton.edu/books/hazlitt-table-talk/
+http://www.wikidata.org/entity/Q3230799,The Fortunes of Nigel,Walter Scott,historical novel,1822-05-29 00:00:00,https://shakespeareandco.princeton.edu/books/scott-fortunes-nigel/
+http://www.wikidata.org/entity/Q2469230,Quentin Durward,Walter Scott,historical novel,1823-05-17 00:00:00,https://shakespeareandco.princeton.edu/books/scott-quentin-durward/
+http://www.wikidata.org/entity/Q7751712,The Misfortunes of Elphin,Thomas Love Peacock,novel,,https://shakespeareandco.princeton.edu/books/peacock-misfortunes-elphin/
+http://www.wikidata.org/entity/Q5188976,Crotchet Castle,Thomas Love Peacock,novel,1831-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/peacock-crotchet-castle/
+http://www.wikidata.org/entity/Q63349600,Notre-Dame de Paris,Victor Hugo,,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hugo-dame-paris/
+http://www.wikidata.org/entity/Q3436601,Count Robert of Paris,Walter Scott,historical novel,1832-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/scott-count-robert-paris/
+http://www.wikidata.org/entity/Q1373644,Eugénie Grandet,Honoré de Balzac,realist novel,1833-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/balzac-eugenie-grandet/
+http://www.wikidata.org/entity/Q7176948,Peter Simple,Frederick Marryat,novel,,https://shakespeareandco.princeton.edu/books/marryat-peter-simple/
+http://www.wikidata.org/entity/Q1134140,Sartor Resartus,Thomas Carlyle,comic novel,1833-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carlyle-sartor-resartus/
+http://www.wikidata.org/entity/Q164974,Oliver Twist,Charles Dickens,drama,1837-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-oliver-twist/
+http://www.wikidata.org/entity/Q11883,The Wild Swans,Hans Christian Andersen,literary fairy tale;conte,1838-10-02 00:00:00,https://shakespeareandco.princeton.edu/books/andersen-wild-swans/
+http://www.wikidata.org/entity/Q847642,Nicholas Nickleby,Charles Dickens,social commentary,1839-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-nicholas-nickleby/
+http://www.wikidata.org/entity/Q1165714,The Charterhouse of Parma,Stendhal,historical novel;Bildungsroman;historical novel;Bildungsroman;literary realism;literary realism,1839-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stendhal-charterhouse-parma/
+http://www.wikidata.org/entity/Q2362527,Barnaby Rudge,Charles Dickens,historical novel,1840-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-barnaby-rudge/
+http://www.wikidata.org/entity/Q7091008,"On Heroes, Hero-Worship, and The Heroic in History",Thomas Carlyle,,1841-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carlyle-heroes-hero-worship/
+http://www.wikidata.org/entity/Q855801,The Deerslayer,James Fenimore Cooper,European colonization of the Americas;historical novel;adventure novel,1841-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cooper-deerslayer/
+http://www.wikidata.org/entity/Q2700616,The Old Curiosity Shop,Charles Dickens,novel;social commentary,1840-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-old-curiosity-shop/
+http://www.wikidata.org/entity/Q647379,Dead Souls,Nikolai Gogol,satirical novel;picaresque novel;narrative poetry,1842-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gogol-dead-souls/
+http://www.wikidata.org/entity/Q42191085,History of the Conquest of Mexico,William Hickling Prescott,,,https://shakespeareandco.princeton.edu/books/prescott-history-conquest-mexico/
+http://www.wikidata.org/entity/Q6888803,Modern Painters,John Ruskin,,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ruskin-modern-painters/
+http://www.wikidata.org/entity/Q7142925,Past and Present,Thomas Carlyle,,,https://shakespeareandco.princeton.edu/books/carlyle-past-present/
+http://www.wikidata.org/entity/Q15632056,A Naturalist's Voyage Round the World,Charles Darwin,,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/darwin-naturalists-voyage-round/
+http://www.wikidata.org/entity/Q19020134,A Book of Nonsense,Edward Lear,,1846-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lear-book-nonsense/
+http://www.wikidata.org/entity/Q6916648,Mosses from an Old Manse,Nathaniel Hawthorne,,1846-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hawthorne-mosses-old-manse/
+http://www.wikidata.org/entity/Q3148901,Pictures from Italy,Charles Dickens,non-fiction;travel literature,1846-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-pictures-italy/
+http://www.wikidata.org/entity/Q2463076,Typee,Herman Melville,novel;travel literature,1846-02-26 00:00:00,https://shakespeareandco.princeton.edu/books/melville-typee/
+http://www.wikidata.org/entity/Q517172,Agnes Grey,Anne Brontë,novel,1847-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-agnes-grey/
+http://www.wikidata.org/entity/Q50404815,Jane Eyre,Charlotte Brontë,,1847-10-16 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-jane-eyre/
+http://www.wikidata.org/entity/Q3882301,Omoo,Herman Melville,travel literature;autobiographical novel,1847-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/melville-omoo/
+http://www.wikidata.org/entity/Q7722508,The Children of the New Forest,Frederick Marryat,novel,1847-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/marryat-children-new-forest/
+http://www.wikidata.org/entity/Q612836,Vanity Fair,William Makepeace Thackeray,satirical novel,1848-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/thackeray-vanity-fair/
+http://www.wikidata.org/entity/Q202975,Wuthering Heights,Emily Brontë,Gothic fiction,1847-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-wuthering-heights/
+http://www.wikidata.org/entity/Q963659,Dombey and Son,Charles Dickens,novel;social commentary,1848-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-dombey/
+http://www.wikidata.org/entity/Q3224025,The Book of Snobs,William Makepeace Thackeray,satire,,https://shakespeareandco.princeton.edu/books/thackeray-book-snobs/
+http://www.wikidata.org/entity/Q44701,The Tenant of Wildfell Hall,Anne Brontë,epistolary novel,1848-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-tenant-wildfell-hall/
+http://www.wikidata.org/entity/Q1210336,Dictionary of Greek and Roman Biography and Mythology,William Smith,dictionary;biographical dictionary,1849-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/smith-dictionary-greek-roman/
+http://www.wikidata.org/entity/Q615175,Shirley,Charlotte Brontë,novel,1849-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-shirley/
+http://www.wikidata.org/entity/Q218578,The Seven Lamps of Architecture,John Ruskin,non-fiction,1849-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ruskin-seven-lamps-architecture/
+http://www.wikidata.org/entity/Q189811,David Copperfield,Charles Dickens,Bildungsroman;autobiographical novel,1852-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-david-copperfield/
+http://www.wikidata.org/entity/Q907568,The Scarlet Letter,Nathaniel Hawthorne,historical novel;romance novel,1850-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hawthorne-scarlet-letter/
+http://www.wikidata.org/entity/Q1431433,White-Jacket,Herman Melville,adventure novel,1850-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/melville-white-jacket/
+http://www.wikidata.org/entity/Q4660769,A Wonder-Book for Girls and Boys,Nathaniel Hawthorne,,1851-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hawthorne-wonder-book-girls/
+http://www.wikidata.org/entity/Q1141732,The House of the Seven Gables,Nathaniel Hawthorne,Gothic fiction,1851-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hawthorne-house-seven-gables/
+http://www.wikidata.org/entity/Q7766650,The Stones of Venice,John Ruskin,,1853-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ruskin-stones-venice/
+http://www.wikidata.org/entity/Q2222,Uncle Tom's Cabin,Harriet Beecher Stowe,social novel,1852-03-20 00:00:00,https://shakespeareandco.princeton.edu/books/stowe-uncle-toms-cabin/
+http://www.wikidata.org/entity/Q883305,Bleak House,Charles Dickens,novel,1853-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-bleak-house/
+http://www.wikidata.org/entity/Q265100,Cranford,Elizabeth Gaskell,novel,1851-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gaskell-cranford/
+http://www.wikidata.org/entity/Q19073619,Tanglewood Tales,Nathaniel Hawthorne,,1853-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hawthorne-tanglewood-tales/
+http://www.wikidata.org/entity/Q2449570,Villette,Charlotte Brontë,novel,1853-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-villette/
+http://www.wikidata.org/entity/Q1340493,Hard Times,Charles Dickens,social novel;serialized fiction,1854-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-hard-times/
+http://www.wikidata.org/entity/Q863534,Walden,Henry David Thoreau,non-fiction;diary,1854-08-09 00:00:00,https://shakespeareandco.princeton.edu/books/thoreau-walden/
+http://www.wikidata.org/entity/Q19095363,English Traits,Ralph Waldo Emerson,,1856-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/emerson-english-traits/
+http://www.wikidata.org/entity/Q193417,Madame Bovary,Gustave Flaubert,narrative;realist novel,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/flaubert-madame-bovary/
+http://www.wikidata.org/entity/Q19895083,Peg Woffington,Charles Reade,novel,1853-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/reade-peg-woffington/
+http://www.wikidata.org/entity/Q4859885,Barchester Towers,Anthony Trollope,novel,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-barchester-towers/
+http://www.wikidata.org/entity/Q565638,Little Dorrit,Charles Dickens,novel,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-little-dorrit/
+http://www.wikidata.org/entity/Q6544172,Scenes of Clerical Life,George Eliot,,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-scenes-clerical-life/
+http://www.wikidata.org/entity/Q4180188,The Life of Charlotte Brontë,Elizabeth Gaskell,biography,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gaskell-life-charlotte-bronte/
+http://www.wikidata.org/entity/Q762203,The Professor,Charlotte Brontë,novel,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-professor/
+http://www.wikidata.org/entity/Q7815084,Tom Brown's School Days,Thomas Hughes,children's literature;autobiographical novel;school story,1857-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hughes-tom-browns-school/
+http://www.wikidata.org/entity/Q200306,Gray's Anatomy,Henry Gray,,1858-08-01 00:00:00,https://shakespeareandco.princeton.edu/books/gray-grays-anatomy/
+http://www.wikidata.org/entity/Q308918,A Tale of Two Cities,Charles Dickens,historical novel;social novel,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-tale-two-cities/
+http://www.wikidata.org/entity/Q2611046,Adam Bede,George Eliot,historical novel,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-adam-bede/
+http://www.wikidata.org/entity/Q105883427,Idylls of the King,Alfred Tennyson,,,https://shakespeareandco.princeton.edu/books/tennyson-idylls-king/
+http://www.wikidata.org/entity/Q1055881,On Liberty,John Stuart Mill,non-fiction,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mill-liberty/
+http://www.wikidata.org/entity/Q20968204,On the Origin of Species,Charles Darwin,,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/darwin-origin-species/
+http://www.wikidata.org/entity/Q14476502,The Ordeal of Richard Feverel,George Meredith,philosophical novel,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/meredith-ordeal-richard-feverel/
+http://www.wikidata.org/entity/Q1215018,The Mill on the Floss,George Eliot,novel,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-mill-floss/
+http://www.wikidata.org/entity/Q1212672,The Woman in White,Wilkie Collins,epistolary novel;sensation fiction;Gothic fiction;crime novel,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/collins-woman-white/
+http://www.wikidata.org/entity/Q67483640,Evan Harrington,George Meredith,,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/meredith-evan-harrington/
+http://www.wikidata.org/entity/Q8565314,Framley Parsonage,Anthony Trollope,novel,1861-04-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-framley-parsonage/
+http://www.wikidata.org/entity/Q219552,Great Expectations,Charles Dickens,black comedy;Bildungsroman,1861-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-great-expectations/
+http://www.wikidata.org/entity/Q62579127,Silas Marner,George Eliot,,1861-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-silas-marner/
+http://www.wikidata.org/entity/Q16962094,Orley Farm,Anthony Trollope,novel,,https://shakespeareandco.princeton.edu/books/trollope-orley-farm/
+http://www.wikidata.org/entity/Q1161171,The House of the Dead,Fyodor Dostoyevsky,serialized fiction,1862-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dostoyevsky-house-dead/
+http://www.wikidata.org/entity/Q7363279,Romola,George Eliot,historical novel,1862-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-romola/
+http://www.wikidata.org/entity/Q83399521,Sylvia's Lovers,Elizabeth Gaskell,,1982-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gaskell-sylvias-lovers/
+http://www.wikidata.org/entity/Q7764868,The Small House at Allington,Anthony Trollope,novel,1862-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-small-house-allington/
+http://www.wikidata.org/entity/Q2453239,Wives and Daughters,Elizabeth Gaskell,novel,1864-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gaskell-wives-daughters/
+http://www.wikidata.org/entity/Q20872991,Alice's Adventures in Wonderland,Lewis Carroll,,1866-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carroll-alices-adventures-wonderland/
+http://www.wikidata.org/entity/Q19086181,The Ethics of the Dust,John Ruskin,,1866-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ruskin-ethics-dust/
+http://www.wikidata.org/entity/Q7716497,The Belton Estate,Anthony Trollope,novel,1865-12-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-belton-estate/
+http://www.wikidata.org/entity/Q7723316,The Claverings,Anthony Trollope,novel,,https://shakespeareandco.princeton.edu/books/trollope-claverings/
+http://www.wikidata.org/entity/Q223688,The Gambler,Fyodor Dostoyevsky,existentialist novel,1867-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dostoyevsky-gambler/
+http://www.wikidata.org/entity/Q16564858,The Prince's Progress,Christina Rossetti,poem,1866-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/rossetti-princes-progress/
+http://www.wikidata.org/entity/Q3820779,The English Constitution,Walter Bagehot,non-fiction,1867-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bagehot-english-constitution/
+http://www.wikidata.org/entity/Q7745622,The Last Chronicle of Barset,Anthony Trollope,novel,1866-12-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-last-chronicle-barset/
+http://www.wikidata.org/entity/Q161531,War and Peace,Leo Tolstoy,historical novel;romance novel;war novel;philosophical novel,1869-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tolstoy-war-peace/
+http://www.wikidata.org/entity/Q523076,Little Women,Louisa May Alcott,realist novel;young adult novel;Bildungsroman;developmental novel;family saga novel;autobiographical novel,1868-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/alcott-little-women/
+http://www.wikidata.org/entity/Q7749138,The Luck of Roaring Camp,Bret Harte,Western literature,1868-08-01 00:00:00,https://shakespeareandco.princeton.edu/books/harte-luck-roaring-camp/
+http://www.wikidata.org/entity/Q2362563,The Moonstone,Wilkie Collins,speculative fiction novel;crime novel;epistolary novel,1868-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/collins-moonstone/
+http://www.wikidata.org/entity/Q3202051,The Ring and the Book,Robert Browning,poetry,1868-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/browning-ring-book/
+http://www.wikidata.org/entity/Q18629846,Phantasmagoria and Other Poems,Lewis Carroll,,1869-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carroll-phantasmagoria-poems/
+http://www.wikidata.org/entity/Q1212285,Sentimental Education,Gustave Flaubert,novel,,https://shakespeareandco.princeton.edu/books/flaubert-sentimental-education/
+http://www.wikidata.org/entity/Q6684687,Lothair,Benjamin Disraeli,philosophical novel,1870-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/disraeli-lothair/
+http://www.wikidata.org/entity/Q1168105,The Mystery of Edwin Drood,Charles Dickens,crime novel;Gothic fiction,1870-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-mystery-edwin-drood/
+http://www.wikidata.org/entity/Q2846293,Desperate Remedies,Thomas Hardy,novel,1871-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-desperate-remedies/
+http://www.wikidata.org/entity/Q313129,Middlemarch,George Eliot,novel,1871-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-middlemarch/
+http://www.wikidata.org/entity/Q7712547,The Adventures of Harry Richmond,George Meredith,romance novel;picaresque novel;adventure novel,1870-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/meredith-adventures-harry-richmond/
+http://www.wikidata.org/entity/Q1165434,"The Descent of Man, and Selection in Relation to Sex",Charles Darwin,scientific publication,1871-02-24 00:00:00,https://shakespeareandco.princeton.edu/books/darwin-descent-man-selection/
+http://www.wikidata.org/entity/Q1350048,Erewhon,Samuel Butler,speculative fiction novel;science fiction novel,1872-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/butler-erewhon/
+http://www.wikidata.org/entity/Q2251594,Under the Greenwood Tree,Thomas Hardy,novel,1872-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-greenwood-tree/
+http://www.wikidata.org/entity/Q9137771,A Chance Acquaintance,William Dean Howells,,1873-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/howells-chance-acquaintance/
+http://www.wikidata.org/entity/Q2931240,A Pair of Blue Eyes,Thomas Hardy,novel,1873-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-pair-blue-eyes/
+http://www.wikidata.org/entity/Q19100181,Literature and Dogma,Matthew Arnold,,,https://shakespeareandco.princeton.edu/books/arnold-literature-dogma/
+http://www.wikidata.org/entity/Q8034531,Work: A Story of Experience,Louisa May Alcott,autobiographical novel,1873-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/alcott-work-story-experience/
+http://www.wikidata.org/entity/Q4659474,A Short History of the English People,John Richard Green,,1874-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/green-short-history-english/
+http://www.wikidata.org/entity/Q5642996,Far from the Madding Crowd,Thomas Hardy,,1874-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-far-madding-crowd/
+http://www.wikidata.org/entity/Q210784,The Idiot,Fyodor Dostoyevsky,existentialist novel,1869-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dostoyevsky-idiot/
+http://www.wikidata.org/entity/Q4877410,Beauchamp's Career,George Meredith,political novel,1875-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/meredith-beauchamps-career/
+http://www.wikidata.org/entity/Q3079804,Roderick Hudson,Henry James,Bildungsroman,1875-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-roderick-hudson/
+http://www.wikidata.org/entity/Q552238,Daniel Deronda,George Eliot,novel,1876-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/eliot-daniel-deronda/
+http://www.wikidata.org/entity/Q7368002,Rose in Bloom,Louisa May Alcott,novel,1876-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/alcott-rose-bloom/
+http://www.wikidata.org/entity/Q326914,The Adventures of Tom Sawyer,Mark Twain,narration;narration;children's literature;children's literature;Bildungsroman;adventure novel;Bildungsroman;adventure novel,1876-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/twain-adventures-tom-sawyer/
+http://www.wikidata.org/entity/Q2661231,The Hand of Ethelberta,Thomas Hardy,novel,,https://shakespeareandco.princeton.edu/books/hardy-hand-ethelberta/
+http://www.wikidata.org/entity/Q1079681,The Hunting of the Snark,Lewis Carroll,nonsense verse,1876-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carroll-hunting-snark/
+http://www.wikidata.org/entity/Q7758216,The Prime Minister,Anthony Trollope,novel,1875-11-01 00:00:00,https://shakespeareandco.princeton.edu/books/trollope-prime-minister/
+http://www.wikidata.org/entity/Q147787,Anna Karenina,Leo Tolstoy,realist novel,1877-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tolstoy-anna-karenina/
+http://www.wikidata.org/entity/Q19077864,The American,Henry James,,,https://shakespeareandco.princeton.edu/books/james-american/
+http://www.wikidata.org/entity/Q7776272,The Wreck of the Grosvenor,William Clark Russell,novel,,https://shakespeareandco.princeton.edu/books/russell-wreck-grosvenor/
+http://www.wikidata.org/entity/Q1364539,"Human, All Too Human",Friedrich Nietzsche,philosophy,1878-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/nietzsche-human-human/
+http://www.wikidata.org/entity/Q16936995,The Leavenworth Case,Anna Katharine Green,novel,1878-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/green-leavenworth-case/
+http://www.wikidata.org/entity/Q141568,The Return of the Native,Thomas Hardy,novel,1878-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-return-native/
+http://www.wikidata.org/entity/Q3080495,Watch and Ward,Henry James,novel,1878-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-watch-ward/
+http://www.wikidata.org/entity/Q574887,Daisy Miller,Henry James,,1879-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-daisy-miller/
+http://www.wikidata.org/entity/Q7731638,The Egoist,George Meredith,novel,,https://shakespeareandco.princeton.edu/books/meredith-egoist/
+http://www.wikidata.org/entity/Q7767953,The Tale of Chloe,George Meredith,novel,,https://shakespeareandco.princeton.edu/books/meredith-tale-chloe/
+http://www.wikidata.org/entity/Q10202,Travels with a Donkey in the Cévennes,Robert Louis Stevenson,travel book,1879-06-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-travels-donkey-vennes/
+http://www.wikidata.org/entity/Q2992478,Confidence,Henry James,novel,1879-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-confidence/
+http://www.wikidata.org/entity/Q1138346,Nana,Émile Zola,novel,1880-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/zola-nana/
+http://www.wikidata.org/entity/Q183157,The Brothers Karamazov,Fyodor Dostoyevsky,serialized fiction;existentialist novel,1880-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dostoyevsky-brothers-karamazov/
+http://www.wikidata.org/entity/Q2363473,The Trumpet-Major,Thomas Hardy,historical novel,,https://shakespeareandco.princeton.edu/books/hardy-trumpet-major/
+http://www.wikidata.org/entity/Q19113362,Uncle Remus: His Songs and His Sayings,Joel Chandler Harris,,,https://shakespeareandco.princeton.edu/books/harris-uncle-remus-songs/
+http://www.wikidata.org/entity/Q1548029,Washington Square,Henry James,novel,1880-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-washington-square/
+http://www.wikidata.org/entity/Q4658314,A Modern Instance,William Dean Howells,novel,1882-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/howells-modern-instance/
+http://www.wikidata.org/entity/Q17002120,Dr. Breen's Practice,William Dean Howells,novel,,https://shakespeareandco.princeton.edu/books/howells-dr-breens-practice/
+http://www.wikidata.org/entity/Q6240780,John Inglesant,Joseph Henry Shorthouse,novel,1881-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shorthouse-john-inglesant/
+http://www.wikidata.org/entity/Q861017,The Portrait of a Lady,Henry James,novel,1881-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-portrait-lady/
+http://www.wikidata.org/entity/Q6002441,Imaginary Conversations,Walter Savage Landor,,,https://shakespeareandco.princeton.edu/books/landor-imaginary-conversations/
+http://www.wikidata.org/entity/Q6393254,Kept in the Dark,Anthony Trollope,novel,,https://shakespeareandco.princeton.edu/books/trollope-kept-dark/
+http://www.wikidata.org/entity/Q51334549,Mademoiselle Fifi,Guy de Maupassant,,1898-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/maupassant-mademoiselle-fifi/
+http://www.wikidata.org/entity/Q3234271,New Arabian Nights,Robert Louis Stevenson,short story,1882-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-new-arabian-nights/
+http://www.wikidata.org/entity/Q3232887,The Merry Men and Other Tales and Fables,Robert Louis Stevenson,short story,1887-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-merry-men-tales/
+http://www.wikidata.org/entity/Q7859431,Two on a Tower,Thomas Hardy,novel,1882-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-two-tower/
+http://www.wikidata.org/entity/Q57317014,George Sand,Bertha Thomas,,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/thomas-george-sand/
+http://www.wikidata.org/entity/Q7766827,The Story of an African Farm,Olive Schreiner,novel,1883-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/schreiner-story-african-farm/
+http://www.wikidata.org/entity/Q7836097,Travels in Arabia Deserta,Charles Montagu Doughty,,,https://shakespeareandco.princeton.edu/books/doughty-travels-arabia-deserta/
+http://www.wikidata.org/entity/Q185118,Treasure Island,Robert Louis Stevenson,adventure novel;coming-of-age story;sea adventure novel,1883-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-treasure-island/
+http://www.wikidata.org/entity/Q19216360,Letters of Jane Austen,Jane Austen,,,https://shakespeareandco.princeton.edu/books/austen-letters-jane-austen/
+http://www.wikidata.org/entity/Q7714948,The Author of Beltraffio,Henry James,short story,1884-07-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-author-beltraffio/
+http://www.wikidata.org/entity/Q1217608,The Wild Duck,Henrik Ibsen,,1884-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-wild-duck/
+http://www.wikidata.org/entity/Q74456647,A Child's Garden of Verses,Robert Louis Stevenson,,1885-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-childs-garden-verses/
+http://www.wikidata.org/entity/Q5271362,Diana of the Crossways,George Meredith,novel,,https://shakespeareandco.princeton.edu/books/meredith-diana-crossways/
+http://www.wikidata.org/entity/Q5477441,Marius the Epicurean,Walter Pater,historical novel;philosophical novel,1885-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/pater-marius-epicurean/
+http://www.wikidata.org/entity/Q2068990,Prince Otto,Robert Louis Stevenson,novel,1885-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-prince-otto/
+http://www.wikidata.org/entity/Q7760892,The Rise of Silas Lapham,William Dean Howells,novel,1885-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/howells-rise-silas-lapham/
+http://www.wikidata.org/entity/Q5048723,Cashel Byron's Profession,George Bernard Shaw,novel,,https://shakespeareandco.princeton.edu/books/shaw-cashel-byrons-profession/
+http://www.wikidata.org/entity/Q16386329,Indian Summer,William Dean Howells,,1886-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/howells-indian-summer/
+http://www.wikidata.org/entity/Q2349094,Kidnapped,Robert Louis Stevenson,children's literature;fiction;historical novel;adventure novel,1886-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-kidnapped/
+http://www.wikidata.org/entity/Q387480,Little Lord Fauntleroy,Frances Hodgson Burnett,children's novel,1885-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/burnett-little-lord-fauntleroy/
+http://www.wikidata.org/entity/Q2343169,The Mayor of Casterbridge,Thomas Hardy,novel,1886-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-mayor-casterbridge/
+http://www.wikidata.org/entity/Q3211932,The Princess Casamassima,Henry James,novel,1886-10-22 00:00:00,https://shakespeareandco.princeton.edu/books/james-princess-casamassima/
+http://www.wikidata.org/entity/Q6815614,Memories and Portraits,Robert Louis Stevenson,essay collection,1887-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-memories-portraits/
+http://www.wikidata.org/entity/Q640513,She: A History of Adventure,H. Rider Haggard,Lost World fiction;speculative fiction novel;Gothic fiction;adventure novel,1887-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/haggard-history-adventure/
+http://www.wikidata.org/entity/Q2254480,The Woodlanders,Thomas Hardy,novel,1887-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-woodlanders/
+http://www.wikidata.org/entity/Q2362409,The Aspern Papers,Henry James,novel;novella,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-aspern-papers/
+http://www.wikidata.org/entity/Q797466,The Happy Prince and Other Tales,Oscar Wilde,short story,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilde-happy-prince-tales/
+http://www.wikidata.org/entity/Q7746978,The Lesson of the Master,Henry James,novella,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-lesson-master/
+http://www.wikidata.org/entity/Q3616152,The Reverberator,Henry James,novel,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-reverberator/
+http://www.wikidata.org/entity/Q7979316,Wee Willie Winkie and Other Child Stories,Rudyard Kipling,,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-wee-willie-winkie/
+http://www.wikidata.org/entity/Q848612,A Connecticut Yankee in King Arthur's Court,Mark Twain,science fiction;humour;satire;speculative fiction novel;science fiction novel;alternate history novel;satirical novel;speculative fiction,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/twain-connecticut-yankee-king/
+http://www.wikidata.org/entity/Q669694,A Doll's House,Henrik Ibsen,drama,1879-12-21 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-dolls-house/
+http://www.wikidata.org/entity/Q52848307,Fabian Essays in Socialism,,,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shaw-fabian-essays-socialism/
+http://www.wikidata.org/entity/Q1632505,Sylvie and Bruno,Lewis Carroll,speculative fiction novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carroll-sylvie-bruno/
+http://www.wikidata.org/entity/Q1214091,The Kreutzer Sonata,Leo Tolstoy,historical novel;romance novel;short novel;novella,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tolstoy-kreutzer-sonata/
+http://www.wikidata.org/entity/Q2615930,The Master of Ballantrae,Robert Louis Stevenson,historical novel;adventure novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-master-ballantrae/
+http://www.wikidata.org/entity/Q4449924,The Mystery of Cloomber,Arthur Conan Doyle,speculative fiction novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/doyle-mystery-cloomber/
+http://www.wikidata.org/entity/Q3548866,The Wrong Box,Robert Louis Stevenson,black comedy;novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-wrong-box/
+http://www.wikidata.org/entity/Q1296318,Twilight of the Idols,Friedrich Nietzsche,philosophy;essay,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/nietzsche-twilight-idols/
+http://www.wikidata.org/entity/Q4657268,A Hazard of New Fortunes,William Dean Howells,novel,1890-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/howells-hazard-new-fortunes/
+http://www.wikidata.org/entity/Q3221974,The Crime of Sylvestre Bonnard,Anatole France,novel,1881-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/france-crime-sylvestre-bonnard/
+http://www.wikidata.org/entity/Q3659366,The Tragic Muse,Henry James,novel,1890-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-tragic-muse/
+http://www.wikidata.org/entity/Q81724988,A Group of Noble Dames,Thomas Hardy,,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-group-noble-dames/
+http://www.wikidata.org/entity/Q16514005,Diary of a Pilgrimage,Jerome K. Jerome,novel,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/jerome-diary-pilgrimage/
+http://www.wikidata.org/entity/Q1559656,Gösta Berlings Saga,Selma Lagerlöf,novel,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lagerlof-gosta-berlings-saga/
+http://www.wikidata.org/entity/Q63751171,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q176465,Hedda Gabler,Henrik Ibsen,,1890-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q78928074,Hedda Gabler,Henrik Ibsen,,1987-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q64373906,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q60004976,Hedda Gabler,Henrik Ibsen,,t1021342447,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q73048517,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q63967646,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q63119557,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q84177727,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q82452585,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q82458932,Hedda Gabler,Henrik Ibsen,drama,,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q60005508,Hedda Gabler,Henrik Ibsen,,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-hedda-gabler/
+http://www.wikidata.org/entity/Q3799362,Intentions,Oscar Wilde,essay,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilde-intentions/
+http://www.wikidata.org/entity/Q1810331,Lord Arthur Savile's Crime and Other Stories,Oscar Wilde,youth and children's literature,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilde-lord-arthur-saviles/
+http://www.wikidata.org/entity/Q42186130,One of Our Conquerors,George Meredith,,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/meredith-one-conquerors/
+http://www.wikidata.org/entity/Q649409,Tess of the d'Urbervilles,Thomas Hardy,novel;tragedy,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-tess-durbervilles/
+http://www.wikidata.org/entity/Q1517178,The Light That Failed,Rudyard Kipling,novel,1891-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-light-failed/
+http://www.wikidata.org/entity/Q4676497,Across the Plains,Robert Louis Stevenson,memoir;travel book,1892-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-across-plains/
+http://www.wikidata.org/entity/Q4129177,Degeneration,Max Nordau,,1892-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/nordau-degeneration/
+http://www.wikidata.org/entity/Q208094,Peer Gynt,Henrik Ibsen,play,1867-11-14 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-peer-gynt/
+http://www.wikidata.org/entity/Q641378,The Master Builder,Henrik Ibsen,drama,1892-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ibsen-master-builder/
+http://www.wikidata.org/entity/Q2277829,Catriona,Robert Louis Stevenson,historical novel;adventure novel,1893-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-catriona/
+http://www.wikidata.org/entity/Q4710615,Island Nights' Entertainments,Robert Louis Stevenson,,1893-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevenson-island-nights-entertainments/
+http://www.wikidata.org/entity/Q3276774,Maggie: A Girl of the Streets,Stephen Crane,novella;novel,1893-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/crane-maggie-girl-streets/
+http://www.wikidata.org/entity/Q19026203,Many Inventions,Rudyard Kipling,,,https://shakespeareandco.princeton.edu/books/kipling-many-inventions/
+http://www.wikidata.org/entity/Q203585,A Woman of No Importance,Oscar Wilde,comedy,,https://shakespeareandco.princeton.edu/books/wilde-woman-importance/
+http://www.wikidata.org/entity/Q5401319,Esther Waters,George Moore,novel,,https://shakespeareandco.princeton.edu/books/moore-esther-waters/
+http://www.wikidata.org/entity/Q42190465,Glimpses of Unfamiliar Japan,Lafcadio Hearn,,1894-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hearn-glimpses-unfamiliar-japan/
+http://www.wikidata.org/entity/Q17010180,Milton's Prosody,Robert Bridges,,,https://shakespeareandco.princeton.edu/books/bridges-miltons-prosody/
+http://www.wikidata.org/entity/Q1394704,The Great God Pan,Arthur Machen,horror novel;novella,1894-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/machen-great-god-pan/
+http://www.wikidata.org/entity/Q189509,The Jungle Book,Rudyard Kipling,narration;didactic literature,1894-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-jungle-book/
+http://www.wikidata.org/entity/Q760143,A Sportsman's Sketches,Ivan Turgenev,,1852-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/turgenev-sportsmans-sketches/
+http://www.wikidata.org/entity/Q2404359,Almayer's Folly,Joseph Conrad,novel,1895-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-almayers-folly/
+http://www.wikidata.org/entity/Q1248773,Jude the Obscure,Thomas Hardy,novel,1895-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-jude-obscure/
+http://www.wikidata.org/entity/Q144547,On the Eve,Ivan Turgenev,novel,1860-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/turgenev-eve/
+http://www.wikidata.org/entity/Q7713242,The Altar of the Dead,Henry James,short story,1895-05-15 00:00:00,https://shakespeareandco.princeton.edu/books/james-altar-dead/
+http://www.wikidata.org/entity/Q16969050,The Gospel of Buddha,Paul Carus,,1894-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carus-gospel-buddha/
+http://www.wikidata.org/entity/Q1219239,The Red Badge of Courage,Stephen Crane,novel;historical fiction,1895-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/crane-red-badge-courage/
+http://www.wikidata.org/entity/Q1101819,The Second Jungle Book,Rudyard Kipling,children's novel,1895-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-second-jungle-book/
+http://www.wikidata.org/entity/Q1090444,An Outcast of the Islands,Joseph Conrad,novel,1896-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-outcast-islands/
+http://www.wikidata.org/entity/Q5724762,Smoke,Ivan Turgenev,novel,1867-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/turgenev-smoke/
+http://www.wikidata.org/entity/Q7728785,The Damnation of Theron Ware,Harold Frederic,novel,1896-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/frederic-damnation-theron-ware/
+http://www.wikidata.org/entity/Q3224800,The Figure in the Carpet,Henry James,short story,1896-02-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-figure-carpet/
+http://www.wikidata.org/entity/Q2066902,The Wheels of Chance,H. G. Wells,comic novel,1896-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-wheels-chance/
+http://www.wikidata.org/entity/Q1035138,Captains Courageous,Rudyard Kipling,novel,1897-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-captains-courageous/
+http://www.wikidata.org/entity/Q41542,Dracula,Bram Stoker,invasion literature;horror novel;vampire novel;Gothic fiction;epistolary novel,1897-05-26 00:00:00,https://shakespeareandco.princeton.edu/books/stoker-dracula/
+http://www.wikidata.org/entity/Q3819426,The Happy Hypocrite,Max Beerbohm,,1896-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/beerbohm-happy-hypocrite/
+http://www.wikidata.org/entity/Q71047909,The Invisible Man,H. G. Wells,,1897-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-invisible-man/
+http://www.wikidata.org/entity/Q3809486,The Spoils of Poynton,Henry James,novel,1897-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-spoils-poynton/
+http://www.wikidata.org/entity/Q2943614,What Maisie Knew,Henry James,novel,1897-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-maisie-knew/
+http://www.wikidata.org/entity/Q5363788,Elizabeth and Her German Garden,Elizabeth von Arnim,novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/arnim-elizabeth-german-garden/
+http://www.wikidata.org/entity/Q3151490,Tales of Unrest,Joseph Conrad,short story,1898-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-tales-unrest/
+http://www.wikidata.org/entity/Q7729141,The Day's Work,Rudyard Kipling,short story,1898-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-days-work/
+http://www.wikidata.org/entity/Q42185785,The Little Minister,J. M. Barrie,,,https://shakespeareandco.princeton.edu/books/barrie-little-minister/
+http://www.wikidata.org/entity/Q7756712,The Perfect Wagnerite,George Bernard Shaw,music journalism,1898-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shaw-perfect-wagnerite/
+http://www.wikidata.org/entity/Q625923,The Turn of the Screw,Henry James,speculative fiction novel;novella;Gothic fiction;horror literature;ghost story,1898-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-turn-screw/
+http://www.wikidata.org/entity/Q1143075,An Ideal Husband,Oscar Wilde,comedy,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilde-ideal-husband/
+http://www.wikidata.org/entity/Q42189788,Fables in Slang,George Ade,,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ade-fables-slang/
+http://www.wikidata.org/entity/Q1062365,Hunger,Knut Hamsun,novel,1890-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hamsun-hunger/
+http://www.wikidata.org/entity/Q3275960,Mademoiselle de Maupin,Théophile Gautier,epistolary novel,1835-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gautier-mademoiselle-maupin/
+http://www.wikidata.org/entity/Q11772710,McTeague,Frank Norris,novel,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/norris-mcteague/
+http://www.wikidata.org/entity/Q3484772,Plain Tales from the Hills,Rudyard Kipling,,1888-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-plain-tales-hills/
+http://www.wikidata.org/entity/Q3867271,The Awkward Age,Henry James,novel,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-awkward-age/
+http://www.wikidata.org/entity/Q7738010,The Greater Inclination,Edith Wharton,,,https://shakespeareandco.princeton.edu/books/wharton-greater-inclination/
+http://www.wikidata.org/entity/Q4657879,A Little Tour in France,Henry James,travel literature,1884-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-little-tour-france/
+http://www.wikidata.org/entity/Q727408,Lord Jim,Joseph Conrad,psychological novel,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-lord-jim/
+http://www.wikidata.org/entity/Q58416767,Love and Mr. Lewisham,H. G. Wells,,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-love-mr-lewisham/
+http://www.wikidata.org/entity/Q4354019,Sailing Alone Around the World,Joshua Slocum,autobiography,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/slocum-sailing-alone-around/
+http://www.wikidata.org/entity/Q1286961,Sister Carrie,Theodore Dreiser,novel,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-sister-carrie/
+http://www.wikidata.org/entity/Q97684046,Tales of the Unexpected,H. G. Wells,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-tales-unexpected/
+http://www.wikidata.org/entity/Q7767021,The Strenuous Life,Theodore Roosevelt,,,https://shakespeareandco.princeton.edu/books/roosevelt-strenuous-life/
+http://www.wikidata.org/entity/Q130295,The Wonderful Wizard of Oz,L. Frank Baum,speculative fiction novel;children's novel;speculative fiction novel;children's novel,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/baum-wizard-oz/
+http://www.wikidata.org/entity/Q948984,Three Men on the Bummel,Jerome K. Jerome,comic novel,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/jerome-three-men-bummel/
+http://www.wikidata.org/entity/Q589868,Kim,Rudyard Kipling,espionage novel,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-kim/
+http://www.wikidata.org/entity/Q16653725,The Defendant,G. K. Chesterton,essay,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-defendant/
+http://www.wikidata.org/entity/Q30474306,The First Men in the Moon,H. G. Wells,,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-first-men-moon/
+http://www.wikidata.org/entity/Q51499467,The Life of the Bee,Maurice Maeterlinck,,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/maeterlinck-life-bee/
+http://www.wikidata.org/entity/Q2743868,The Sacred Fount,Henry James,novel,1901-02-06 00:00:00,https://shakespeareandco.princeton.edu/books/james-sacred-fount/
+http://www.wikidata.org/entity/Q7797696,Three Plays for Puritans,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-three-plays-puritans/
+http://www.wikidata.org/entity/Q339852,A Daughter of the Snows,Jack London,novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-daughter-snows/
+http://www.wikidata.org/entity/Q4767661,Anna of the Five Towns,Arnold Bennett,novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-anna-five-towns/
+http://www.wikidata.org/entity/Q3232379,Children of the Frost,Jack London,,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-children-frost/
+http://www.wikidata.org/entity/Q1247723,Just So Stories,Rudyard Kipling,children's literature,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-just-stories/
+http://www.wikidata.org/entity/Q1248928,The Admirable Crichton,J. M. Barrie,comedy,,https://shakespeareandco.princeton.edu/books/barrie-admirable-crichton/
+http://www.wikidata.org/entity/Q45192,The Hound of the Baskervilles,Arthur Conan Doyle,crime novel;detective novel;mystery novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/doyle-hound-baskervilles/
+http://www.wikidata.org/entity/Q174626,The Immoralist,André Gide,novel;LGBT literature,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gide-immoralist/
+http://www.wikidata.org/entity/Q732360,The Little White Bird,J. M. Barrie,fictional diary;fairytale fantasy;speculative fiction novel;fictional diary;fairytale fantasy;speculative fiction novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/barrie-little-white-bird/
+http://www.wikidata.org/entity/Q5050817,The Sea Lady,H. G. Wells,speculative fiction novel,1902-07-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-sea-lady/
+http://www.wikidata.org/entity/Q2605035,The Varieties of Religious Experience,William James,essay,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-varieties-religious-experience/
+http://www.wikidata.org/entity/Q1557588,The Wings of the Dove,Henry James,novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-wings-dove/
+http://www.wikidata.org/entity/Q1329329,Typhoon,Joseph Conrad,adventure novel,1902-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-typhoon/
+http://www.wikidata.org/entity/Q725409,Man and Superman,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-man-superman/
+http://www.wikidata.org/entity/Q16386886,Mankind in the Making,H. G. Wells,,1903-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-mankind-making/
+http://www.wikidata.org/entity/Q1145074,Sex and Character,Otto Weininger,essay,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/weininger-sex-character/
+http://www.wikidata.org/entity/Q650571,The Ambassadors,Henry James,novel,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-ambassadors/
+http://www.wikidata.org/entity/Q476871,The Call of the Wild,Jack London,adventure novel,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-call-wild/
+http://www.wikidata.org/entity/Q19087229,The Five Nations,Rudyard Kipling,,1903-10-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-five-nations/
+http://www.wikidata.org/entity/Q255074,The Way of All Flesh,Samuel Butler,novel,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/butler-way-flesh/
+http://www.wikidata.org/entity/Q4233781,Cabbages and Kings,O. Henry,novel,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/henry-cabbages-kings/
+http://www.wikidata.org/entity/Q18121821,Heart of the West,O. Henry,,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/henry-heart-west/
+http://www.wikidata.org/entity/Q19089206,Original Plays,W. S. Gilbert,,1876-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gilbert-original-plays/
+http://www.wikidata.org/entity/Q478381,The Cherry Orchard,Anton Chekhov,tragicomedy,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chekhov-cherry-orchard/
+http://www.wikidata.org/entity/Q7731298,The Dynasts,Thomas Hardy,,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hardy-dynasts/
+http://www.wikidata.org/entity/Q1215802,The Food of the Gods and How It Came to Earth,H. G. Wells,science fiction novel,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-food-gods-came/
+http://www.wikidata.org/entity/Q1248585,The Golden Bowl,Henry James,novel,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-golden-bowl/
+http://www.wikidata.org/entity/Q3790793,The Island Pharisees,John Galsworthy,novel,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/galsworthy-island-pharisees/
+http://www.wikidata.org/entity/Q3792823,The Napoleon of Notting Hill,G. K. Chesterton,political novel;dystopian novel,1904-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-napoleon-notting-hill/
+http://www.wikidata.org/entity/Q7769450,The Tinker's Wedding,John Millington Synge,,,https://shakespeareandco.princeton.edu/books/synge-tinkers-wedding/
+http://www.wikidata.org/entity/Q1249074,A Modern Utopia,H. G. Wells,novel,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-modern-utopia/
+http://www.wikidata.org/entity/Q1249459,De Profundis,Oscar Wilde,carta,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilde-profundis/
+http://www.wikidata.org/entity/Q5738287,Heretics,G. K. Chesterton,essay,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-heretics/
+http://www.wikidata.org/entity/Q3221512,The Club of Queer Trades,G. K. Chesterton,crime novel,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-club-queer-trades/
+http://www.wikidata.org/entity/Q6474536,The House of Mirth,Edith Wharton,novel,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wharton-house-mirth/
+http://www.wikidata.org/entity/Q7747205,The Life of Reason,George Santayana,,,https://shakespeareandco.princeton.edu/books/santayana-life-reason/
+http://www.wikidata.org/entity/Q7752230,The Morals of Marcus Ordeyne,William John Locke,adventure novel,,https://shakespeareandco.princeton.edu/books/locke-morals-marcus-ordeyne/
+http://www.wikidata.org/entity/Q470616,The Philanderer,George Bernard Shaw,satire,,https://shakespeareandco.princeton.edu/books/shaw-philanderer/
+http://www.wikidata.org/entity/Q7993159,Where Angels Fear to Tread,E. M. Forster,novel,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-angels-fear-tread/
+http://www.wikidata.org/entity/Q4342308,Puck of Pook's Hill,Rudyard Kipling,fantasy,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-puck-pooks-hill/
+http://www.wikidata.org/entity/Q7715074,The Awakening of Helena Richie,Margaret Deland,historical novel,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/deland-awakening-helena-richie/
+http://www.wikidata.org/entity/Q7716494,The Beloved Vagabond,William John Locke,adventure novel,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/locke-beloved-vagabond/
+http://www.wikidata.org/entity/Q7719311,The Book of Tea,Okakura Kakuzō,,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/okakura-book-tea/
+http://www.wikidata.org/entity/Q7735024,The Four Million,O. Henry,,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/henry-four-million/
+http://www.wikidata.org/entity/Q260205,The Jungle,Upton Sinclair,social novel;social novel;novel;novel,1905-02-26 00:00:00,https://shakespeareandco.princeton.edu/books/sinclair-jungle/
+http://www.wikidata.org/entity/Q18635229,The Mirror of the Sea,Joseph Conrad,,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-mirror-sea/
+http://www.wikidata.org/entity/Q152267,White Fang,Jack London,Guata;anime,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-white-fang/
+http://www.wikidata.org/entity/Q429967,Chamber Music,James Joyce,poetry,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/joyce-chamber-music/
+http://www.wikidata.org/entity/Q6223808,John Bull's Other Island,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-john-bulls-island/
+http://www.wikidata.org/entity/Q42728800,The Fruit of the Tree,Edith Wharton,novel,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wharton-fruit-tree/
+http://www.wikidata.org/entity/Q1394147,The Hill of Dreams,Arthur Machen,autobiographical novel,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/machen-hill-dreams/
+http://www.wikidata.org/entity/Q2465752,The Iron Heel,Jack London,science fiction novel;political novel;dystopian novel,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-iron-heel/
+http://www.wikidata.org/entity/Q15999894,The Longest Journey,E. M. Forster,novel,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-longest-journey/
+http://www.wikidata.org/entity/Q94440704,The Playboy of the Western World,John Millington Synge,,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/synge-playboy-western-world/
+http://www.wikidata.org/entity/Q18209556,The Road,Jack London,autobiography,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/road-2/
+http://www.wikidata.org/entity/Q726254,The Wonderful Adventures of Nils,Selma Lagerlöf,speculative fiction novel;speculative fiction novel;children's literature;children's literature,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lagerlof-wonderful-adventures-nils/
+http://www.wikidata.org/entity/Q3485648,A Set of Six,Joseph Conrad,,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-set-six/
+http://www.wikidata.org/entity/Q30109470,All Things Considered,G. K. Chesterton,essay,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-things-considered/
+http://www.wikidata.org/entity/Q7012633,New Worlds for Old,H. G. Wells,non-fiction,1908-03-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-new-worlds-old/
+http://www.wikidata.org/entity/Q3486423,Orthodoxy,G. K. Chesterton,Christian apologetics,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-orthodoxy/
+http://www.wikidata.org/entity/Q2368111,The Autobiography of a Super-Tramp,W. H. Davies,autobiographical novel,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/davies-autobiography-super-tramp/
+http://www.wikidata.org/entity/Q7742277,The Intermediate Sex,Edward Carpenter,LGBT,,https://shakespeareandco.princeton.edu/books/carpenter-intermediate-sex/
+http://www.wikidata.org/entity/Q959816,The Man Who Was Thursday,G. K. Chesterton,novel;thriller,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-man-thursday/
+http://www.wikidata.org/entity/Q2563691,The Mystery of the Yellow Room,Gaston Leroux,detective fiction;crime novel;locked room mystery;detective literature,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/leroux-mystery-yellow-room/
+http://www.wikidata.org/entity/Q7754941,The Old Wives' Tale,Arnold Bennett,novel,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-old-wives-tale/
+http://www.wikidata.org/entity/Q936276,The Wind in the Willows,Kenneth Grahame,children's novel,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/grahame-wind-willows/
+http://www.wikidata.org/entity/Q1247736,Ann Veronica,H. G. Wells,feminist novel,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-ann-veronica/
+http://www.wikidata.org/entity/Q1317839,Martin Eden,Jack London,Künstlerroman,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-martin-eden/
+http://www.wikidata.org/entity/Q25206363,Roads of Destiny,O. Henry,,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/henry-roads-destiny/
+http://www.wikidata.org/entity/Q19896235,The Street of Adventure,Philip Gibbs,novel,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gibbs-street-adventure/
+http://www.wikidata.org/entity/Q7797597,Three Lives,Gertrude Stein,novel;novella,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stein-three-lives/
+http://www.wikidata.org/entity/Q1535422,Tono-Bungay,H. G. Wells,science fiction novel,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-tono-bungay/
+http://www.wikidata.org/entity/Q19107545,Tremendous Trifles,G. K. Chesterton,essay,1909-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-tremendous-trifles/
+http://www.wikidata.org/entity/Q42184341,Clayhanger,Arnold Bennett,,1910-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-clayhanger/
+http://www.wikidata.org/entity/Q5252584,Deirdre of the Sorrows,John Millington Synge,,,https://shakespeareandco.princeton.edu/books/synge-deirdre-sorrows/
+http://www.wikidata.org/entity/Q1146642,Howards End,E. M. Forster,family drama;novel,1910-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-howards-end/
+http://www.wikidata.org/entity/Q3467424,Justice,John Galsworthy,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/galsworthy-justice/
+http://www.wikidata.org/entity/Q19082889,The Complete Poems of Emily Brontë,Emily Brontë,poetry,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bronte-complete-poems-emily/
+http://www.wikidata.org/entity/Q58833458,The New Machiavelli,H. G. Wells,,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-new-machiavelli/
+http://www.wikidata.org/entity/Q4228091,Whirligigs,O. Henry,,1910-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/henry-whirligigs/
+http://www.wikidata.org/entity/Q3202732,Adventure,Jack London,adventure novel,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-adventure/
+http://www.wikidata.org/entity/Q2992058,Concise Oxford English Dictionary,,non-fiction literature,2011-08-18 00:00:00,https://shakespeareandco.princeton.edu/books/concise-oxford-english/
+http://www.wikidata.org/entity/Q1132319,Creative Evolution,Henri Bergson,essay,,https://shakespeareandco.princeton.edu/books/bergson-creative-evolution/
+http://www.wikidata.org/entity/Q5402934,Ethan Frome,Edith Wharton,novella,1911-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/wharton-ethan-frome/
+http://www.wikidata.org/entity/Q42185117,Hilda Lessways,Arnold Bennett,,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-hilda-lessways/
+http://www.wikidata.org/entity/Q39050472,In a German Pension,Katherine Mansfield,,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mansfield-german-pension/
+http://www.wikidata.org/entity/Q2671379,Jennie Gerhardt,Theodore Dreiser,novel,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-jennie-gerhardt/
+http://www.wikidata.org/entity/Q9358933,Just Patty,Jean Webster,novel,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/webster-just-patty/
+http://www.wikidata.org/entity/Q3742640,Riders to the Sea,John Millington Synge,,,https://shakespeareandco.princeton.edu/books/synge-riders-sea/
+http://www.wikidata.org/entity/Q3793807,The Doctor's Dilemma,George Bernard Shaw,Problem play,,https://shakespeareandco.princeton.edu/books/shaw-doctors-dilemma/
+http://www.wikidata.org/entity/Q23954363,The Innocence of Father Brown,G. K. Chesterton,mystery fiction,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-innocence-father-brown/
+http://www.wikidata.org/entity/Q19100202,The Strength of the Strong,Jack London,,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-strength-strong/
+http://www.wikidata.org/entity/Q7774542,The White Peacock,D. H. Lawrence,novel;Hindi,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/white-peacock/
+http://www.wikidata.org/entity/Q3685905,Under Western Eyes,Joseph Conrad,novel,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-western-eyes/
+http://www.wikidata.org/entity/Q8075113,Zuleika Dobson,Max Beerbohm,novel;satire,1911-10-26 00:00:00,https://shakespeareandco.princeton.edu/books/beerbohm-zuleika-dobson/
+http://www.wikidata.org/entity/Q4655911,A Christmas Garland,Max Beerbohm,parody,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/beerbohm-christmas-garland/
+http://www.wikidata.org/entity/Q16514368,A Personal Record,Joseph Conrad,,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-personal-record/
+http://www.wikidata.org/entity/Q1211706,At the Sign of the Reine Pédauque,Anatole France,novel,1893-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/france-sign-reine-pedauque/
+http://www.wikidata.org/entity/Q1156969,Daddy-Long-Legs,Jean Webster,epistolary novel,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/daddy-long-legs/
+http://www.wikidata.org/entity/Q51614301,Gitanjali,Rabindranath Tagore,,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tagore-gitanjali/
+http://www.wikidata.org/entity/Q3828527,Manalive,G. K. Chesterton,comic novel;mystery fiction,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-manalive/
+http://www.wikidata.org/entity/Q3232266,The Aspirations of Jean Servien,Anatole France,novel,1882-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/france-aspirations-jean-servien/
+http://www.wikidata.org/entity/Q42184415,The Crock of Gold,James Stephens,,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stephens-crock-gold/
+http://www.wikidata.org/entity/Q18175721,The Problems of Philosophy,Bertrand Russell,,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/russell-problems-philosophy/
+http://www.wikidata.org/entity/Q7770124,The Trespasser,D. H. Lawrence,novel,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-trespasser/
+http://www.wikidata.org/entity/Q4127106,Burning Daylight,Jack London,historical novel;adventure novel,1910-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-burning-daylight/
+http://www.wikidata.org/entity/Q793748,Chance,Joseph Conrad,novel,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-chance/
+http://www.wikidata.org/entity/Q19096921,Euripides and His Age,Gilbert Murray,non-fiction,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/murray-euripides-age/
+http://www.wikidata.org/entity/Q3180997,John Barleycorn,Jack London,autobiographical novel,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-john-barleycorn/
+http://www.wikidata.org/entity/Q80771,Sons and Lovers,D. H. Lawrence,novel,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-sons-lovers/
+http://www.wikidata.org/entity/Q5717253,The Gardener,Rabindranath Tagore,,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tagore-gardener/
+http://www.wikidata.org/entity/Q726382,The Interpretation of Dreams,Sigmund Freud,,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/freud-interpretation-dreams/
+http://www.wikidata.org/entity/Q4193654,The Little Nugget,P. G. Wodehouse,novel,1914-02-10 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-little-nugget/
+http://www.wikidata.org/entity/Q78289676,The Night-Born,Jack London,,1911-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-night-born/
+http://www.wikidata.org/entity/Q459592,Dubliners,James Joyce,,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/joyce-dubliners/
+http://www.wikidata.org/entity/Q7057510,North of Boston,Robert Frost,,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/frost-north-boston/
+http://www.wikidata.org/entity/Q7062617,Notes of a Son and Brother,Henry James,autobiography,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-notes-brother/
+http://www.wikidata.org/entity/Q7524438,Sinister Street,Compton Mackenzie,novel,,https://shakespeareandco.princeton.edu/books/mackenzie-sinister-street/
+http://www.wikidata.org/entity/Q461760,Spoon River Anthology,Edgar Lee Masters,epitaph,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/masters-spoon-river-anthology/
+http://www.wikidata.org/entity/Q7699617,Tender Buttons,Gertrude Stein,,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stein-tender-buttons/
+http://www.wikidata.org/entity/Q7734598,The Flying Inn,G. K. Chesterton,political novel;speculative fiction;science fiction novel,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-flying-inn/
+http://www.wikidata.org/entity/Q7758649,The Prussian Officer and Other Stories,D. H. Lawrence,short story,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-prussian-officer-stories/
+http://www.wikidata.org/entity/Q27592,The Psychopathology of Everyday Life,Sigmund Freud,psychoanalysis,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/freud-psychopathology-everyday-life/
+http://www.wikidata.org/entity/Q4458189,The Titan,Theodore Dreiser,novel,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-titan/
+http://www.wikidata.org/entity/Q19881660,Vandover and the Brute,Frank Norris,novel,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/norris-vandover-brute/
+http://www.wikidata.org/entity/Q19019291,1914 and Other Poems,Rupert Brooke,poetry,,https://shakespeareandco.princeton.edu/books/brooke-1914-poems/
+http://www.wikidata.org/entity/Q16239161,Boon,H. G. Wells,,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-boon/
+http://www.wikidata.org/entity/Q5246853,Dear Enemy,Jean Webster,epistolary novel,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/webster-dear-enemy/
+http://www.wikidata.org/entity/Q4009165,Old Calabria,Norman Douglas,travel literature,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/douglas-old-calabria/
+http://www.wikidata.org/entity/Q7256098,"Psmith, Journalist",P. G. Wodehouse,comic novel,1915-09-29 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-psmith-journalist/
+http://www.wikidata.org/entity/Q7560096,Something Fresh,P. G. Wodehouse,comic novel,1915-09-16 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-something-fresh/
+http://www.wikidata.org/entity/Q4593382,"The ""Genius""",Theodore Dreiser,novel,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-genius/
+http://www.wikidata.org/entity/Q27331,The Beast in the Jungle,Henry James,fiction literature,1903-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-beast-jungle/
+http://www.wikidata.org/entity/Q767802,The Good Soldier,Ford Madox Ford,novel,1915-03-01 00:00:00,https://shakespeareandco.princeton.edu/books/ford-good-soldier/
+http://www.wikidata.org/entity/Q1213402,The Little Lady of the Big House,Jack London,romance novel,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/london-little-lady-big/
+http://www.wikidata.org/entity/Q3288936,The Rainbow,D. H. Lawrence,novel,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-rainbow/
+http://www.wikidata.org/entity/Q7765253,The Song of the Lark,Willa Cather,Bildungsroman,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-song-lark/
+http://www.wikidata.org/entity/Q599198,The Voyage Out,Virginia Woolf,novel,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-voyage/
+http://www.wikidata.org/entity/Q105823268,These Twain,Arnold Bennett,,1915-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-twain/
+http://www.wikidata.org/entity/Q465360,A Portrait of the Artist as a Young Man,James Joyce,Bildungsroman;Künstlerroman;autobiographical novel,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/joyce-portrait-artist-young/
+http://www.wikidata.org/entity/Q4759428,Androcles and the Lion,George Bernard Shaw,comedy,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shaw-androcles-lion/
+http://www.wikidata.org/entity/Q5095740,Chicago Poems,Carl Sandburg,poetry,,https://shakespeareandco.princeton.edu/books/sandburg-chicago-poems/
+http://www.wikidata.org/entity/Q5604315,Greenmantle,John Buchan,adventure novel;war novel,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-greenmantle/
+http://www.wikidata.org/entity/Q12062136,Mr. Britling Sees It Through,H. G. Wells,novel,1916-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-mr-britling-sees/
+http://www.wikidata.org/entity/Q7315978,Responsibilities and Other Poems,William Butler Yeats,,,https://shakespeareandco.princeton.edu/books/yeats-responsibilities-poems/
+http://www.wikidata.org/entity/Q472228,The Mysterious Affair at Styles,Agatha Christie,detective novel,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-mysterious-affair-styles/
+http://www.wikidata.org/entity/Q7773135,The Voysey Inheritance,Harley Granville-Barker,,1905-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/granville-barker-voysey-inheritance/
+http://www.wikidata.org/entity/Q7884156,Uneasy Money,P. G. Wodehouse,novel,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-uneasy-money/
+http://www.wikidata.org/entity/Q8024852,Windy McPherson's Son,Sherwood Anderson,novel,1916-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-windy-mcphersons/
+http://www.wikidata.org/entity/Q5433995,Fanny's First Play,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-fannys-first-play/
+http://www.wikidata.org/entity/Q6757004,Marching Men,Sherwood Anderson,novel,1917-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-marching-men/
+http://www.wikidata.org/entity/Q84629191,Nationalism,Rabindranath Tagore,,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tagore-nationalism/
+http://www.wikidata.org/entity/Q7308395,Regiment of Women,Clemence Dane,LGBT literature;novel,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dane-regiment-women/
+http://www.wikidata.org/entity/Q1236743,South Wind,Norman Douglas,novel,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/douglas-south-wind/
+http://www.wikidata.org/entity/Q2418554,The Lady with the Dog,Anton Chekhov,short story,1899-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chekhov-lady-dog/
+http://www.wikidata.org/entity/Q3936679,The Sense of the Past,Henry James,comedy of manners;chuanyue,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/james-sense-past/
+http://www.wikidata.org/entity/Q7765370,The Soul of a Bishop,H. G. Wells,novel,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-soul-bishop/
+http://www.wikidata.org/entity/Q7774902,The Wild Swans at Coole,William Butler Yeats,,,https://shakespeareandco.princeton.edu/books/yeats-wild-swans-coole/
+http://www.wikidata.org/entity/Q19022360,A Hundred and Seventy Chinese Poems,,,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hundred-seventy-chinese/
+http://www.wikidata.org/entity/Q1605244,Adolphe,Benjamin Constant,autobiographical novel,1816-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/constant-adolphe/
+http://www.wikidata.org/entity/Q2297900,Exiles,James Joyce,drama,,https://shakespeareandco.princeton.edu/books/joyce-exiles/
+http://www.wikidata.org/entity/Q96313091,Gold and Iron,Joseph Hergesheimer,,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hergesheimer-gold-iron/
+http://www.wikidata.org/entity/Q107000085,Java Head,Joseph Hergesheimer,,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hergesheimer-java-head/
+http://www.wikidata.org/entity/Q12100788,Joan and Peter,H. G. Wells,novel,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-joan-peter/
+http://www.wikidata.org/entity/Q19029837,Mashi and Other Stories,Rabindranath Tagore,,,https://shakespeareandco.princeton.edu/books/tagore-mashi-stories/
+http://www.wikidata.org/entity/Q3515799,Tarr,Wyndham Lewis,novel;modernism,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-tarr/
+http://www.wikidata.org/entity/Q7760466,The Return of the Soldier,Rebecca West,psychological novel;war novel,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/west-return-soldier/
+http://www.wikidata.org/entity/Q105823374,The Roll-Call,Arnold Bennett,,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-roll-call/
+http://www.wikidata.org/entity/Q3228235,An Honest Thief,Fyodor Dostoyevsky,short story,1848-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dostoyevsky-honest-thief/
+http://www.wikidata.org/entity/Q5499735,Free Air,Sinclair Lewis,novel,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-free-air/
+http://www.wikidata.org/entity/Q544347,Introduction to Mathematical Philosophy,Bertrand Russell,popular science,,https://shakespeareandco.princeton.edu/books/russell-introduction-mathematical-philosophy/
+http://www.wikidata.org/entity/Q3814864,Kew Gardens,Virginia Woolf,short story,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-kew-gardens/
+http://www.wikidata.org/entity/Q6551488,Linda Condon,Joseph Hergesheimer,novel,,https://shakespeareandco.princeton.edu/books/hergesheimer-linda-condon/
+http://www.wikidata.org/entity/Q6875108,Misalliance,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-misalliance/
+http://www.wikidata.org/entity/Q16387208,My Man Jeeves,P. G. Wodehouse,comedy,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-man-jeeves/
+http://www.wikidata.org/entity/Q1610831,Night and Day,Virginia Woolf,novel,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-night-day/
+http://www.wikidata.org/entity/Q56328007,Saint's Progress,John Galsworthy,,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/galsworthy-saints-progress/
+http://www.wikidata.org/entity/Q19075587,Ten Days That Shook the World,John Reed,,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/reed-ten-days-shook/
+http://www.wikidata.org/entity/Q784886,The American Language,H. L. Mencken,essay,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mencken-american-language/
+http://www.wikidata.org/entity/Q860023,The Arrow of Gold,Joseph Conrad,novel,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-arrow-gold/
+http://www.wikidata.org/entity/Q7719857,The Brass Check,Upton Sinclair,,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sinclair-brass-check/
+http://www.wikidata.org/entity/Q2299605,The Economic Consequences of the Peace,John Maynard Keynes,essay;essay,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/keynes-economic-consequences-peace/
+http://www.wikidata.org/entity/Q60072157,The Journal of a Disappointed Man,W. N. P. Barbellion,,1919-07-01 00:00:00,https://shakespeareandco.princeton.edu/books/barbellion-journal-disappointed-man/
+http://www.wikidata.org/entity/Q7771428,The Undying Fire,H. G. Wells,novel,,https://shakespeareandco.princeton.edu/books/wells-undying-fire/
+http://www.wikidata.org/entity/Q910769,Totem and Taboo,Sigmund Freud,religious studies;psychoanalysis;cultural studies,1913-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/freud-totem-taboo/
+http://www.wikidata.org/entity/Q7912511,Valmouth,Ronald Firbank,novel,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/firbank-valmouth/
+http://www.wikidata.org/entity/Q4384270,A Voyage to Arcturus,David Lindsay,science fiction novel,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lindsay-voyage-arcturus/
+http://www.wikidata.org/entity/Q1758947,Anna Christie,Eugene O'Neill,drama,1921-11-02 00:00:00,https://shakespeareandco.princeton.edu/books/oneill-anna-christie/
+http://www.wikidata.org/entity/Q794360,Beyond the Horizon,Eugene O'Neill,theatre,,https://shakespeareandco.princeton.edu/books/oneill-beyond-horizon/
+http://www.wikidata.org/entity/Q5505497,From Ritual to Romance,Jessie Weston,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/weston-ritual-romance/
+http://www.wikidata.org/entity/Q6070722,Irish Fairy Tales,James Stephens,folklore,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stephens-irish-fairy-tales/
+http://www.wikidata.org/entity/Q6549026,Limbo,Aldous Huxley,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-limbo/
+http://www.wikidata.org/entity/Q246436,Miss Lulu Bett,Zona Gale,novel,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gale-miss-lulu-bett/
+http://www.wikidata.org/entity/Q20895679,Poems,Iris Tree,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/tree-poems/
+http://www.wikidata.org/entity/Q19038860,Poems,Wilfred Owen,,,https://shakespeareandco.princeton.edu/books/owen-poems/
+http://www.wikidata.org/entity/Q16979165,Poor White,Sherwood Anderson,novel,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-poor-white/
+http://www.wikidata.org/entity/Q73410381,The Age of Innocence,Edith Wharton,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wharton-age-innocence/
+http://www.wikidata.org/entity/Q3338169,The Cask,Freeman Wills Crofts,detective fiction,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/crofts-cask/
+http://www.wikidata.org/entity/Q3823831,The Lost Girl,D. H. Lawrence,novel,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-lost-girl/
+http://www.wikidata.org/entity/Q7753644,The New Jerusalem,G. K. Chesterton,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-new-jerusalem/
+http://www.wikidata.org/entity/Q7755682,The Outline of History,H. G. Wells,,1919-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-outline-history/
+http://www.wikidata.org/entity/Q19096958,The Practice and Theory of Bolshevism,Bertrand Russell,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/russell-practice-theory-bolshevism/
+http://www.wikidata.org/entity/Q251604,The Story of Doctor Dolittle,Hugh Lofting,speculative fiction novel;children's literature,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lofting-story-doctor-doolittle/
+http://www.wikidata.org/entity/Q2581681,This Side of Paradise,F. Scott Fitzgerald,novel,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fitzgerald-side-paradise/
+http://www.wikidata.org/entity/Q2443714,Women in Love,D. H. Lawrence,LGBT literature;novel;Modernist literature,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-women-love/
+http://www.wikidata.org/entity/Q8059288,Youth and the Bright Medusa,Willa Cather,speculative fiction,,https://shakespeareandco.princeton.edu/books/cather-youth-bright-medusa/
+http://www.wikidata.org/entity/Q4725707,Alice Adams,Booth Tarkington,novel,1921-06-01 00:00:00,https://shakespeareandco.princeton.edu/books/tarkington-alice-adams/
+http://www.wikidata.org/entity/Q5187582,Crome Yellow,Aldous Huxley,novel,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-crome-yellow/
+http://www.wikidata.org/entity/Q42185470,Joanna Godden,Sheila Kaye-Smith,,,https://shakespeareandco.princeton.edu/books/kaye-smith-joanna-godden/
+http://www.wikidata.org/entity/Q6898670,Monday or Tuesday,Virginia Woolf,,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-monday-tuesday/
+http://www.wikidata.org/entity/Q4398296,Russia in the Shadows,H. G. Wells,,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-russia-shadows/
+http://www.wikidata.org/entity/Q533575,Scaramouche,Rafael Sabatini,cloak and dagger novel,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sabatini-scaramouche/
+http://www.wikidata.org/entity/Q3473567,Sea and Sardinia,D. H. Lawrence,diary,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-sea-sardinia/
+http://www.wikidata.org/entity/Q2488744,The Emperor Jones,Eugene O'Neill,tragedy,,https://shakespeareandco.princeton.edu/books/oneill-emperor-jones/
+http://www.wikidata.org/entity/Q3987409,The Green Goddess,William Archer,drama,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/archer-green-goddess/
+http://www.wikidata.org/entity/Q19098655,The Schoolmistress and Other Stories,Anton Chekhov,,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chekhov-schoolmistress-stories/
+http://www.wikidata.org/entity/Q7797826,Three Soldiers,John Dos Passos,war novel,1921-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/dos-passos-three-soldiers/
+http://www.wikidata.org/entity/Q779726,Vera,Elizabeth von Arnim,comic novel,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/arnim-vera/
+http://www.wikidata.org/entity/Q28955176,A Revision of the Treaty,John Maynard Keynes,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/keynes-revision-treaty/
+http://www.wikidata.org/entity/Q4661765,Aaron's Rod,D. H. Lawrence,novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-aarons-rod/
+http://www.wikidata.org/entity/Q105872353,Against the Grain,Joris-Karl Huysmans,,,https://shakespeareandco.princeton.edu/books/huysmans-grain/
+http://www.wikidata.org/entity/Q1107000,Babbitt,Sinclair Lewis,novel;satire,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-babbitt/
+http://www.wikidata.org/entity/Q56640001,"Beasts, Men and Gods",Ferdynand Antoni Ossendowski,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ossendowski-beasts-men-gods/
+http://www.wikidata.org/entity/Q466271,Beyond the Pleasure Principle,Sigmund Freud,monograph,1920-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/freud-beyond-pleasure-principle/
+http://www.wikidata.org/entity/Q946444,Casanova's Homecoming,Arthur Schnitzler,short story,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/schnitzler-casanovas-homecoming/
+http://www.wikidata.org/entity/Q3002079,Crainquebille,Anatole France,,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/france-crainquebille/
+http://www.wikidata.org/entity/Q5945557,Huntingtower,John Buchan,novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-huntingtower/
+http://www.wikidata.org/entity/Q1677745,Jacob's Room,Virginia Woolf,novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-jacobs-room/
+http://www.wikidata.org/entity/Q6347444,Kai Lung's Golden Hours,Ernest Bramah,speculative fiction novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bramah-kai-lungs-golden/
+http://www.wikidata.org/entity/Q6470665,Lady into Fox,David Garnett,speculative fiction novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/garnett-lady-fox/
+http://www.wikidata.org/entity/Q97704684,Love and Other Stories,Anton Chekhov,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chekhov-love-stories/
+http://www.wikidata.org/entity/Q6914359,Mortal Coils,Aldous Huxley,,1921-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-mortal-coils/
+http://www.wikidata.org/entity/Q7093535,One of Ours,Willa Cather,historical novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-one/
+http://www.wikidata.org/entity/Q7366589,Rootabaga Stories,Carl Sandburg,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sandburg-rootabaga-stories/
+http://www.wikidata.org/entity/Q18187988,The Enchanted April,Elizabeth von Arnim,novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/arnim-enchanted-april/
+http://www.wikidata.org/entity/Q47014961,The Enormous Room,E. E. Cummings,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cummings-enormous-room/
+http://www.wikidata.org/entity/Q735319,The Forsyte Saga,John Galsworthy,novel,1906-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/galsworthy-forsyte-saga/
+http://www.wikidata.org/entity/Q30717034,The Glimpses of the Moon,Edith Wharton,novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wharton-glimpses-moon/
+http://www.wikidata.org/entity/Q7759881,The Red House Mystery,A. A. Milne,novel;mystery fiction,1922-04-06 00:00:00,https://shakespeareandco.princeton.edu/books/milne-red-house-mystery/
+http://www.wikidata.org/entity/Q84355987,The Secret Places of the Heart,H. G. Wells,novel,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-secret-places-heart/
+http://www.wikidata.org/entity/Q6511,Ulysses,James Joyce,experimental literature;autobiographical novel;literary fiction;metafiction;Modernist literature;serialized fiction,1922-02-02 00:00:00,https://shakespeareandco.princeton.edu/books/joyce-ulysses/
+http://www.wikidata.org/entity/Q3815190,A Lost Lady,Willa Cather,romance novel,1923-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-lost-lady/
+http://www.wikidata.org/entity/Q4774579,Antic Hay,Aldous Huxley,novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-antic-hay/
+http://www.wikidata.org/entity/Q3655399,Cane,Jean Toomer,novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/toomer-cane/
+http://www.wikidata.org/entity/Q5659368,Harmonium,Wallace Stevens,,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stevens-harmonium/
+http://www.wikidata.org/entity/Q6362515,Kangaroo,D. H. Lawrence,novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-kangaroo/
+http://www.wikidata.org/entity/Q6753351,Many Marriages,Sherwood Anderson,erotic novel,1923-02-20 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-many-marriages/
+http://www.wikidata.org/entity/Q669479,Mastro-don Gesualdo,Giovanni Verga,novel,1889-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/verga-mastro-don-gesualdo/
+http://www.wikidata.org/entity/Q2500351,Men Like Gods,H. G. Wells,speculative fiction novel;science fiction novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-men-like-gods/
+http://www.wikidata.org/entity/Q19894944,Open All Night,Paul Morand,,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/morand-open-night/
+http://www.wikidata.org/entity/Q7323142,Riceyman Steps,Arnold Bennett,novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-riceyman-steps/
+http://www.wikidata.org/entity/Q7580755,Spring and All,William Carlos Williams,Imagism,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/williams-spring/
+http://www.wikidata.org/entity/Q7628058,Studies in Classic American Literature,D. H. Lawrence,literary criticism,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-studies-classic-american/
+http://www.wikidata.org/entity/Q7712123,The Able McLaughlins,Margaret Wilson,historical novel;Western novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilson-able-mclaughlins/
+http://www.wikidata.org/entity/Q60321311,The Great American Novel,William Carlos Williams,,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/williams-great-american-novel/
+http://www.wikidata.org/entity/Q257921,The Hairy Ape,Eugene O'Neill,,,https://shakespeareandco.princeton.edu/books/oneill-hairy-ape/
+http://www.wikidata.org/entity/Q7745207,The Ladybird,D. H. Lawrence,,,https://shakespeareandco.princeton.edu/books/lawrence-ladybird/
+http://www.wikidata.org/entity/Q7761631,The Rover,Joseph Conrad,historical novel,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conrad-rover/
+http://www.wikidata.org/entity/Q7797851,Three Stories and Ten Poems,Ernest Hemingway,,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-three-stories-ten/
+http://www.wikidata.org/entity/Q7799547,Thy Neighbour's Wife,Liam O'Flaherty,novel,,https://shakespeareandco.princeton.edu/books/oflaherty-thy-neighbours-wife/
+http://www.wikidata.org/entity/Q81542894,A Passage to India,E. M. Forster,,t1876448645,https://shakespeareandco.princeton.edu/books/forster-passage-india/
+http://www.wikidata.org/entity/Q622303,A Passage to India,E. M. Forster,novel,1924-06-04 00:00:00,https://shakespeareandco.princeton.edu/books/forster-passage-india/
+http://www.wikidata.org/entity/Q16157134,A Year of Prophesying,H. G. Wells,column,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-year-prophesying/
+http://www.wikidata.org/entity/Q326909,Buddenbrooks,Thomas Mann,period novel;Bildungsroman;social novel;family saga novel,1901-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-buddenbrooks/
+http://www.wikidata.org/entity/Q5287315,Doctor Dolittle's Circus,Hugh Lofting,speculative fiction novel;children's literature,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lofting-doctor-dolittles-circus/
+http://www.wikidata.org/entity/Q65528561,Mårbacka,Selma Lagerlöf,,,https://shakespeareandco.princeton.edu/books/lagerlof-marbacka/
+http://www.wikidata.org/entity/Q63366133,Medieval People,Eileen Power,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/power-medieval-people/
+http://www.wikidata.org/entity/Q55076592,Mr. Bennett and Mrs. Brown,Virginia Woolf,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-mr-bennett-mrs/
+http://www.wikidata.org/entity/Q7423651,Sard Harker,John Masefield,adventure novel,,https://shakespeareandco.princeton.edu/books/masefield-sard-harker/
+http://www.wikidata.org/entity/Q7549047,So Big,Edna Ferber,novel,,https://shakespeareandco.princeton.edu/books/ferber-big/
+http://www.wikidata.org/entity/Q7719685,The Boy in the Bush,D. H. Lawrence,novel,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-boy-bush/
+http://www.wikidata.org/entity/Q75832804,The Complete Poems of Emily Dickinson,Emily Dickinson,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickinson-complete-poems-emily/
+http://www.wikidata.org/entity/Q7727424,The Constant Nymph,Margaret Kennedy,novel,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kennedy-constant-nymph/
+http://www.wikidata.org/entity/Q7727767,The Counterplot,Hope Mirrlees,novel,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mirrlees-counterplot/
+http://www.wikidata.org/entity/Q104902853,The Fire in the Flint,Walter Francis White,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/white-fire-flint/
+http://www.wikidata.org/entity/Q7766818,The Story of a Great Schoolmaster,H. G. Wells,biography,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-story-great-schoolmaster/
+http://www.wikidata.org/entity/Q17029423,The Third Round,H. C. McNeile,novel,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mcneile-third-round/
+http://www.wikidata.org/entity/Q3541963,Tulips and Chimneys,E. E. Cummings,,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cummings-tulips-chimneys/
+http://www.wikidata.org/entity/Q604418,An American Tragedy,Theodore Dreiser,Naturalism;crime novel,1925-12-17 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-american-tragedy/
+http://www.wikidata.org/entity/Q743777,Arrowsmith,Sinclair Lewis,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-arrowsmith/
+http://www.wikidata.org/entity/Q2130592,Ashe of Rings,Mary Butts,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/butts-ashe-rings/
+http://www.wikidata.org/entity/Q12081234,Christina Alberta's Father,H. G. Wells,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-christina-albertas-father/
+http://www.wikidata.org/entity/Q828296,Death in Venice,Thomas Mann,novella,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-death-venice/
+http://www.wikidata.org/entity/Q581180,Lady Susan,Jane Austen,epistolary novel,1871-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/austen-lady-susan/
+http://www.wikidata.org/entity/Q23307575,Lewis and Irene,Paul Morand,,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/morand-lewis-irene/
+http://www.wikidata.org/entity/Q107183365,Manhattan Transfer,John Dos Passos,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dos-passos-manhattan-transfer/
+http://www.wikidata.org/entity/Q7044569,No More Parades,Ford Madox Ford,war novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ford-parades/
+http://www.wikidata.org/entity/Q7230083,Porgy,DuBose Heyward,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/heyward-porgy/
+http://www.wikidata.org/entity/Q7408396,Sam the Sudden,P. G. Wodehouse,comic novel,1925-10-15 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-sam-sudden/
+http://www.wikidata.org/entity/Q98414025,The ABC of Relativity,Bertrand Russell,,,https://shakespeareandco.princeton.edu/books/russell-abc-relativity/
+http://www.wikidata.org/entity/Q64230947,The Common Reader,Virginia Woolf,,,https://shakespeareandco.princeton.edu/books/woolf-common-reader/
+http://www.wikidata.org/entity/Q3820059,The Everlasting Man,G. K. Chesterton,essay,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-everlasting-man/
+http://www.wikidata.org/entity/Q214371,The Great Gatsby,F. Scott Fitzgerald,narrative;Great American Novel;tragedy,1925-04-10 00:00:00,https://shakespeareandco.princeton.edu/books/fitzgerald-great-gatsby/
+http://www.wikidata.org/entity/Q2356919,The Informer,Liam O'Flaherty,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/oflaherty-informer/
+http://www.wikidata.org/entity/Q7758486,The Professor's House,Willa Cather,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-professors-house/
+http://www.wikidata.org/entity/Q7762040,The Sailor's Return,David Garnett,historical novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/garnett-sailors-return/
+http://www.wikidata.org/entity/Q36097,The Trial,Franz Kafka,novel;absurdist literature;dystopian novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kafka-trial/
+http://www.wikidata.org/entity/Q7796809,Those Barren Leaves,Aldous Huxley,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-barren-leaves/
+http://www.wikidata.org/entity/Q7799063,Thunder on the Left,Christopher Morley,novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/morley-thunder-left/
+http://www.wikidata.org/entity/Q8000640,Wild Geese,Martha Ostenso,Naturalism;historical novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ostenso-wild-geese/
+http://www.wikidata.org/entity/Q42185067,Adam's Breed,Radclyffe Hall,novel,,https://shakespeareandco.princeton.edu/books/hall-adams-breed/
+http://www.wikidata.org/entity/Q4730179,All the Sad Young Men,F. Scott Fitzgerald,,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fitzgerald-sad-young-men/
+http://www.wikidata.org/entity/Q101079831,Anglo-Saxon Poetry,,,1982-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gordon-anglo-saxon-poetry/
+http://www.wikidata.org/entity/Q859978,Dark Laughter,Sherwood Anderson,erotic novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-dark-laughter/
+http://www.wikidata.org/entity/Q318848,Evenings on a Farm Near Dikanka,Nikolai Gogol,,1830-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gogol-evenings-farm-near/
+http://www.wikidata.org/entity/Q85201987,Fairy Gold,Compton Mackenzie,,,https://shakespeareandco.princeton.edu/books/mackenzie-fairy-gold/
+http://www.wikidata.org/entity/Q18224787,Introduction to Sally,Elizabeth von Arnim,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/arnim-introduction-sally/
+http://www.wikidata.org/entity/Q6668990,Lolly Willowes,Sylvia Townsend Warner,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/warner-lolly-willowes/
+http://www.wikidata.org/entity/Q6752204,Mantrap,Sinclair Lewis,novel,1926-06-03 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-mantrap/
+http://www.wikidata.org/entity/Q16209810,My Mortal Enemy,Willa Cather,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-mortal-enemy/
+http://www.wikidata.org/entity/Q7033140,Nigger Heaven,Carl Van Vechten,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/van-vechten-nigger-heaven/
+http://www.wikidata.org/entity/Q48785387,Notes on Democracy,H. L. Mencken,,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mencken-notes-democracy/
+http://www.wikidata.org/entity/Q1249322,Show Boat,Edna Ferber,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ferber-show-boat/
+http://www.wikidata.org/entity/Q1536034,Soldiers' Pay,William Faulkner,historical novel;war novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-soldiers-pay/
+http://www.wikidata.org/entity/Q25209530,Sorrell and Son,Warwick Deeping,,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/deeping-sorrell/
+http://www.wikidata.org/entity/Q7728834,The Dancing Floor,John Buchan,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-dancing-floor/
+http://www.wikidata.org/entity/Q854921,The Decline of the West,Oswald Spengler,essay;philosophy of history,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/spengler-decline-west/
+http://www.wikidata.org/entity/Q28955318,The End of Laissez-Faire,John Maynard Keynes,non-fiction,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/keynes-end-laissez/
+http://www.wikidata.org/entity/Q7737784,The Great God Brown,Eugene O'Neill,,,https://shakespeareandco.princeton.edu/books/oneill-great-god-brown/
+http://www.wikidata.org/entity/Q74480,The Incredulity of Father Brown,G. K. Chesterton,short story,1926-07-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-incredulity-father-brown/
+http://www.wikidata.org/entity/Q224078,The Murder of Roger Ackroyd,Agatha Christie,crime novel;detective novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-murder-roger-ackroyd/
+http://www.wikidata.org/entity/Q17017955,The Plumed Serpent,D. H. Lawrence,historical novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-plumed-serpent/
+http://www.wikidata.org/entity/Q192649,The Red and the Black,Stendhal,historical novel;Bildungsroman;psychological novel;literary realism,1830-11-01 00:00:00,https://shakespeareandco.princeton.edu/books/stendhal-red-black/
+http://www.wikidata.org/entity/Q501351,The Sun Also Rises,Ernest Hemingway,novel,1926-10-22 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-sun-also-rises/
+http://www.wikidata.org/entity/Q1216578,The Torrents of Spring,Ernest Hemingway,novel;novella,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-torrents-spring/
+http://www.wikidata.org/entity/Q7774000,The Weary Blues,Langston Hughes,,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hughes-weary-blues/
+http://www.wikidata.org/entity/Q1514807,The Well of Loneliness,Radclyffe Hall,novel;LGBT literature,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hall-well-loneliness/
+http://www.wikidata.org/entity/Q129936,The Wood Demon,Anton Chekhov,comedy,1890-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chekhov-wood-demon/
+http://www.wikidata.org/entity/Q7776166,The World of William Clissold,H. G. Wells,novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-world-william-clissold/
+http://www.wikidata.org/entity/Q60276567,Travel and Travellers of the Middle Ages,,,1926-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/newton-travel-travellers-middle/
+http://www.wikidata.org/entity/Q7994505,White Buildings,Hart Crane,,,https://shakespeareandco.princeton.edu/books/crane-white-buildings/
+http://www.wikidata.org/entity/Q12038412,A Modern Comedy,John Galsworthy,,,https://shakespeareandco.princeton.edu/books/galsworthy-modern-comedy/
+http://www.wikidata.org/entity/Q4145994,Aspects of the Novel,E. M. Forster,essay,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-aspects-novel/
+http://www.wikidata.org/entity/Q1563870,But Gentlemen Marry Brunettes,Anita Loos,novel,,https://shakespeareandco.princeton.edu/books/loos-gentlemen-marry-brunettes/
+http://www.wikidata.org/entity/Q4593507,Chains: Lesser Novels and Stories,Theodore Dreiser,short story,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-chains-lesser-novels/
+http://www.wikidata.org/entity/Q543116,Death Comes for the Archbishop,Willa Cather,novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-death-comes-archbishop/
+http://www.wikidata.org/entity/Q5317165,Dusty Answer,Rosamond Lehmann,romance novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lehmann-dusty-answer/
+http://www.wikidata.org/entity/Q1247044,Elmer Gantry,Sinclair Lewis,novel,1927-03-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-elmer-gantry/
+http://www.wikidata.org/entity/Q25209532,Kitty,Warwick Deeping,,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/deeping-kitty/
+http://www.wikidata.org/entity/Q6505913,Lazarus Laughed,Eugene O'Neill,,,https://shakespeareandco.princeton.edu/books/oneill-lazarus-laughed/
+http://www.wikidata.org/entity/Q6698664,Lud-in-the-Mist,Hope Mirrlees,speculative fiction novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mirrlees-lud-mist/
+http://www.wikidata.org/entity/Q6912952,Mornings in Mexico,D. H. Lawrence,,,https://shakespeareandco.princeton.edu/books/lawrence-mornings-mexico/
+http://www.wikidata.org/entity/Q17074681,Mother India,Katherine Mayo,,,https://shakespeareandco.princeton.edu/books/mayo-mother-india/
+http://www.wikidata.org/entity/Q7081270,Oil!,Upton Sinclair,political novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/oil/
+http://www.wikidata.org/entity/Q1304943,Pomes Penyeach,James Joyce,poetry,,https://shakespeareandco.princeton.edu/books/joyce-pomes-penyeach/
+http://www.wikidata.org/entity/Q7714967,The Autobiography of an Ex-Colored Man,James Weldon Johnson,African-American literature;novel,1912-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/johnson-autobiography-ex-colored/
+http://www.wikidata.org/entity/Q941462,The Bridge of San Luis Rey,Thornton Wilder,novel;novella,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilder-bridge-san-luis/
+http://www.wikidata.org/entity/Q276722,The Counterfeiters,André Gide,LGBT literature;novel,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gide-counterfeiters/
+http://www.wikidata.org/entity/Q212898,The Magic Mountain,Thomas Mann,philosophical novel;Bildungsroman;social novel;developmental novel,1924-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-magic-mountain/
+http://www.wikidata.org/entity/Q23661511,The Return of Don Quixote,G. K. Chesterton,novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-return-don-quixote/
+http://www.wikidata.org/entity/Q82463,The Secret of Father Brown,G. K. Chesterton,short story,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-secret-father-brown/
+http://www.wikidata.org/entity/Q3021213,The Small Bachelor,P. G. Wodehouse,novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-small-bachelor/
+http://www.wikidata.org/entity/Q478016,To the Lighthouse,Virginia Woolf,novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-lighthouse/
+http://www.wikidata.org/entity/Q13430524,Armed with Madness,Mary Butts,,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/butts-armed-madness/
+http://www.wikidata.org/entity/Q4947714,Boston,Upton Sinclair,political novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sinclair-boston/
+http://www.wikidata.org/entity/Q42187701,Caspar Hauser,Jakob Wassermann,,,https://shakespeareandco.princeton.edu/books/wassermann-caspar-hauser/
+http://www.wikidata.org/entity/Q3115185,Decline and Fall,Evelyn Waugh,comic novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/waugh-decline-fall/
+http://www.wikidata.org/entity/Q6223425,John Brown's Body,Stephen Vincent Benét,,,https://shakespeareandco.princeton.edu/books/benet-john-browns-body/
+http://www.wikidata.org/entity/Q750670,Lady Chatterley's Lover,D. H. Lawrence,erotic novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-lady-chatterleys-lover/
+http://www.wikidata.org/entity/Q6494582,Last Post,Ford Madox Ford,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ford-last-post/
+http://www.wikidata.org/entity/Q16968883,Mamba's Daughters,DuBose Heyward,novel,,https://shakespeareandco.princeton.edu/books/heyward-mambas-daughters/
+http://www.wikidata.org/entity/Q1754954,Mirgorod,Nikolai Gogol,,,https://shakespeareandco.princeton.edu/books/gogol-mirgorod/
+http://www.wikidata.org/entity/Q10332947,Mr. Blettsworthy on Rampole Island,H. G. Wells,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-mr-blettsworthy-rampole/
+http://www.wikidata.org/entity/Q97573361,My Brother Jonathan,Francis Brett Young,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/young-brother-jonathan/
+http://www.wikidata.org/entity/Q1816820,Nadja,André Breton,novel,1928-05-25 00:00:00,https://shakespeareandco.princeton.edu/books/breton-nadja/
+http://www.wikidata.org/entity/Q1469294,Ol' Man Adam an' His Chillun,Roark Bradford,drama,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bradford-ol-man-adam/
+http://www.wikidata.org/entity/Q1629456,Orlando: A Biography,Virginia Woolf,speculative fiction novel;LGBT,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-orlando-biography/
+http://www.wikidata.org/entity/Q119246,Point Counter Point,Aldous Huxley,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-point-counter-point/
+http://www.wikidata.org/entity/Q25352100,Ryder,Djuna Barnes,,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/barnes-ryder/
+http://www.wikidata.org/entity/Q7621410,Strange Interlude,Eugene O'Neill,drama,,https://shakespeareandco.princeton.edu/books/oneill-strange-interlude/
+http://www.wikidata.org/entity/Q1197193,The Case of Sergeant Grischa,Arnold Zweig,novel;war novel,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/zweig-case-sergeant-grischa/
+http://www.wikidata.org/entity/Q5981034,The Children,Edith Wharton,novel,,https://shakespeareandco.princeton.edu/books/wharton-children/
+http://www.wikidata.org/entity/Q16385631,The Eternal Moment,E. M. Forster,fantasy,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-eternal-moment/
+http://www.wikidata.org/entity/Q1167737,The Future of an Illusion,Sigmund Freud,cultural studies;religious studies;psychoanalysis;psychology,1927-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/freud-future-illusion/
+http://www.wikidata.org/entity/Q7735770,The Gangs of New York,Herbert Asbury,non-fiction,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/asbury-gangs-new-york/
+http://www.wikidata.org/entity/Q28758411,The Gunner,Edgar Wallace,,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wallace-gunner/
+http://www.wikidata.org/entity/Q636815,The Mystery of the Blue Train,Agatha Christie,detective novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-mystery-blue-train/
+http://www.wikidata.org/entity/Q10381671,The Orator,Edgar Wallace,,,https://shakespeareandco.princeton.edu/books/wallace-orator/
+http://www.wikidata.org/entity/Q7774887,The Wild Party,Joseph Moncure March,,,https://shakespeareandco.princeton.edu/books/march-wild-party/
+http://www.wikidata.org/entity/Q40890433,Undertones of War,Edmund Blunden,memoir,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/blunden-undertones-war/
+http://www.wikidata.org/entity/Q235795,A Farewell to Arms,Ernest Hemingway,war novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-farewell-arms/
+http://www.wikidata.org/entity/Q3401207,A High Wind in Jamaica,Richard Hughes,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hughes-high-wind-jamaica/
+http://www.wikidata.org/entity/Q1204366,A Room of One's Own,Virginia Woolf,essay,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-room-ones/
+http://www.wikidata.org/entity/Q207332,All Quiet on the Western Front,Erich Maria Remarque,war novel;historical novel;roman à clef,1929-01-29 00:00:00,https://shakespeareandco.princeton.edu/books/remarque-quiet-western-front/
+http://www.wikidata.org/entity/Q13479598,Cimarron,Edna Ferber,historical novel;Western novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ferber-cimarron/
+http://www.wikidata.org/entity/Q5227913,Daughter of Earth,Agnes Smedley,autobiographical novel,,https://shakespeareandco.princeton.edu/books/smedley-daughter-earth/
+http://www.wikidata.org/entity/Q5247568,Death of a Hero,Richard Aldington,war novel,,https://shakespeareandco.princeton.edu/books/aldington-death-hero/
+http://www.wikidata.org/entity/Q2783135,Dodsworth,Sinclair Lewis,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-dodsworth/
+http://www.wikidata.org/entity/Q18223089,Expiation,Elizabeth von Arnim,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/arnim-expiation/
+http://www.wikidata.org/entity/Q6498095,Laughing Boy,Oliver La Farge,historical novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/la-farge-laughing-boy/
+http://www.wikidata.org/entity/Q6675006,"Look Homeward, Angel",Thomas Wolfe,Bildungsroman,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wolfe-look-homeward-angel/
+http://www.wikidata.org/entity/Q522520,Marriage and Morals,Bertrand Russell,essay,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/russell-marriage-morals/
+http://www.wikidata.org/entity/Q3050598,Memoirs of a Fox-Hunting Man,Siegfried Sassoon,autobiographical novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sassoon-memoirs-fox-hunting/
+http://www.wikidata.org/entity/Q6907673,Moonchild,Aleister Crowley,novel;occultism,1923-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/crowley-moonchild/
+http://www.wikidata.org/entity/Q842074,Oblomov,Ivan Goncharov,novel;critical realism,1859-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/goncharov-oblomov/
+http://www.wikidata.org/entity/Q3800795,Our Exagmination Round His Factification for Incamination of Work in Progress,Marcel Brion,essay,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/exagmination-round-factification/
+http://www.wikidata.org/entity/Q1211857,Partners in Crime,Agatha Christie,crime fiction short story;detective literature,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-partners-crime/
+http://www.wikidata.org/entity/Q3902535,Piccadilly Jim,P. G. Wodehouse,novel,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-piccadilly-jim/
+http://www.wikidata.org/entity/Q455957,Process and Reality,Alfred North Whitehead,philosophy,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/whitehead-process-reality/
+http://www.wikidata.org/entity/Q1851314,Sartoris,William Faulkner,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-sartoris/
+http://www.wikidata.org/entity/Q1219475,Seven Brothers,Aleksis Kivi,,1870-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kivi-seven-brothers/
+http://www.wikidata.org/entity/Q3826548,Summer Lightning,P. G. Wodehouse,comic novel,1929-07-19 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-summer-lightning/
+http://www.wikidata.org/entity/Q7727866,The Courts of the Morning,John Buchan,adventure novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-courts-morning/
+http://www.wikidata.org/entity/Q4424396,The Death of the Gods,Dmitry Merezhkovsky,novel,1895-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/merezhkovsky-death-gods/
+http://www.wikidata.org/entity/Q7737191,The Good Companions,J. B. Priestley,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/priestley-good-companions/
+http://www.wikidata.org/entity/Q135515,The Sound and the Fury,William Faulkner,novel;Southern Gothic,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-sound-fury/
+http://www.wikidata.org/entity/Q16564851,The Twister,Edgar Wallace,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wallace-twister/
+http://www.wikidata.org/entity/Q1307369,War,Ludwig Renn,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/renn-war/
+http://www.wikidata.org/entity/Q18163234,Wolf Solent,John Cowper Powys,Bildungsroman,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/powys-wolf-solent/
+http://www.wikidata.org/entity/Q23035228,A Note in Music,Rosamond Lehmann,,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lehmann-note-music/
+http://www.wikidata.org/entity/Q4762241,Angel Pavement,J. B. Priestley,novel,1930-08-01 00:00:00,https://shakespeareandco.princeton.edu/books/priestley-angel-pavement/
+http://www.wikidata.org/entity/Q1544119,As I Lay Dying,William Faulkner,novel;Modernist literature,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-lay-dying/
+http://www.wikidata.org/entity/Q5050090,Castle Gay,John Buchan,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-castle-gay/
+http://www.wikidata.org/entity/Q74396215,Diary of a Provincial Lady,E. M. Delafield,,,https://shakespeareandco.princeton.edu/books/delafield-diary-provincial-lady/
+http://www.wikidata.org/entity/Q5329692,East Wind: West Wind,Pearl S. Buck,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buck-east-wind-west/
+http://www.wikidata.org/entity/Q21282878,Four Faultless Felons,G. K. Chesterton,crime novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-four-faultless-felons/
+http://www.wikidata.org/entity/Q6006812,Imperial Palace,Arnold Bennett,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bennett-imperial-palace/
+http://www.wikidata.org/entity/Q6815287,Memoirs of an Infantry Officer,Siegfried Sassoon,war novel,,https://shakespeareandco.princeton.edu/books/sassoon-memoirs-infantry-officer/
+http://www.wikidata.org/entity/Q17105186,Number: The Language of Science,Tobias Dantzig,,,https://shakespeareandco.princeton.edu/books/dantzig-number-language-science/
+http://www.wikidata.org/entity/Q17054470,Redheap,Norman Lindsay,,1987-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lindsay-redheap/
+http://www.wikidata.org/entity/Q7457494,Seven Types of Ambiguity,William Empson,,,https://shakespeareandco.princeton.edu/books/empson-seven-types-ambiguity/
+http://www.wikidata.org/entity/Q20664267,The 42nd Parallel,John Dos Passos,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dos-passos-42nd-parallel/
+http://www.wikidata.org/entity/Q7713979,The Apes of God,Wyndham Lewis,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-apes-god/
+http://www.wikidata.org/entity/Q16238773,The Autocracy of Mr. Parham,H. G. Wells,novel,1930-07-21 00:00:00,https://shakespeareandco.princeton.edu/books/wells-autocracy-mr-parham/
+http://www.wikidata.org/entity/Q7720066,The Bridge,Hart Crane,,,https://shakespeareandco.princeton.edu/books/crane-bridge/
+http://www.wikidata.org/entity/Q682733,The Castle,Franz Kafka,philosophical novel;dystopian novel,1926-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kafka-castle/
+http://www.wikidata.org/entity/Q3821889,The Conquest of Happiness,Bertrand Russell,essay,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/russell-conquest-happiness/
+http://www.wikidata.org/entity/Q3824215,The Edwardians,Vita Sackville-West,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sackville-west-edwardians/
+http://www.wikidata.org/entity/Q870551,The Maltese Falcon,Dashiell Hammett,noir novel;detective novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hammett-maltese-falcon/
+http://www.wikidata.org/entity/Q1193273,The Maurizius Case,Jakob Wassermann,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wassermann-maurizius-case/
+http://www.wikidata.org/entity/Q1167410,The Story of San Michele,Axel Munthe,memoir,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/munthe-story-san-michele/
+http://www.wikidata.org/entity/Q17062312,The Water Gipsies,A. P. Herbert,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/herbert-water-gipsies/
+http://www.wikidata.org/entity/Q19898261,The Woman of Andros,Thornton Wilder,novel,1930-02-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilder-woman-andros/
+http://www.wikidata.org/entity/Q23021231,Thy Servant a Dog,Rudyard Kipling,youth and children's literature,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-thy-servant-dog/
+http://www.wikidata.org/entity/Q7923056,"Very Good, Jeeves",P. G. Wodehouse,comedy,1930-06-20 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-good-jeeves/
+http://www.wikidata.org/entity/Q7271018,Vile Bodies,Evelyn Waugh,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/waugh-vile-bodies/
+http://www.wikidata.org/entity/Q16576843,White Face,Edgar Wallace,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wallace-white-face/
+http://www.wikidata.org/entity/Q3881234,All Passion Spent,Vita Sackville-West,novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sackville-west-passion-spent/
+http://www.wikidata.org/entity/Q4743157,American Beauty,Edna Ferber,historical novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ferber-american-beauty/
+http://www.wikidata.org/entity/Q4802890,As I Was Going Down Sackville Street,Oliver St. John Gogarty,novel,,https://shakespeareandco.princeton.edu/books/gogarty-going-sackville-street/
+http://www.wikidata.org/entity/Q2878373,Back Street,Fannie Hurst,romance novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hurst-back-street/
+http://www.wikidata.org/entity/Q694245,Berlin Alexanderplatz,Alfred Döblin,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/doblin-berlin-alexanderplatz/
+http://www.wikidata.org/entity/Q22087226,Boy,James Hanley,novel,,https://shakespeareandco.princeton.edu/books/hanley-boy/
+http://www.wikidata.org/entity/Q1920758,Grand Hotel,Vicki Baum,novel,1929-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/baum-grand-hotel/
+http://www.wikidata.org/entity/Q5615139,Guests of the Nation,Frank O'Connor,,,https://shakespeareandco.princeton.edu/books/oconnor-guests-nation/
+http://www.wikidata.org/entity/Q63729725,Mourning Becomes Electra,Eugene O'Neill,drama,,https://shakespeareandco.princeton.edu/books/oneill-mourning-becomes-electra/
+http://www.wikidata.org/entity/Q3210396,Police at the Funeral,Margery Allingham,detective fiction;crime novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/allingham-police-funeral/
+http://www.wikidata.org/entity/Q1212765,Sanctuary,William Faulkner,novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-sanctuary/
+http://www.wikidata.org/entity/Q7460836,Shadows on the Rock,Willa Cather,historical novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-shadows-rock/
+http://www.wikidata.org/entity/Q7734903,The Fortunes of Richard Mahony,Henry Handel Richardson,novel,1917-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/richardson-fortunes-richard-mahony/
+http://www.wikidata.org/entity/Q6035197,The Glass Key,Dashiell Hammett,crime novel;noir novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hammett-glass-key/
+http://www.wikidata.org/entity/Q1218608,The Good Earth,Pearl S. Buck,novel;historical fiction,1931-03-02 00:00:00,https://shakespeareandco.princeton.edu/books/buck-good-earth/
+http://www.wikidata.org/entity/Q3223464,The Hamlet,William Faulkner,novel,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-hamlet/
+http://www.wikidata.org/entity/Q1217475,The Waves,Virginia Woolf,novel;experimental literature,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-waves/
+http://www.wikidata.org/entity/Q17031427,"The Work, Wealth and Happiness of Mankind",H. G. Wells,non-fiction literature,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-work-wealth-happiness/
+http://www.wikidata.org/entity/Q7783327,These 13,William Faulkner,,,https://shakespeareandco.princeton.edu/books/faulkner-13/
+http://www.wikidata.org/entity/Q7823969,Too True to Be Good,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-true-good/
+http://www.wikidata.org/entity/Q28468343,Tragic America,Theodore Dreiser,,1931-12-30 00:00:00,https://shakespeareandco.princeton.edu/books/dreiser-tragic-america/
+http://www.wikidata.org/entity/Q1529809,A Glastonbury Romance,John Cowper Powys,novel,1932-03-06 00:00:00,https://shakespeareandco.princeton.edu/books/powys-glastonbury-romance/
+http://www.wikidata.org/entity/Q4921296,Black Mischief,Evelyn Waugh,comic novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/waugh-black-mischief/
+http://www.wikidata.org/entity/Q191949,Brave New World,Aldous Huxley,parody;philosophical novel;science fiction novel;political novel;dystopian novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-brave-new-world/
+http://www.wikidata.org/entity/Q20008202,Chaucer,G. K. Chesterton,essay;biography,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-chaucer/
+http://www.wikidata.org/entity/Q1970223,Death in the Afternoon,Ernest Hemingway,novel;travel literature;travel book,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-death-afternoon/
+http://www.wikidata.org/entity/Q77233773,Enemy of the Stars,Wyndham Lewis,,1914-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-enemy-stars/
+http://www.wikidata.org/entity/Q2498251,Hatter's Castle,A. J. Cronin,novel,1931-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cronin-hatters-castle/
+http://www.wikidata.org/entity/Q106255269,Helene,Vicki Baum,novel,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/baum-helene/
+http://www.wikidata.org/entity/Q3137338,History of the Russian Revolution,Leon Trotsky,essay,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/trotsky-history-russian-revolution/
+http://www.wikidata.org/entity/Q5910588,Hot Water,P. G. Wodehouse,novel,,https://shakespeareandco.princeton.edu/books/wodehouse-hot-water/
+http://www.wikidata.org/entity/Q1823273,Light in August,William Faulkner,novel;Southern Gothic,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-light-august/
+http://www.wikidata.org/entity/Q6685963,Louder and Funnier,P. G. Wodehouse,,,https://shakespeareandco.princeton.edu/books/wodehouse-louder-funnier/
+http://www.wikidata.org/entity/Q1706363,Marie Antoinette: The Portrait of an Average Woman,Stefan Zweig,biographical novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/zweig-marie-antoinette-portrait/
+http://www.wikidata.org/entity/Q7075409,Obscure Destinies,Willa Cather,,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-obscure-destinies/
+http://www.wikidata.org/entity/Q957248,Peril at End House,Agatha Christie,crime novel;detective novel,1932-02-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-peril-end-house/
+http://www.wikidata.org/entity/Q2822836,Save Me the Waltz,Zelda Fitzgerald,autobiographical novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fitzgerald-save-waltz/
+http://www.wikidata.org/entity/Q7562273,Sons,Pearl S. Buck,novel,1932-06-01 00:00:00,https://shakespeareandco.princeton.edu/books/buck-sons/
+http://www.wikidata.org/entity/Q16385198,The Bulpington of Blup,H. G. Wells,novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-bulpington-blup/
+http://www.wikidata.org/entity/Q25415016,The Burning Bush,Sigrid Undset,novel,1930-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/undset-burning-bush/
+http://www.wikidata.org/entity/Q7735797,The Gap in the Curtain,John Buchan,novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-gap-curtain/
+http://www.wikidata.org/entity/Q7755267,The Orators,W. H. Auden,,,https://shakespeareandco.princeton.edu/books/auden-orators/
+http://www.wikidata.org/entity/Q17020907,The Return of Bulldog Drummond,H. C. McNeile,crime novel,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mcneile-return-bulldog-drummond/
+http://www.wikidata.org/entity/Q29379121,The Soldier and the Gentlewoman,Hilda Vaughan,,1932-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/vaughan-soldier-gentlewoman/
+http://www.wikidata.org/entity/Q934396,The Thirteen Problems,Agatha Christie,crime fiction short story;short story,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-thirteen-problems/
+http://www.wikidata.org/entity/Q7783788,They Were Defeated,Rose Macaulay,novel,,https://shakespeareandco.princeton.edu/books/macaulay-defeated/
+http://www.wikidata.org/entity/Q7811035,To Make My Bread,Grace Lumpkin,,,https://shakespeareandco.princeton.edu/books/lumpkin-make-bread/
+http://www.wikidata.org/entity/Q14980903,A Prince of the Captivity,John Buchan,adventure novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-prince-captivity/
+http://www.wikidata.org/entity/Q4730157,All the Mowgli Stories,Rudyard Kipling,,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/kipling-mowgli-stories/
+http://www.wikidata.org/entity/Q18518702,Ann Vickers,Sinclair Lewis,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-ann-vickers/
+http://www.wikidata.org/entity/Q4958701,Brazilian Adventure,Peter Fleming,non-fiction,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fleming-brazilian-adventure/
+http://www.wikidata.org/entity/Q5323202,EIMI,E. E. Cummings,travel journal,,https://shakespeareandco.princeton.edu/books/cummings-eimi/
+http://www.wikidata.org/entity/Q5377956,"England, Their England",A. G. Macdonell,comic novel;satire,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/macdonell-england-england/
+http://www.wikidata.org/entity/Q2270838,Flush: A Biography,Virginia Woolf,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-flush-biography/
+http://www.wikidata.org/entity/Q2873125,Grand Canary,A. J. Cronin,romance novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cronin-grand-canary/
+http://www.wikidata.org/entity/Q6004170,Imitation of Life,Fannie Hurst,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hurst-imitation-life/
+http://www.wikidata.org/entity/Q1746652,"Little Man, What Now?",Hans Fallada,novel,,https://shakespeareandco.princeton.edu/books/fallada-little-man-now/
+http://www.wikidata.org/entity/Q1199794,Lost Horizon,James Hilton,speculative fiction novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hilton-lost-horizon/
+http://www.wikidata.org/entity/Q6876987,Miss Lonelyhearts,Nathanael West,novel,1933-04-08 00:00:00,https://shakespeareandco.princeton.edu/books/west-miss-lonelyhearts/
+http://www.wikidata.org/entity/Q7081401,Oil for the Lamps of China,Alice Tisdale Hobart,novel,2002-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hobart-oil-lamps-china/
+http://www.wikidata.org/entity/Q7199550,Pity Is Not Enough,Josephine Herbst,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/herbst-pity-enough/
+http://www.wikidata.org/entity/Q2406418,Testament of Youth,Vera Brittain,autobiography,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/brittain-testament-youth/
+http://www.wikidata.org/entity/Q6618986,The Autobiography of Alice B. Toklas,Gertrude Stein,autobiography;biography,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stein-autobiography-alice-b/
+http://www.wikidata.org/entity/Q97168297,The Bird of Dawning,John Masefield,,,https://shakespeareandco.princeton.edu/books/masefield-bird-dawning/
+http://www.wikidata.org/entity/Q3900130,The Case of the Velvet Claws,Erle Stanley Gardner,crime novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gardner-case-velvet-claws/
+http://www.wikidata.org/entity/Q7730333,The Disinherited,Jack Conroy,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/conroy-disinherited/
+http://www.wikidata.org/entity/Q7733446,The Farm,Louis Bromfield,novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/louis-bromfield-farm/
+http://www.wikidata.org/entity/Q2096753,The Macedonian,Mary Butts,historical novel,,https://shakespeareandco.princeton.edu/books/butts-macedonian/
+http://www.wikidata.org/entity/Q3829111,The Tales of Jacob,Thomas Mann,novel,1933-10-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-tales-jacob/
+http://www.wikidata.org/entity/Q7880599,Ultramarine,Malcolm Lowry,novel,,https://shakespeareandco.princeton.edu/books/lowry-ultramarine/
+http://www.wikidata.org/entity/Q3641802,Untouchable,Mulk Raj Anand,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/anand-untouchable/
+http://www.wikidata.org/entity/Q8025602,Winner Take Nothing,Ernest Hemingway,short story;short story,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-winner-take-nothing/
+http://www.wikidata.org/entity/Q4004281,A Handful of Dust,Evelyn Waugh,novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/waugh-handful-dust/
+http://www.wikidata.org/entity/Q4650281,ABC of Reading,Ezra Pound,,,https://shakespeareandco.princeton.edu/books/pound-abc-reading/
+http://www.wikidata.org/entity/Q75840,And Quiet Flows the Don,Mikhail Sholokhov,epic,1928-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sholokhov-quiet-flows-don/
+http://www.wikidata.org/entity/Q4410649,Appointment in Samarra,John O'Hara,novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/ohara-appointment-samarra/
+http://www.wikidata.org/entity/Q23035846,Autobiography,John Cowper Powys,autobiography,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/powys-autobiography/
+http://www.wikidata.org/entity/Q4900156,Beyond the Mexique Bay,Aldous Huxley,,,https://shakespeareandco.princeton.edu/books/huxley-beyond-mexique-bay/
+http://www.wikidata.org/entity/Q1762079,Burmese Days,George Orwell,,1934-10-01 00:00:00,https://shakespeareandco.princeton.edu/books/orwell-burmese-days/
+http://www.wikidata.org/entity/Q20590139,Dew on the Grass,Eiluned Lewis,,,https://shakespeareandco.princeton.edu/books/lewis-dew-grass/
+http://www.wikidata.org/entity/Q5378300,English Journey,J. B. Priestley,,,https://shakespeareandco.princeton.edu/books/priestley-english-journey/
+http://www.wikidata.org/entity/Q5835240,Erasmus of Rotterdam,Stefan Zweig,biography,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/zweig-erasmus-rotterdam/
+http://www.wikidata.org/entity/Q5885372,Holy Deadlock,A. P. Herbert,polemic;novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/herbert-holy-deadlock/
+http://www.wikidata.org/entity/Q135215,"I, Claudius",Robert Graves,historical novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/graves-claudius/
+http://www.wikidata.org/entity/Q6090994,It's a Battlefield,Graham Greene,novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/greene-battlefield/
+http://www.wikidata.org/entity/Q24255910,Jonah's Gourd Vine,Zora Neale Hurston,novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hurston-jonahs-gourd-vine/
+http://www.wikidata.org/entity/Q269368,More Pricks Than Kicks,Samuel Beckett,short story,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/beckett-pricks-kicks/
+http://www.wikidata.org/entity/Q845889,Murder on the Orient Express,Agatha Christie,detective novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-murder-orient-express/
+http://www.wikidata.org/entity/Q7333527,"Right Ho, Jeeves",P. G. Wodehouse,novel,1934-10-05 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-right-ho-jeeves/
+http://www.wikidata.org/entity/Q3958335,Seven Poor Men of Sydney,Christina Stead,novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stead-seven-poor-men/
+http://www.wikidata.org/entity/Q247372,Tender Is the Night,F. Scott Fitzgerald,autobiographical novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fitzgerald-tender-night/
+http://www.wikidata.org/entity/Q10381242,The Case of the Howling Dog,Erle Stanley Gardner,crime novel,,https://shakespeareandco.princeton.edu/books/gardner-case-howling-dog/
+http://www.wikidata.org/entity/Q7721522,The Case of the Lucky Legs,Erle Stanley Gardner,crime novel;mystery film,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/gardner-case-lucky-legs/
+http://www.wikidata.org/entity/Q699107,The Forty Days of Musa Dagh,Franz Werfel,historical novel,1933-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/werfel-forty-days-musa/
+http://www.wikidata.org/entity/Q934430,The Postman Always Rings Twice,James M. Cain,crime novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cain-postman-always-rings/
+http://www.wikidata.org/entity/Q7767945,The Taking of the Gry,John Masefield,adventure novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/masefield-taking-gry/
+http://www.wikidata.org/entity/Q1198493,The Thin Man,Dashiell Hammett,crime novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hammett-thin-man/
+http://www.wikidata.org/entity/Q7774549,The White Priory Murders,John Dickson Carr,mystery novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-white-priory-murders/
+http://www.wikidata.org/entity/Q2986155,The World as I See It,Albert Einstein,popular science,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/einstein-world-see/
+http://www.wikidata.org/entity/Q1501700,Tropic of Cancer,Henry Miller,autobiographical novel;erotic novel,1934-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/miller-tropic-cancer/
+http://www.wikidata.org/entity/Q1141184,Why Didn't They Ask Evans?,Agatha Christie,crime novel;detective novel,1934-09-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-didnt-ask-evans/
+http://www.wikidata.org/entity/Q5151307,Come and Get It,Edna Ferber,novel,,https://shakespeareandco.princeton.edu/books/ferber-come-get/
+http://www.wikidata.org/entity/Q1218581,Green Hills of Africa,Ernest Hemingway,non-fiction;travel journal,1935-10-25 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-green-hills-africa/
+http://www.wikidata.org/entity/Q16995798,Honey in the Horn,H. L. Davis,novel,,https://shakespeareandco.princeton.edu/books/davis-honey-horn/
+http://www.wikidata.org/entity/Q2317772,In Praise of Idleness and Other Essays,Bertrand Russell,essay,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/russell-praise-idleness-essays/
+http://www.wikidata.org/entity/Q2943868,It Can't Happen Here,Sinclair Lewis,science fiction novel;political novel;dystopian novel,1935-10-21 00:00:00,https://shakespeareandco.princeton.edu/books/lewis-cant-happen/
+http://www.wikidata.org/entity/Q14396011,Life with Father,Clarence Day,humour;humour;autobiography;autobiography,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/day-life-father/
+http://www.wikidata.org/entity/Q6698314,Lucy Gayheart,Willa Cather,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cather-lucy-gayheart/
+http://www.wikidata.org/entity/Q24255909,Mules and Men,Zora Neale Hurston,,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hurston-mules-men/
+http://www.wikidata.org/entity/Q17104435,National Velvet,Enid Bagnold,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bagnold-national-velvet/
+http://www.wikidata.org/entity/Q18209332,North to the Orient,Anne Morrow Lindbergh,,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lindbergh-north-orient/
+http://www.wikidata.org/entity/Q18158198,Panic,Archibald MacLeish,drama,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/macleish-panic/
+http://www.wikidata.org/entity/Q3411227,Pylon,William Faulkner,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-pylon/
+http://www.wikidata.org/entity/Q24323,Seven Pillars of Wisdom,T. E. Lawrence,autobiography,1922-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lawrence-seven-pillars-wisdom/
+http://www.wikidata.org/entity/Q7730511,The Dog Beneath the Skin,W. H. Auden,,,https://shakespeareandco.princeton.edu/books/auden-dog-beneath-skin/
+http://www.wikidata.org/entity/Q21127202,The Golden Sayings of Epictetus,Epictetus,philosophy,,https://shakespeareandco.princeton.edu/books/epictetus-golden-sayings-epictetus/
+http://www.wikidata.org/entity/Q366927,The House in Paris,Elizabeth Bowen,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bowen-house-paris/
+http://www.wikidata.org/entity/Q7740673,The House of the Four Winds,John Buchan,adventure novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buchan-house-four-winds/
+http://www.wikidata.org/entity/Q7762086,The Saint in New York,Leslie Charteris,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/charteris-saint-new-york/
+http://www.wikidata.org/entity/Q82459,The Scandal of Father Brown,G. K. Chesterton,short story,1935-03-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-scandal-father-brown/
+http://www.wikidata.org/entity/Q1093537,The Stars Look Down,A. J. Cronin,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cronin-stars-look/
+http://www.wikidata.org/entity/Q18923589,The Well and the Shallows,G. K. Chesterton,essay,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-well-shallows/
+http://www.wikidata.org/entity/Q606720,Tortilla Flat,John Steinbeck,novel,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/steinbeck-tortilla-flat/
+http://www.wikidata.org/entity/Q30040486,365 Days,,,1971-10-18 00:00:00,https://shakespeareandco.princeton.edu/books/boyle-365-days/
+http://www.wikidata.org/entity/Q2181982,"Absalom, Absalom!",William Faulkner,historical novel;Southern Gothic,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-absalom-absalom/
+http://www.wikidata.org/entity/Q733639,Cards on the Table,Agatha Christie,detective novel,1936-11-02 00:00:00,https://shakespeareandco.princeton.edu/books/christie-cards-table/
+http://www.wikidata.org/entity/Q5263919,Desert Encounter,Knud Holmboe,,,https://shakespeareandco.princeton.edu/books/holmboe-desert-encounter/
+http://www.wikidata.org/entity/Q5422772,Eyeless in Gaza,Aldous Huxley,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-eyeless-gaza/
+http://www.wikidata.org/entity/Q5447865,Fighting Angel,Pearl S. Buck,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/buck-fighting-angel/
+http://www.wikidata.org/entity/Q5462310,Flowers for the Judge,Margery Allingham,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/allingham-flowers-judge/
+http://www.wikidata.org/entity/Q2870,Gone with the Wind,Margaret Mitchell,historical novel;epic,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mitchell-gone-wind/
+http://www.wikidata.org/entity/Q582472,In Dubious Battle,John Steinbeck,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/steinbeck-dubious-battle/
+http://www.wikidata.org/entity/Q1217656,Keep the Aspidistra Flying,George Orwell,novel,1936-04-20 00:00:00,https://shakespeareandco.princeton.edu/books/orwell-keep-aspidistra-flying/
+http://www.wikidata.org/entity/Q6467695,Laburnum Grove,J. B. Priestley,,,https://shakespeareandco.princeton.edu/books/priestley-laburnum-grove/
+http://www.wikidata.org/entity/Q6498118,Laughing Gas,P. G. Wodehouse,comic novel,1936-09-25 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-laughing-gas/
+http://www.wikidata.org/entity/Q56398121,Maiden Castle,John Cowper Powys,,1990-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/powys-maiden-castle/
+http://www.wikidata.org/entity/Q642911,Murder in Mesopotamia,Agatha Christie,detective novel;detective novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-murder-mesopotamia/
+http://www.wikidata.org/entity/Q17114087,"My Ten Years in a Quandary, and How They Grew",Robert Benchley,,,https://shakespeareandco.princeton.edu/books/benchley-ten-years-quandary/
+http://www.wikidata.org/entity/Q11918676,Nightwood,Djuna Barnes,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/barnes-nightwood/
+http://www.wikidata.org/entity/Q2047664,"Pale Horse, Pale Rider",Katherine Anne Porter,,,https://shakespeareandco.princeton.edu/books/porter-pale-horse-pale/
+http://www.wikidata.org/entity/Q7495443,Sherston's Progress,Siegfried Sassoon,novel,,https://shakespeareandco.princeton.edu/books/sassoon-sherstons-progress/
+http://www.wikidata.org/entity/Q7714643,The Ascent of F6,W. H. Auden,,,https://shakespeareandco.princeton.edu/books/auden-ascent-f6/
+http://www.wikidata.org/entity/Q16932170,The Croquet Player,H. G. Wells,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-croquet-player/
+http://www.wikidata.org/entity/Q7732793,The Exile,Pearl S. Buck,,,https://shakespeareandco.princeton.edu/books/buck-exile/
+http://www.wikidata.org/entity/Q7756072,The Paradoxes of Mr. Pond,G. K. Chesterton,crime novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/chesterton-paradoxes-mr-pond/
+http://www.wikidata.org/entity/Q7756627,"The People, Yes",Carl Sandburg,poetry,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sandburg-people-yes/
+http://www.wikidata.org/entity/Q3700770,The Punch and Judy Murders,John Dickson Carr,crime novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-punch-judy-murders/
+http://www.wikidata.org/entity/Q7761261,The Rock Pool,Cyril Connolly,novel,,https://shakespeareandco.princeton.edu/books/connolly-rock-pool/
+http://www.wikidata.org/entity/Q18393948,The Weather in the Streets,Rosamond Lehmann,,,https://shakespeareandco.princeton.edu/books/lehmann-weather-streets/
+http://www.wikidata.org/entity/Q7838347,Trent's Own Case,Edmund Clerihew Bentley,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bentley-trents-case/
+http://www.wikidata.org/entity/Q7977317,We Are Not Alone,James Hilton,war novel,1937-03-12 00:00:00,https://shakespeareandco.princeton.edu/books/hilton-alone/
+http://www.wikidata.org/entity/Q4660493,A Vision,William Butler Yeats,,1925-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/yeats-vision/
+http://www.wikidata.org/entity/Q4677207,Action for Slander,Mary Borden,novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/borden-action-slander/
+http://www.wikidata.org/entity/Q28365515,Daughters and Sons,Ivy Compton-Burnett,novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/compton-burnett-daughters-sons/
+http://www.wikidata.org/entity/Q381756,Death on the Nile,Agatha Christie,detective novel;crime novel,1937-11-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-death-nile/
+http://www.wikidata.org/entity/Q5417646,Everybody's Autobiography,Gertrude Stein,,,https://shakespeareandco.princeton.edu/books/stein-everybodys-autobiography/
+http://www.wikidata.org/entity/Q3311170,Famine,Liam O'Flaherty,novel,,https://shakespeareandco.princeton.edu/books/oflaherty-famine/
+http://www.wikidata.org/entity/Q6000479,Illusion and Reality,Christopher Caudwell,non-fiction literature,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sprigg-illusion-reality/
+http://www.wikidata.org/entity/Q62632331,Ion,Euripides,,1918-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/euripides-ion/
+http://www.wikidata.org/entity/Q3482455,Letters from Iceland,W. H. Auden,travel literature,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/auden-letters-iceland/
+http://www.wikidata.org/entity/Q6545039,Life and Death of a Spanish Town,Elliot Paul,modern history,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/paul-elliot-life-death-spanish/
+http://www.wikidata.org/entity/Q6679226,Lord Emsworth and Others,P. G. Wodehouse,short story,1935-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wodehouse-lord-emsworth-others/
+http://www.wikidata.org/entity/Q650508,Murder in the Mews,Agatha Christie,detective fiction;crime fiction short story;detective literature,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-murder-mews/
+http://www.wikidata.org/entity/Q7060158,Northwest Passage,Kenneth Roberts,historical novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/roberts-northwest-passage/
+http://www.wikidata.org/entity/Q457977,Of Mice and Men,John Steinbeck,short novel;novella,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/steinbeck-mice-men/
+http://www.wikidata.org/entity/Q7572848,Spain,W. H. Auden,poem,,https://shakespeareandco.princeton.edu/books/auden-spain/
+http://www.wikidata.org/entity/Q6593066,Spanish Testament,Arthur Koestler,,,https://shakespeareandco.princeton.edu/books/koestler-spanish-testament/
+http://www.wikidata.org/entity/Q7637374,Summer Moonshine,P. G. Wodehouse,novel,,https://shakespeareandco.princeton.edu/books/wodehouse-summer-moonshine/
+http://www.wikidata.org/entity/Q7712244,The Ace of Knaves,Leslie Charteris,novella,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/charteris-ace-knaves/
+http://www.wikidata.org/entity/Q10381241,The Case of the Lame Canary,Erle Stanley Gardner,crime novel;legal thriller,,https://shakespeareandco.princeton.edu/books/gardner-case-lame-canary/
+http://www.wikidata.org/entity/Q2264850,The Citadel,A. J. Cronin,novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/cronin-citadel/
+http://www.wikidata.org/entity/Q7746279,The Late George Apley,John P. Marquand,novel,,https://shakespeareandco.princeton.edu/books/marquand-late-george-apley/
+http://www.wikidata.org/entity/Q184222,The Metamorphosis,Franz Kafka,Erzählung;existentialist novel;body horror fiction;novella;absurdist literature;epic literature;short novel,1915-10-01 00:00:00,https://shakespeareandco.princeton.edu/books/kafka-metamorphosis/
+http://www.wikidata.org/entity/Q16652386,The Rains Came,Louis Bromfield,novel,1937-11-01 00:00:00,https://shakespeareandco.princeton.edu/books/louis-bromfield-rains-came/
+http://www.wikidata.org/entity/Q1197966,The Road to Wigan Pier,George Orwell,autobiography,1937-03-08 00:00:00,https://shakespeareandco.princeton.edu/books/orwell-road-wigan-pier/
+http://www.wikidata.org/entity/Q102079323,The Ten Principal Upanishads,,,,https://shakespeareandco.princeton.edu/books/ten-principal-upanishads/
+http://www.wikidata.org/entity/Q1616684,The Years,Virginia Woolf,novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-years/
+http://www.wikidata.org/entity/Q97573379,They Seek a Country,Francis Brett Young,novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/young-seek-country/
+http://www.wikidata.org/entity/Q7784104,Thieves Like Us,Edward Anderson,crime novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/anderson-thieves-like-us/
+http://www.wikidata.org/entity/Q538390,To Have and Have Not,Ernest Hemingway,crime novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-to-have-and/
+http://www.wikidata.org/entity/Q3706022,To Wake the Dead,John Dickson Carr,crime novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-wake-dead/
+http://www.wikidata.org/entity/Q8025168,Winged Pharaoh,Joan Grant,historical novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/grant-winged-pharaoh/
+http://www.wikidata.org/entity/Q2056663,Brighton Rock,Graham Greene,crime novel;noir novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/greene-brighton-rock/
+http://www.wikidata.org/entity/Q3736337,Death in Five Boxes,John Dickson Carr,crime novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-death-five-boxes/
+http://www.wikidata.org/entity/Q97573367,Dr. Bradley Remembers,Francis Brett Young,novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/young-dr-bradley-remembers/
+http://www.wikidata.org/entity/Q5319176,Dynasty of Death,Taylor Caldwell,novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/caldwell-dynasty-death/
+http://www.wikidata.org/entity/Q5376751,Enemies of Promise,Cyril Connolly,,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/connolly-enemies-promise/
+http://www.wikidata.org/entity/Q514694,Homage to Catalonia,George Orwell,autobiography;war,1938-04-25 00:00:00,https://shakespeareandco.princeton.edu/books/orwell-homage-catalonia/
+http://www.wikidata.org/entity/Q24967499,House of All Nations,Christina Stead,literary fiction,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stead-house-nations/
+http://www.wikidata.org/entity/Q3771675,Joseph in Egypt,Thomas Mann,novel,1936-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-joseph-egypt/
+http://www.wikidata.org/entity/Q28365554,Listen! The Wind,Anne Morrow Lindbergh,,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/lindbergh-listen-wind/
+http://www.wikidata.org/entity/Q1431476,Murphy,Samuel Beckett,novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/beckett-murphy/
+http://www.wikidata.org/entity/Q3273584,My Sister Eileen,Ruth McKenney,,,https://shakespeareandco.princeton.edu/books/mckenney-sister-eileen/
+http://www.wikidata.org/entity/Q1755219,Our Town,Thornton Wilder,drama,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wilder-town/
+http://www.wikidata.org/entity/Q56563663,Picasso,Gertrude Stein,,1973-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/stein-picasso/
+http://www.wikidata.org/entity/Q1059846,Red Star Over China,Edgar Snow,biography;non-fiction,,https://shakespeareandco.princeton.edu/books/snow-red-star-china/
+http://www.wikidata.org/entity/Q1029093,Scoop,Evelyn Waugh,comic novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/waugh-scoop/
+http://www.wikidata.org/entity/Q61767372,Swiss Sonata,Gwethalyn Graham,novel,,https://shakespeareandco.princeton.edu/books/graham-swiss-sonata/
+http://www.wikidata.org/entity/Q7726959,The Coming Victory of Democracy,Thomas Mann,essay,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mann-coming-victory-democracy/
+http://www.wikidata.org/entity/Q3823252,The Death of the Heart,Elizabeth Bowen,novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bowen-death-heart/
+http://www.wikidata.org/entity/Q7733487,The Fashion in Shrouds,Margery Allingham,crime novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/allingham-fashion-shrouds/
+http://www.wikidata.org/entity/Q63406105,The Fathers,Allen Tate,,,https://shakespeareandco.princeton.edu/books/tate-fathers/
+http://www.wikidata.org/entity/Q2972926,The Fifth Column and the First Forty-Nine Stories,Ernest Hemingway,,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/hemingway-fifth-column-first/
+http://www.wikidata.org/entity/Q6581958,The Judas Window,John Dickson Carr,crime novel;detective novel;mystery novel,1937-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-judas-window/
+http://www.wikidata.org/entity/Q673452,The Long Valley,John Steinbeck,short story,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/steinbeck-long-valley/
+http://www.wikidata.org/entity/Q2717946,The Unvanquished,William Faulkner,novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/faulkner-unvanquished/
+http://www.wikidata.org/entity/Q429806,The Yearling,Marjorie Kinnan Rawlings,novel;young adult literature;short novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/rawlings-yearling/
+http://www.wikidata.org/entity/Q16512793,This Proud Heart,Pearl S. Buck,novel,,https://shakespeareandco.princeton.edu/books/buck-proud-heart-2/
+http://www.wikidata.org/entity/Q1257028,Three Guineas,Virginia Woolf,essay,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/woolf-three-guineas/
+http://www.wikidata.org/entity/Q632047,"Wait until Spring, Bandini",John Fante,autobiographical novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/fante-wait-spring-bandini/
+http://www.wikidata.org/entity/Q470,World Brain,H. G. Wells,essay,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wells-world-brain/
+http://www.wikidata.org/entity/Q4666415,Abe Lincoln in Illinois,Robert E. Sherwood,,,https://shakespeareandco.princeton.edu/books/sherwood-abe-lincoln-illinois/
+http://www.wikidata.org/entity/Q4686662,Adventures of a Young Man,John Dos Passos,novel,,https://shakespeareandco.princeton.edu/books/dos-passos-adventures-young-man/
+http://www.wikidata.org/entity/Q3187145,After Many a Summer,Aldous Huxley,philosophical novel;science fiction novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-many-summer/
+http://www.wikidata.org/entity/Q1428590,Beware of Pity,Stefan Zweig,novel;novel,1938-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/zweig-beware-pity/
+http://www.wikidata.org/entity/Q967866,Coming Up for Air,George Orwell,novel,1939-06-12 00:00:00,https://shakespeareandco.princeton.edu/books/orwell-coming-air/
+http://www.wikidata.org/entity/Q5308438,Drop to His Death,John Dickson Carr,crime novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/carr-drop-death/
+http://www.wikidata.org/entity/Q48914392,Escape to Life,Erika Mann,,1939-04-14 00:00:00,https://shakespeareandco.princeton.edu/books/mann-escape-life/
+http://www.wikidata.org/entity/Q6507,Finnegans Wake,James Joyce,sui generis;experimental literature;Menippean satire,1939-05-04 00:00:00,https://shakespeareandco.princeton.edu/books/joyce-finnegans-wake/
+http://www.wikidata.org/entity/Q19840132,Geneva,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-geneva/
+http://www.wikidata.org/entity/Q3605099,Goodbye to Berlin,Christopher Isherwood,novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/isherwood-goodbye-berlin/
+http://www.wikidata.org/entity/Q3398593,How Green Was My Valley,Richard Llewellyn,historical novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/llewellyn-green-valley/
+http://www.wikidata.org/entity/Q6009574,In Good King Charles's Golden Days,George Bernard Shaw,,,https://shakespeareandco.princeton.edu/books/shaw-good-king-charless/
+http://www.wikidata.org/entity/Q6296470,Journey to a War,W. H. Auden,,,https://shakespeareandco.princeton.edu/books/auden-journey-war/
+http://www.wikidata.org/entity/Q6418548,Kitty Foyle,Christopher Morley,novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/morley-kitty-foyle/
+http://www.wikidata.org/entity/Q6533127,Let the People Sing,J. B. Priestley,novel,,https://shakespeareandco.princeton.edu/books/priestley-let-people-sing/
+http://www.wikidata.org/entity/Q7033424,Night Rider,Robert Penn Warren,novel,,https://shakespeareandco.princeton.edu/books/warren-night-rider/
+http://www.wikidata.org/entity/Q7140910,Party Going,Henry Green,novel,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/green-party-going/
+http://www.wikidata.org/entity/Q79892646,Ten Little Niggers,Agatha Christie,drama,,https://shakespeareandco.princeton.edu/books/christie-ten-little-niggers/
+http://www.wikidata.org/entity/Q10381203,The Bigger They Come,Erle Stanley Gardner,crime novel,,https://shakespeareandco.princeton.edu/books/gardner-bigger-come/
+http://www.wikidata.org/entity/Q1150908,The Day of the Locust,Nathanael West,novel,1939-05-16 00:00:00,https://shakespeareandco.princeton.edu/books/west-day-locust/
+http://www.wikidata.org/entity/Q7734581,The Flying Dutchman,Michael Arlen,novel,,https://shakespeareandco.princeton.edu/books/arlen-flying-dutchman/
+http://www.wikidata.org/entity/Q215983,The Grapes of Wrath,John Steinbeck,realist novel,1939-04-14 00:00:00,https://shakespeareandco.princeton.edu/books/steinbeck-grapes-wrath/
+http://www.wikidata.org/entity/Q28401919,The Young Cosima,Henry Handel Richardson,,1939-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/richardson-young-cosima/
+http://www.wikidata.org/entity/Q8058280,Young Man with a Horn,Dorothy Baker,novel,,https://shakespeareandco.princeton.edu/books/baker-young-man-horn/
+http://www.wikidata.org/entity/Q5247299,Death at the Bar,Ngaio Marsh,novel,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/marsh-death-bar/
+http://www.wikidata.org/entity/Q165599,Native Son,Richard Wright,novel;African-American literature,1940-03-01 00:00:00,https://shakespeareandco.princeton.edu/books/wright-native/
+http://www.wikidata.org/entity/Q7232282,Portrait of Jennie,Robert Nathan,novella;novel;mystery fiction,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/nathan-portrait-jennie/
+http://www.wikidata.org/entity/Q10638035,Portrait of the Artist as a Young Dog,Dylan Thomas,,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/thomas-portrait-artist-young/
+http://www.wikidata.org/entity/Q1138330,Sad Cypress,Agatha Christie,crime novel;detective novel,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/christie-sad-cypress/
+http://www.wikidata.org/entity/Q55594189,The Eagles Gather,Taylor Caldwell,novel,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/caldwell-eagles-gather/
+http://www.wikidata.org/entity/Q431524,The Power and the Glory,Graham Greene,novel,1940-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/greene-power-glory/
+http://www.wikidata.org/entity/Q10385633,Turn on the Heat,Erle Stanley Gardner,crime novel,,https://shakespeareandco.princeton.edu/books/gardner-turn-heat/
+http://www.wikidata.org/entity/Q880125,Black Boy,Richard Wright,autobiographical novel;autobiography,1945-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/wright-black-boy/
+http://www.wikidata.org/entity/Q1215450,The Doors of Perception,Aldous Huxley,essay,1954-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/huxley-doors-perception/
+http://www.wikidata.org/entity/Q3208856,Homer's Daughter,Robert Graves,novel;Greek mythology,1955-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/graves-homers-daughter/
+http://www.wikidata.org/entity/Q127149,Lolita,Vladimir Nabokov,editorial fiction;erotic novel;detective novel;confessional fiction;tragicomedy;metafiction,1955-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/nabokov-lolita/
+http://www.wikidata.org/entity/Q1304926,Ten North Frederick,John O'Hara,novel,,https://shakespeareandco.princeton.edu/books/ohara-ten-north-frederick/
+http://www.wikidata.org/entity/Q884005,Look Back in Anger,John Osborne,drama,1956-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/osborne-look-back-anger/
+http://www.wikidata.org/entity/Q2276817,Moderato Cantabile,Marguerite Duras,novella;novel,1958-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/duras-moderato-cantabile/
+http://www.wikidata.org/entity/Q444395,Saturday Night and Sunday Morning,Alan Sillitoe,novel,1958-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/sillitoe-saturday-night-sunday/
+http://www.wikidata.org/entity/Q7772950,The Vodi,John Braine,novel,,https://shakespeareandco.princeton.edu/books/braine-vodi/
+http://www.wikidata.org/entity/Q2032353,A Child's History of England,Charles Dickens,children's literature,1851-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dickens-childs-history-england/
+http://www.wikidata.org/entity/Q120288,A Room with a View,E. M. Forster,novel,1908-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/forster-room-view/
+http://www.wikidata.org/entity/Q3549497,A Woman Killed with Kindness,Thomas Heywood,,,https://shakespeareandco.princeton.edu/books/heywood-woman-killed-kindness/
+http://www.wikidata.org/entity/Q19074835,Beowulf,,,1894-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/beowulf/
+http://www.wikidata.org/entity/Q463126,Coriolanus,William Shakespeare,tragedy,1623-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-coriolanus/
+http://www.wikidata.org/entity/Q105978234,Doctor Faustus,Christopher Marlowe,,,https://shakespeareandco.princeton.edu/books/marlowe-doctor-faustus/
+http://www.wikidata.org/entity/Q29478,Faust,Johann Wolfgang von Goethe,drama;drama,1808-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/goethe-faust/
+http://www.wikidata.org/entity/Q10288350,Gargantua,François Rabelais,novel,1534-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/rabelais-gargantua/
+http://www.wikidata.org/entity/Q2316733,Grace Abounding to the Chief of Sinners,John Bunyan,spiritual autobiography,1666-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/bunyan-grace-abounding-chief/
+http://www.wikidata.org/entity/Q96336192,Hippolytus,Euripides,,,https://shakespeareandco.princeton.edu/books/euripides-hippolytus/
+http://www.wikidata.org/entity/Q59465789,Julius Caesar,William Shakespeare,,t2100502154,https://shakespeareandco.princeton.edu/books/shakespeare-julius-caesar/
+http://www.wikidata.org/entity/Q96332506,King Lear,William Shakespeare,,,https://shakespeareandco.princeton.edu/books/shakespeare-king-lear/
+http://www.wikidata.org/entity/Q4015014,Lives of the Most Eminent English Poets,Samuel Johnson,biography;biography,1779-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/johnson-lives-eminent-english/
+http://www.wikidata.org/entity/Q59267602,Macbeth,William Shakespeare,,1907-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q59268259,Macbeth,William Shakespeare,,t1831670729,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q130283,Macbeth,William Shakespeare,tragedy,1623-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q96331840,Macbeth,William Shakespeare,,,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q101095471,Macbeth,William Shakespeare,,,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q101095584,Macbeth,William Shakespeare,,,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q61450950,Macbeth,William Shakespeare,tragedy,,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q64352576,Macbeth,William Shakespeare,drama,,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q60147947,Macbeth,William Shakespeare,,1858-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q65528245,Macbeth,William Shakespeare,,1813-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q19020108,Macbeth,William Shakespeare,,1623-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-macbeth/
+http://www.wikidata.org/entity/Q661655,Metaphysics,Aristotle,treatise,,https://shakespeareandco.princeton.edu/books/aristotle-metaphysics/
+http://www.wikidata.org/entity/Q555862,Phaedrus,Plato,Socratic dialogue,,https://shakespeareandco.princeton.edu/books/plato-phaedrus/
+http://www.wikidata.org/entity/Q7717444,The Bible,,epic film;epic film,2013-03-03 00:00:00,https://shakespeareandco.princeton.edu/books/bible/
+http://www.wikidata.org/entity/Q60070638,The Cambridge History of English Literature,,,1917-10-01 00:00:00,https://shakespeareandco.princeton.edu/books/ward-cambridge-history-english/
+http://www.wikidata.org/entity/Q58972200,The Cloud of Unknowing,,,1961-02-01 00:00:00,https://shakespeareandco.princeton.edu/books/cloud-unknowing/
+http://www.wikidata.org/entity/Q21190993,The Divine Comedy,Dante Alighieri,,1867-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/dante-alighieri-divine-comedy/
+http://www.wikidata.org/entity/Q815376,The Frogs,Aristophanes,Old Comedy,,https://shakespeareandco.princeton.edu/books/aristophanes-frogs/
+http://www.wikidata.org/entity/Q56341585,The Invasion of Europe by the Barbarians,J. B. Bury,,1929-04-01 00:00:00,https://shakespeareandco.princeton.edu/books/bury-invasion-europe-barbarians/
+http://www.wikidata.org/entity/Q19093186,The Mabinogion,,,1877-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/mabinogion/
+http://www.wikidata.org/entity/Q206400,The Merchant of Venice,William Shakespeare,tragicomedy,1600-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-merchant-venice/
+http://www.wikidata.org/entity/Q15628440,The Odyssey,Homer,,1900-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/homer-odyssey/
+http://www.wikidata.org/entity/Q1242779,The Prelude,William Wordsworth,,,https://shakespeareandco.princeton.edu/books/wordsworth-prelude/
+http://www.wikidata.org/entity/Q1115255,The Spanish Tragedy,Thomas Kyd,English Renaissance theatre,,https://shakespeareandco.princeton.edu/books/kyd-spanish-tragedy/
+http://www.wikidata.org/entity/Q8269,The Tale of Genji,Murasaki Shikibu,monogatari;tsukuri monogatari,1010-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/murasaki-shikibu-tale-genji/
+http://www.wikidata.org/entity/Q332387,The Taming of the Shrew,William Shakespeare,comedy,1623-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-taming-shrew/
+http://www.wikidata.org/entity/Q86440,The Tempest,William Shakespeare,tragicomedy,1623-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/shakespeare-tempest/
+http://www.wikidata.org/entity/Q654562,The Travels of Marco Polo,Marco Polo,adventure film,1298-01-01 00:00:00,https://shakespeareandco.princeton.edu/books/polo-travels-marco-polo/
