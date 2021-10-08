@@ -7,7 +7,8 @@ import os.path
 from ratelimit import limits, sleep_and_retry
 import requests
 
-# script to
+# script to search for books in S&co dataset in the LoC books
+# collection to find catalog records and pull in subjects & genres
 
 
 # some searches return zero results because S&co author doesn't match LOC author
@@ -42,7 +43,7 @@ authorized_author = {
 # Burst Limit  	20 requests per 10 seconds, Block for 5 minutes
 # Crawl Limit 	80 requests per 1 minute, Block for 1 hour
 
-# setting limits with 20 and 18 both resulted in rate limiting;
+# NOTE: setting limit to calls=20 and calls=18 both resulted in rate limiting;
 # not sure if problem is LOC or ratelimit, but 15 worked
 
 @sleep_and_retry
@@ -108,7 +109,7 @@ csv_fieldnames = [
 output_filename = "shxco_loc_matches.csv"
 
 # if csv output file exists, load it and make a list of sco ids with existing matches
-# append to file & skip writing header if it alread existed
+# append to file & skip writing header if it alreadyI existed
 previous_matches = []
 
 if os.path.exists(output_filename):
