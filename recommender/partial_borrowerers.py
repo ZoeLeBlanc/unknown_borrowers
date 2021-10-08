@@ -3,6 +3,10 @@ import os.path
 import numpy as np
 import pandas as pd
 
+import sys
+  
+sys.path.insert(0, '../dataset_generator/')
+
 from dataset import get_shxco_data, get_data, get_model
 
 
@@ -17,7 +21,7 @@ from dataset import get_shxco_data, get_data, get_model
 
 def identify_partial_borrowers(date_events):
     # if the file already exists, just load it and return
-    partial_borrowers_csv = "data/partial_borrowers.csv"
+    partial_borrowers_csv = "../dataset_generator/data/partial_borrowers.csv"
     if os.path.isfile(partial_borrowers_csv):
         return pd.read_csv(partial_borrowers_csv)
 

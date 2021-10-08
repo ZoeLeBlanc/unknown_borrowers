@@ -1,5 +1,6 @@
 # don't check in partial borrowers csv file
-data/partial_borrowers.csv
+dataset_generator/data/partial_borrowers.csv
+dataset_generator/drafts
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -115,6 +116,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+unknown_borrowers_env/
 
 # Spyder project settings
 .spyderproject
@@ -139,3 +141,4 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
