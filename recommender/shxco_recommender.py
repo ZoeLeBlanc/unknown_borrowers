@@ -2,8 +2,8 @@ import numpy as np
 
 import sys
   
-sys.path.insert(0, '../dataset_generator/')
-from dataset import get_data, get_model
+sys.path.append("..")
+from dataset_generator.dataset import get_data, get_model
 
 # sample recommendation code adapted from lightfm quickstart example
 
