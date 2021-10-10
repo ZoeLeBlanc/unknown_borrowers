@@ -134,6 +134,9 @@ def get_data():
     # shorten URIs for readability in output
     interactions_df = events_df[events_df.item_uri.notna()].copy()
 
+    # restrict to borrow events only
+    interactions_df = interactions_df[interactions_df.event_type == 'Borrow'].copy()
+
     # reduce to minimum user/item interaction fields and drop dupes
     unique_interactions_df = interactions_df[
         ["member_id", "item_uri"]
