@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 import sys
-  
-sys.path.insert(0, '../dataset_generator/')
 
-from dataset import get_shxco_data, get_data, get_model
+sys.path.append("..")
+
+from dataset_generator.dataset import get_shxco_data, get_data, get_model
 
 
 # identify members with partial borrowing history
