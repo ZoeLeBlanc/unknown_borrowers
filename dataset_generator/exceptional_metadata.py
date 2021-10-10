@@ -3,7 +3,9 @@ import pandas as pd
 pd.options.mode.chained_assignment = None
 from datetime import datetime
 from tqdm import tqdm
-from dataset import get_shxco_data
+import sys
+sys.path.append("..")
+from dataset_generator.dataset import get_shxco_data
 
 def load_data():
     """Load in initial datasets"""
