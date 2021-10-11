@@ -1,5 +1,6 @@
 import csv
 import json
+import re
 from time import sleep
 from json.decoder import JSONDecodeError
 import os.path
@@ -11,31 +12,19 @@ import requests
 # collection to find catalog records and pull in subjects & genres
 
 
-# some searches return zero results because S&co author doesn't match LOC author
-# as a workaround, add mappings for the ones I've looked up and
-# corrected manually
-# to fix properly, should use author export from the S&co database with viafs,
-# and then use viaf to lookup LCCN authorized name
-authorized_author = {
-    "Dobson, Henry Austin": "Dobson, Austin",  # confirm ?
-    "Shorthouse, Joseph Henry": "shorthouse, j. h. (joseph+henry)",
-    "Blackmore, Richard Doddridge": "Blackmore, R. D. (Richard Doddridge)",
-    "Gaskell, Elizabeth": "Gaskell, Elizabeth Cleghorn",
-    "Macaulay, Thomas Babington": "Macaulay, Thomas Babington Macaulay",
-    "Holmes, Oliver Wendel": "Holmes, Oliver Wendell",  # typo in S&co db, fixed now
-    "Julian, of Norwich": "Julian",
-    "Smollett, Tobias": "Smollett, T. (Tobias)",
-    "Radcliffe, Ann": "Radcliffe, Ann Ward",
-    "Bulwer-Lytton, Edward": "Lytton, Edward Bulwer Lytton",  # same?
-    "Borrow, George Henry": "Borrow, George",
-    "Tennyson, Alfred": "Tennyson, Alfred Tennyson",
-    "Shaw, George Bernard": "Shaw, Bernard",
-    "Stockton, Frank Richard": "Stockton, Frank R.",
-    "Gissing, George Robert": "Gissing, George",
-    "Turgenev, Ivan": "Turgenev, Ivan Sergeevich",
-    "Nabokov, Vladimir": "Nabokov, Vladimir Vladimirovich",
-    "Sayers, Dorothy": " Sayers, Dorothy L. (Dorothy Leigh)",
-}
+# some searches return zero results because S&co author doesn't match LOC author facet
+# to resolve, we use author data from S&co admin export augemented with
+# VIAF data scraped by Fedor.
+# generate lookup based on author sort name, LoC Name without trailing dates
+
+author_dates_pattern = re.compile(r", \d{4}.*$")
+
+with open("../dataset_generator/data/SCo_books_authors.csv") as csvfile:
+    csvreader = csv.DictReader(csvfile)
+    author_lookup = {
+        row["sort name"]: author_dates_pattern.sub("", row["LoC Name"])
+        for row in csvreader
+    }
 
 
 # LOC API docs limits:
@@ -46,11 +35,12 @@ authorized_author = {
 # NOTE: setting limit to calls=20 and calls=18 both resulted in rate limiting;
 # not sure if problem is LOC or ratelimit, but 15 worked
 
+
 @sleep_and_retry
 @limits(calls=15, period=10)
 def search_loc(title, author):
     # get authorized version of this author's name if there is one
-    author = authorized_author.get(author, author)
+    author = author_lookup.get(author, author)
     print("searching for: %s / %s" % (title, author))
     search_opts = {
         "all": "true",  # return all, not just titles available digitally
