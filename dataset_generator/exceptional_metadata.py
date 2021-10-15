@@ -3,7 +3,9 @@ import pandas as pd
 pd.options.mode.chained_assignment = None
 from datetime import datetime
 from tqdm import tqdm
-from dataset import get_shxco_data
+import sys
+sys.path.append("..")
+from dataset_generator.dataset import get_shxco_data
 
 def load_data():
     """Load in initial datasets"""
@@ -281,11 +283,13 @@ def calculate_exceptional_categories(write_to_csv):
 
 
 def get_shxco_exceptional_data():
-    exceptional_events = pd.read_csv('./data/SCoData_events_v1.1_2021-01_exceptional.csv')
-    exceptional_books = pd.read_csv('./data/SCoData_books_v1.1_2021-01_exceptional.csv')
-    exceptional_members = pd.read_csv('./data/SCoData_members_v1.1_2021-01_exceptional.csv')
+
+    exceptional_events = pd.read_csv('../dataset_generator/data/SCoData_events_v1.1_2021-01_exceptional.csv')
+    exceptional_books = pd.read_csv('../dataset_generator/data/SCoData_books_v1.1_2021-01_exceptional.csv')
+    exceptional_members = pd.read_csv('../dataset_generator/data/SCoData_members_v1.1_2021-01_exceptional.csv')
     return (exceptional_members, exceptional_books, exceptional_events)
 
 
 if __name__ == "__main__":
-    calculate_exceptional_categories(True)
+    # calculate_exceptional_categories(True)
+    get_shxco_exceptional_data()

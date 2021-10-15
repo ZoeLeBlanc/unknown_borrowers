@@ -13,9 +13,9 @@ csv_urls = {
     # 'books': 'https://dataspace.princeton.edu/bitstream/88435/dsp016d570067j/2/SCoData_books_v1.1_2021-01.csv',
     # 'events': 'https://dataspace.princeton.edu/bitstream/88435/dsp012n49t475g/2/SCoData_events_v1.1_2021-01.csv'
     # local downloaded copy
-    "members": "data/SCoData_members_v1.1_2021-01.csv",
-    "books": "data/SCoData_books_v1.1_2021-01.csv",
-    "events": "data/SCoData_events_v1.1_2021-01.csv",
+    "members": "../dataset_generator/data/SCoData_members_v1.1_2021-01.csv",
+    "books": "../dataset_generator/data/SCoData_books_v1.1_2021-01.csv",
+    "events": "../dataset_generator/data/SCoData_events_v1.1_2021-01.csv",
 }
 
 
