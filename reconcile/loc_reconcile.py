@@ -1,12 +1,18 @@
 import csv
 import json
+import os.path
 import re
+import sys
 from time import sleep
 from json.decoder import JSONDecodeError
 import os.path
 
 from ratelimit import limits, sleep_and_retry
 import requests
+
+sys.path.append("..")
+from dataset_generator.dataset import get_shxco_data, get_data, get_model, SOURCE_DATA_DIR
+
 
 # script to search for books in S&co dataset in the LoC books
 # collection to find catalog records and pull in subjects & genres
@@ -19,7 +25,7 @@ import requests
 
 author_dates_pattern = re.compile(r", \d{4}.*$")
 
-with open("../dataset_generator/data/SCo_books_authors.csv") as csvfile:
+with open(os.path.join(SOURCE_DATA_DIR, "SCo_books_authors.csv")) as csvfile:
     csvreader = csv.DictReader(csvfile)
     author_lookup = {
         row["sort name"]: author_dates_pattern.sub("", row["LoC Name"])
@@ -81,7 +87,7 @@ def search_loc(title, author):
     return json_response["results"][0]
 
 # load books dataset from json
-with open("../dataset_generator/data/SCoData_books_v1.1_2021-01.json") as jsonfile:
+with open(os.path.join(SOURCE_DATA_DIR, "SCoData_books_v1.1_2021-01.json")) as jsonfile:
     book_data = json.load(jsonfile)
 
 csv_fieldnames = [
@@ -96,10 +102,11 @@ csv_fieldnames = [
     "subject",
 ]
 
+# should this go in the output data dir? or a reconcile data dir?
 output_filename = "shxco_loc_matches.csv"
 
 # if csv output file exists, load it and make a list of sco ids with existing matches
-# append to file & skip writing header if it alreadyI existed
+# append to file & skip writing header if it already existed
 previous_matches = []
 
 if os.path.exists(output_filename):
