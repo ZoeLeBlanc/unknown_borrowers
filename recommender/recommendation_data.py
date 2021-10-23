@@ -1,30 +1,34 @@
 # reshape data into format easier to use with recommenders
-import sys
 import csv
+import os.path
+import sys
 
 import pandas as pd
 
-sys.path.insert(0, '../dataset_generator/')
-from dataset import get_shxco_data
+sys.path.insert(0, "../dataset_generator/")
+from dataset import get_shxco_data, DATA_DIR, SOURCE_DATA_DIR
+
 
 def identify_interactions(events_df):
     # get all member-book interactions from events
     interactions_df = events_df[events_df.item_uri.notna()].copy()
     # restrict to borrow events only
-    interactions_df = interactions_df[interactions_df.event_type == 'Borrow'].copy()
+    interactions_df = interactions_df[interactions_df.event_type == "Borrow"].copy()
 
     # reduce to minimum user/item interaction fields and drop dupes
-    unique_interactions_df = interactions_df[
-        ["member_id", "item_uri"]
-    ].drop_duplicates().rename(columns={"item_uri": "item_id"})
+    unique_interactions_df = (
+        interactions_df[["member_id", "item_uri"]]
+        .drop_duplicates()
+        .rename(columns={"item_uri": "item_id"})
+    )
     # rename for consistency (should probably rename in dataset code)
 
     # save to csv for use in recommender code
-    unique_interactions_df.to_csv('data/interactions.csv', index=False)
+    unique_interactions_df.to_csv("data/interactions.csv", index=False)
 
 
 # def get_item_features(item, books_genres, books_subjects, wikidata_books_genres):
-def get_item_features(item):
+def get_item_features(item, author_gender):
     # get features for an individual item
     # return {
     features = {
@@ -38,11 +42,16 @@ def get_item_features(item):
 
     # split multiple authors and set feature indicator for each
     if pd.notna(item.author):
-        features.update({"author %s" % a: 1 for a in item.author.split(";")})
+        for author_name in item.author.split(";"):
+            # author name
+            features["author %s" % author_name] = 1
+            # author gender, if known
+            au_gender = author_gender.get(author_name)
+            if au_gender:
+                # feature name: author male / author female
+                features["author %s" % au_gender.lower()] = 1
     else:
         features["author unknown"] = 1
-
-    # TODO: also include author gender
 
     # TODO
     # genres = books_genres[books_genres.item_id == item.id]
@@ -79,7 +88,7 @@ def get_user_features(member):
     # known viaf or wikipedia indicates some degree of "fame"
     # is this a useful feature to include?
     if pd.notna(member.viaf_url) or pd.notna(member.wikipedia_url):
-        features['famousish'] = 1
+        features["famousish"] = 1
 
     # split multiple nationalities and set feature indicator for each
     if pd.notna(member.nationalities):
@@ -94,24 +103,29 @@ def get_user_features(member):
 
 def generate_member_features(members_df):
     # TODO: include all members or borrowers only?
-    member_features = pd.DataFrame(data=[
-        get_user_features(member) for member in members_df.itertuples()
-    ])
+    member_features = pd.DataFrame(
+        data=[get_user_features(member) for member in members_df.itertuples()]
+    )
 
     member_features.to_csv("data/member_features.csv", index=False)
 
 
 def generate_book_features(books_df):
-    book_features = pd.DataFrame(data=[
-        get_item_features(book) for book in books_df.itertuples()
-    ])
+    author_data_df = pd.read_csv(os.path.join(SOURCE_DATA_DIR, "SCo_books_authors.csv"))
+    # limit fields to sort name and Gender, rename, drop rows with unset gender
+    author_data_df = author_data_df[["sort name", "Gender"]].rename(
+        columns={"sort name": "name", "Gender": "gender"}
+    ).dropna()
+    author_gender = {row.name: row.gender for row in author_data_df.itertuples()}
+    book_features = pd.DataFrame(
+        data=[get_item_features(book, author_gender) for book in books_df.itertuples()]
+    )
     book_features.to_csv("data/book_features.csv", index=False)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # load members, books, events as csv
     members_df, books_df, events_df = get_shxco_data()
     identify_interactions(events_df)
     generate_member_features(members_df)
     generate_book_features(books_df)
-
