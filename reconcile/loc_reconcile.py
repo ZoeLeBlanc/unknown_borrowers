@@ -5,13 +5,17 @@ import re
 import sys
 from time import sleep
 from json.decoder import JSONDecodeError
-import os.path
 
 from ratelimit import limits, sleep_and_retry
 import requests
 
 sys.path.append("..")
-from dataset_generator.dataset import get_shxco_data, get_data, get_model, SOURCE_DATA_DIR
+from dataset_generator.dataset import (
+    get_shxco_data,
+    get_data,
+    get_model,
+    SOURCE_DATA_DIR,
+)
 
 
 # script to search for books in S&co dataset in the LoC books
@@ -85,6 +89,7 @@ def search_loc(title, author):
 
     # first result seems pretty good; just use that for now
     return json_response["results"][0]
+
 
 # load books dataset from json
 with open(os.path.join(SOURCE_DATA_DIR, "SCoData_books_v1.1_2021-01.json")) as jsonfile:
