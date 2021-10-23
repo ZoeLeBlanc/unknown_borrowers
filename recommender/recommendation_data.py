@@ -28,7 +28,7 @@ def identify_interactions(events_df):
 
 
 # def get_item_features(item, books_genres, books_subjects, wikidata_books_genres):
-def get_item_features(item, author_gender):
+def get_item_features(item, author_gender, books_genres_subjects):
     # get features for an individual item
     # return {
     features = {
@@ -53,16 +53,11 @@ def get_item_features(item, author_gender):
     else:
         features["author unknown"] = 1
 
-    # TODO
-    # genres = books_genres[books_genres.item_id == item.id]
-    # if genres.shape[0]:
-    #     features.update({"genre %s" % g: 1 for g in genres.genre})
-    # subjects = books_subjects[books_subjects.item_id == item.id]
-    # if subjects.shape[0]:
-    #     features.update({"subject %s" % s: 1 for s in subjects.subject})
-    # wikidata_genres = wikidata_books_genres[wikidata_books_genres.item_id == item.id]
-    # if wikidata_genres.shape[0]:
-    #     features.update({"genre %s" % g: 1 for g in genres.genre})
+    # genre/subject information (only using genre for now)
+    books_genres = books_genres_subjects[books_genres_subjects.type == "genre"]
+    genres = books_genres[(books_genres.item_id == item.id)].term.unique()
+    if genres.any():
+        features.update({"genre %s" % g: 1 for g in genres})
 
     return features
 
@@ -111,14 +106,40 @@ def generate_member_features(members_df):
 
 
 def generate_book_features(books_df):
+    # get db book data augmented with gender from viaf
     author_data_df = pd.read_csv(os.path.join(SOURCE_DATA_DIR, "SCo_books_authors.csv"))
     # limit fields to sort name and Gender, rename, drop rows with unset gender
-    author_data_df = author_data_df[["sort name", "Gender"]].rename(
-        columns={"sort name": "name", "Gender": "gender"}
-    ).dropna()
+    author_data_df = (
+        author_data_df[["sort name", "Gender"]]
+        .rename(columns={"sort name": "name", "Gender": "gender"})
+        .dropna()
+    )
+    # convert to dict for easy lookup by author name
     author_gender = {row.name: row.gender for row in author_data_df.itertuples()}
+    # load genre data
+    books_genres = pd.read_csv(os.path.join(DATA_DIR, "SCoData_books_genre.csv"))
+    # clean up a little for easier use & consistency:
+    # remove trailing period, convert to lower case
+    # (assuming that comic book terms here are for adaptations of our texts)
+    books_genres["term"] = books_genres.term.apply(lambda x: x.rstrip(".").lower())
+    # exclude genre terms that are not relevant/useful for us
+    books_genres = books_genres[
+        ~books_genres.term.isin(
+            [
+                "text",
+                "comic novels",
+                "comic novels",
+                "comic books",
+                "comic books, strips, etc",
+            ]
+        )
+    ]
+
     book_features = pd.DataFrame(
-        data=[get_item_features(book, author_gender) for book in books_df.itertuples()]
+        data=[
+            get_item_features(book, author_gender, books_genres)
+            for book in books_df.itertuples()
+        ]
     )
     book_features.to_csv("data/book_features.csv", index=False)
 
