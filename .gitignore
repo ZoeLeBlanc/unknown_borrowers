@@ -1,6 +1,7 @@
 # don't check in partial borrowers csv file
 dataset_generator/data/partial_borrowers.csv
-network_analysis/
+network_analysis/drafts/
+network_analysis/data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
