@@ -1,5 +1,6 @@
 # don't check in partial borrowers csv file
 dataset_generator/data/partial_borrowers.csv
+# local ignores
 network_analysis/drafts/
 network_analysis/data/
 

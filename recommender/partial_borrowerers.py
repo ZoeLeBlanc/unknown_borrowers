@@ -7,99 +7,15 @@ import sys
 
 sys.path.append("..")
 from dataset_generator.dataset import get_shxco_data, get_data, get_model
-
-
-# identify members with partial borrowing history
-# - adapt from colab notebook
-# - get dates for the subscriptions without documented borrowing activity
-#    (chunk the time periods? collapse chunks?)
-
-# write a method to get a list of books that
-# were known to be circulating during a particular time period (year? months?)
-
-
-def identify_partial_borrowers(date_events):
-    # if the file already exists, just load it and return
-    partial_borrowers_csv = "../dataset_generator/data/partial_borrowers.csv"
-    if os.path.isfile(partial_borrowers_csv):
-        return pd.read_csv(partial_borrowers_csv)
-
-    # filter to subscription events with known start and end date
-    subscription_events = date_events[
-        date_events.event_type.isin(["Subscription", "Renewal", "Supplement"])
-        & date_events.start_datetime.notna()
-        & date_events.end_datetime.notna()
-    ]
-
-    # get all book events (anything with an item uri, ignore event type)
-    # [strictly speaking should we restrict to borrows?]
-    book_events = date_events[date_events.item_uri.notna()]
-
-    partial_borrowers = []
-
-    # look over subscriptions for each member with book events
-    for member_id in book_events.member_id.unique():
-        # filter to all subscription and book events for this member
-        member_subs = subscription_events[subscription_events.member_id == member_id]
-        member_book_events = book_events[book_events.member_id == member_id]
-
-        # check each subscription for any overlapping book events
-        for sub in member_subs.itertuples():
-            # NOTE: ignoring unknown end dates
-            # look for book events that overlap with the subscription dates
-            sub_book_events = member_book_events[
-                (member_book_events.end_datetime >= sub.start_datetime)
-                | (member_book_events.start_datetime >= sub.end_datetime)
-            ]
-
-            # if there are no book events within this subscription,
-            # add it to the list of partial borrower dates
-            if sub_book_events.empty:
-                partial_borrowers.append(
-                    {
-                        "member_id": member_id,
-                        "subscription_start": sub.start_date,
-                        "subscription_end": sub.end_date,
-                        "known_borrows": len(member_book_events.index),
-                    }
-                )
-
-    df = pd.DataFrame(data=partial_borrowers)
-    # save this as as csv so we don't have to recalculate every time
-    df.to_csv(partial_borrowers_csv, index=False)
-
-    return df
-
-    #   for each subscription period
-    #        get list of books that were circulating
-    #        # run model.predict for that user over those items
-
-    # use the scores to get the most likely items
-    # scores = model.predict(user_id, np.arange(n_items))
-    # — how accurate/specific are scores? do they tell us the confidence of the likelihood?
-
-    # can we use Kevin's estimates to determine how many borrowing events they
-    # would likely have had during that time
-    # (and/or use that particular member's activity if different?)
-
-    # output the top books we predict they most likely borrowed (include scores/confidence? are they meaningful)
-    # NOTE: may be able to use predict rank method here, depending on # of interactions
-    # (but predict may be easier anyway)
+from dataset_generator.identify_partial_borrowers import get_partial_borrowers
 
 
 def partial_borrowing():
     members_df, books_df, events_df = get_shxco_data()
-    date_events = events_df.copy()
-    date_events["start_datetime"] = pd.to_datetime(
-        date_events.start_date, format="%Y-%m-%d", errors="ignore"
-    )
-    date_events["end_datetime"] = pd.to_datetime(
-        date_events.end_date, format="%Y-%m-%d", errors="ignore"
-    )
 
-    print("identifying partial borrowers...")
-    partial_borrowers = identify_partial_borrowers(date_events)
-    print("found %d partial borrowers" % partial_borrowers.shape[0])
+    print("Loading partial borrower information...")
+    partial_borrowers = get_partial_borrowers()
+    print("  %d partial borrowers" % partial_borrowers.shape[0])
 
     # for each partial borrower subscription period
     #    get list of books that were circulating
