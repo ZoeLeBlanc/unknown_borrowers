@@ -190,7 +190,7 @@ def get_pagerank(biadjacency, seeds=None):
     return values_row, values_col
 
 def generate_sknetwork_metrics(edgelist, nodelist, metrics, is_bipartite, seeds=None):
-    tuples = [tuple(x) for x in edgelist.values]
+    tuples = [tuple(x) for x in edgelist[['source', 'target','weight']].values]
     graph = convert_edge_list(tuples, bipartite=is_bipartite, named=True)
     biadjacency = graph.biadjacency if is_bipartite else graph.adjacency 
     
