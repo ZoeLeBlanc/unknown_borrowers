@@ -206,8 +206,9 @@ def generate_sknetwork_metrics(edgelist, nodelist, metrics, is_bipartite, seeds=
                 nodelist.loc[nodelist.uri == node, f"{metric}"] = label
         else:
             names = graph.names
+            node_col = 'uri' if is_bipartite else 'node_id'
             for label, node in zip(values_row, names):
-                nodelist.loc[nodelist.node_id == node, f"{metric}"] = label
+                nodelist.loc[nodelist[node_col] == node, f"{metric}"] = label
     return nodelist
 
 def generate_link_metrics(graph, edgelist, nodelist, metrics, is_bipartite):
@@ -266,9 +267,14 @@ def generate_local_metrics(graph, original_nodelist, sk_metrics, link_metrics, i
         
         for metric in combined_metrics:
             ranked_nodelist = ranked_nodelist.rename(columns={metric : f'local_{metric}'})
-            for v in graph.vs:
-                node = ranked_nodelist.loc[ranked_nodelist.uri == v['uri']]
-                v['local_' + metric] = node['local_' + metric]
+            if is_bipartite:
+                for d, v in graph.nodes(data=True):
+                    node = ranked_nodelist.loc[ranked_nodelist.uri == v['uri']]
+                    v['local_' + metric] = node['local_' + metric]
+            else:
+                for v in graph.vs:
+                    node = ranked_nodelist.loc[ranked_nodelist.uri == v['uri']]
+                    v['local_' + metric] = node['local_' + metric]
         nodes_df.append(ranked_nodelist)
     final_local_nodes = pd.concat(nodes_df)
     return final_local_nodes
