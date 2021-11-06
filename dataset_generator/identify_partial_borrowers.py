@@ -19,10 +19,10 @@ def identify_partial_borrowers():
     members_df, books_df, events_df = get_shxco_data()
     date_events = events_df.copy()
     date_events["start_datetime"] = pd.to_datetime(
-        date_events.start_date, format="%Y-%m-%d", errors="ignore"
+        date_events.start_date, format="%Y-%m-%d", errors="coerce"
     )
     date_events["end_datetime"] = pd.to_datetime(
-        date_events.end_date, format="%Y-%m-%d", errors="ignore"
+        date_events.end_date, format="%Y-%m-%d", errors="coerce"
     )
 
     # filter to subscription events with known start and end date
