@@ -49,8 +49,8 @@ def identify_partial_borrowers():
             # NOTE: ignoring unknown end dates
             # look for book events that overlap with the subscription dates
             sub_book_events = member_book_events[
-                (member_book_events.end_datetime >= sub.start_datetime)
-                | (member_book_events.start_datetime >= sub.end_datetime)
+                (sub.start_datetime <= member_book_events.end_datetime)
+                & (sub.end_datetime >= member_book_events.start_datetime)
             ]
 
             # if there are no book events within this subscription,
