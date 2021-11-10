@@ -163,6 +163,7 @@ def get_katz(biadjacency, is_bipartite):
     print('calculating katz')
     katz = Katz()
     katz.fit_transform(biadjacency)
+    print('katz', len(katz.scores_) ,is_bipartite)
     if (len(katz.scores_) == 1) | (is_bipartite == False):
         values_row = katz.scores_
         values_col = katz.scores_

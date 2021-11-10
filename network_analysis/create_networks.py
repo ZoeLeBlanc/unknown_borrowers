@@ -138,32 +138,37 @@ def build_bipartite_graphs(grouped_events_df, member_attrs, book_attrs, edge_att
     if should_process:
         processed_bipartite_graph = get_bipartite_network_metrics(
             bipartite_graph)
-    else:
-        processed_bipartite_graph = bipartite_graph
-    processed_bipartite_nodelist, processed_bipartite_edgelist = generate_dataframes(
-        processed_bipartite_graph, True, True)
-    print(f"calculating local skmetrics: {' '.join(sk_metrics + link_metrics)}")
-    local_nodelist = generate_local_metrics(
-        processed_bipartite_graph, processed_bipartite_nodelist, sk_metrics, link_metrics, True, True)
-    print(f"calculating global skmetrics: {' '.join(sk_metrics)}")
-    updated_bipartite_nodelist = generate_sknetwork_metrics(
-        processed_bipartite_edgelist, local_nodelist, sk_metrics, True)
+        processed_bipartite_nodelist, processed_bipartite_edgelist = generate_dataframes(
+            processed_bipartite_graph, True, True)
+        print(
+            f"calculating local skmetrics: {' '.join(sk_metrics + link_metrics)}")
+        local_nodelist = generate_local_metrics(
+            processed_bipartite_graph, processed_bipartite_nodelist, sk_metrics, link_metrics, True, True)
+        print(f"calculating global skmetrics: {' '.join(sk_metrics)}")
+        updated_bipartite_nodelist = generate_sknetwork_metrics(
+            processed_bipartite_edgelist, local_nodelist, sk_metrics, True)
 
-    print(f"calculating global link metrics: : {' '.join(link_metrics)}")
-    bipartite_nodelist = generate_link_metrics(
-        processed_bipartite_graph, processed_bipartite_edgelist, updated_bipartite_nodelist, link_metrics, True)
-    all_metrics = sk_metrics + link_metrics
-    for m in all_metrics:
-        bipartite_nodelist = bipartite_nodelist.rename(
-            columns={m: f'global_{m}'})
+        print(f"calculating global link metrics: : {' '.join(link_metrics)}")
+        bipartite_nodelist = generate_link_metrics(
+            processed_bipartite_graph, processed_bipartite_edgelist, updated_bipartite_nodelist, link_metrics, True)
+        all_metrics = sk_metrics + link_metrics
+        for m in all_metrics:
+            bipartite_nodelist = bipartite_nodelist.rename(
+                columns={m: f'global_{m}'})
+        bipartite_edgelist = processed_bipartite_edgelist
+        bipartite_graph = processed_bipartite_graph
+    else:
+        bipartite_nodelist, bipartite_edgelist = generate_dataframes(
+            bipartite_graph, True, True)
+    
 
     update_networkx_nodes(bipartite_graph, bipartite_nodelist)
 
     if write_to_file:
-       write_dataframe(file_name, processed_bipartite_edgelist, bipartite_nodelist)
+       write_dataframe(file_name, bipartite_edgelist, bipartite_nodelist)
        nx.write_gexf(bipartite_graph, f'{file_name}_graph.gexf')
     
-    bipartite_edgelist = processed_bipartite_edgelist
+    
     bipartite_members = bipartite_nodelist[bipartite_nodelist.group == 'members']
 
     bipartite_books = bipartite_nodelist[bipartite_nodelist.group == 'books']
@@ -175,7 +180,7 @@ def build_bipartite_graphs(grouped_events_df, member_attrs, book_attrs, edge_att
     joined_books = combine_dataframes(
         bipartite_books, books_df, bipartite_books.columns.tolist(), 'uri', 'inner')
 
-    return (processed_bipartite_graph, bipartite_nodelist, bipartite_edgelist, joined_members, joined_books)
+    return (bipartite_graph, bipartite_nodelist, bipartite_edgelist, joined_members, joined_books)
 
 ## Reload Saved Graphs
 def reload_saved_graphs(file_path, members_df, books_df):
@@ -222,58 +227,69 @@ def build_unipartite_graphs(grouped_events_df, borrow_events, member_attrs, book
             f'{file_name}_members_graph.graphml')
         processed_books_graph = get_unipartite_network_metrics(books_graph)
         processed_books_graph.write_graphml(f'{file_name}_books_graph.graphml')
+        processed_members_nodelist, processed_members_edgelist = generate_dataframes(
+            processed_members_graph, False, False)
+        processed_books_nodelist, processed_books_edgelist = generate_dataframes(
+            processed_books_graph, False, False)
+
+        print(
+            f"calculating local skmetrics members: {' '.join(sk_metrics + link_metrics)}")
+        local_members_nodelist = generate_local_metrics(
+            processed_members_graph, processed_members_nodelist, sk_metrics, link_metrics, False, False)
+        print(
+            f"calculating local skmetrics books: {' '.join(sk_metrics + link_metrics)}")
+        local_books_nodelist = generate_local_metrics(
+            processed_books_graph, processed_books_nodelist, sk_metrics, link_metrics, False, False)
+
+        print(f"calculating global members skmetrics: {' '.join(sk_metrics)}")
+        updated_members_nodelist = generate_sknetwork_metrics(
+            processed_members_edgelist, local_members_nodelist, sk_metrics, False)
+        print(f"calculating global books skmetrics: {' '.join(sk_metrics)}")
+        updated_books_nodelist = generate_sknetwork_metrics(
+            processed_books_edgelist, local_books_nodelist, sk_metrics, False)
+
+        print(
+            f"calculating global link members metrics: : {' '.join(link_metrics)}")
+        members_nodelist = generate_link_metrics(
+            processed_members_graph, processed_members_edgelist, updated_members_nodelist, link_metrics, False)
+        print('link calculations', members_nodelist.columns)
+        print(f"calculating global link books metrics: : {' '.join(link_metrics)}")
+        books_nodelist = generate_link_metrics(
+            processed_books_graph, processed_books_edgelist, updated_books_nodelist, link_metrics, False)
+
+        all_metrics = sk_metrics + link_metrics
+        for m in all_metrics:
+            members_nodelist = members_nodelist.rename(columns={m: f'global_{m}'})
+            books_nodelist = books_nodelist.rename(columns={m: f'global_{m}'})
+        members_edgelist = processed_members_edgelist
+        books_edgelist = processed_books_edgelist
     else:
         processed_members_graph = members_graph
         processed_books_graph = books_graph
-    processed_members_nodelist, processed_members_edgelist = generate_dataframes(
-        processed_members_graph, False, False)
-    processed_books_nodelist, processed_books_edgelist = generate_dataframes(processed_books_graph, False, False)
-
-    print(f"calculating local skmetrics members: {' '.join(sk_metrics + link_metrics)}")
-    local_members_nodelist = generate_local_metrics(
-        processed_members_graph, processed_members_nodelist, sk_metrics, link_metrics, False, False)
-    print(f"calculating local skmetrics books: {' '.join(sk_metrics + link_metrics)}")
-    local_books_nodelist = generate_local_metrics(
-        processed_books_graph, processed_books_nodelist, sk_metrics, link_metrics, False, False)
-
-    print(f"calculating global members skmetrics: {' '.join(sk_metrics)}")
-    updated_members_nodelist = generate_sknetwork_metrics(processed_members_edgelist, local_members_nodelist, sk_metrics, False)
-    print(f"calculating global books skmetrics: {' '.join(sk_metrics)}")
-    updated_books_nodelist = generate_sknetwork_metrics(
-        processed_books_edgelist, local_books_nodelist, sk_metrics, False)
-
-    print(f"calculating global link members metrics: : {' '.join(link_metrics)}")
-    members_nodelist = generate_link_metrics(
-        processed_members_graph, processed_members_edgelist, updated_members_nodelist, link_metrics, False)
-    print('link calculations', members_nodelist.columns)
-    print(f"calculating global link books metrics: : {' '.join(link_metrics)}")
-    books_nodelist = generate_link_metrics(
-        processed_books_graph, processed_books_edgelist, updated_books_nodelist, link_metrics, False)
-
-    all_metrics = sk_metrics + link_metrics
-    for m in all_metrics:
-        members_nodelist = members_nodelist.rename(columns={m: f'global_{m}'})
-        books_nodelist = books_nodelist.rename(columns={m: f'global_{m}'})
+        members_nodelist, members_edgelist = generate_dataframes(
+            processed_members_graph, False, False)
+        books_nodelist, books_edgelist = generate_dataframes(
+            processed_books_graph, False, False)
+    
     update_igraph_nodes(processed_members_graph, members_nodelist)
     update_igraph_nodes(processed_books_graph, books_nodelist)
 
     if write_to_file:
-        write_dataframe(file_name + '_members', processed_members_edgelist, members_nodelist)
+        write_dataframe(file_name + '_members', members_edgelist, members_nodelist)
         members_graph.write_graphml(f'{file_name}_members_graph.graphml')
         members_gml = nx.read_graphml(f'{file_name}_members_graph.graphml')
         nx.write_gexf(members_gml, f'{file_name}_members_graph.gexf')
         if os.path.exists(f'{file_name}_members_graph.gexf'):
             os.remove(f'{file_name}_members_graph.graphml')
 
-        write_dataframe(file_name + '_books', processed_books_edgelist, books_nodelist)
+        write_dataframe(file_name + '_books', books_edgelist, books_nodelist)
         books_graph.write_graphml(f'{file_name}_books_graph.graphml')
         books_gml = nx.read_graphml(f'{file_name}_books_graph.graphml')
         nx.write_gexf(books_gml, f'{file_name}_books_graph.gexf')
         if os.path.exists(f'{file_name}_books_graph.gexf'):
             os.remove(f'{file_name}_books_graph.graphml')
    
-    members_edgelist = processed_members_edgelist
-    books_edgelist = processed_books_edgelist
+    
 
     members_df['old_uri'] = members_df.uri
     members_df.uri = members_df.member_id
