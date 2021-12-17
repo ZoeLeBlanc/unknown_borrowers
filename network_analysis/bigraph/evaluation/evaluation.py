@@ -7,7 +7,7 @@ from sklearn.metrics import roc_curve, roc_auc_score
 from sklearn.model_selection import KFold
 # from tabulate import tabulate
 
-from bigraph import bigraph as pr
+# from bigraph import bigraph as pr
 from bigraph.predict import jc_predict, aa_predict, cn_predict, pa_predict, katz_predict
 
 
@@ -50,7 +50,7 @@ def _evaluate_method(G: object, k: int, method: str) -> list:
         np_edges = np.array(list(G.edges))
         test_edges = np_edges[test_index]
         G_train.remove_edges_from(test_edges)
-        # print('G_train(node, edge): ', G_train.number_of_nodes(), G_train.number_of_edges())
+        print('G_train(node, edge): ', G_train.number_of_nodes(), G_train.number_of_edges())
         print('Iteration %i / %i :' % (iterator, k))
         # -------------------------------------------------------------------
         if method == 'jc':
@@ -75,8 +75,7 @@ def _evaluate_method(G: object, k: int, method: str) -> list:
         fpr_algo = []
         tpr_algo = []
         try:
-            score_algo, label_algo = zip(*[(float(score), label in test_edges) for label, score in
-                                           sorted(predicted.items(), key=itemgetter(1), reverse=True)])
+            score_algo, label_algo = zip(*[(float(score), label in test_edges) for label, score in sorted(predicted.items(), key=itemgetter(1), reverse=True)])
             # Compute the ROC AUC Score
             fpr_algo, tpr_algo, _ = roc_curve(label_algo, score_algo)
             auc_algo = roc_auc_score(label_algo, score_algo)

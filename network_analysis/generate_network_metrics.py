@@ -163,8 +163,7 @@ def get_katz(biadjacency, is_bipartite):
     print('calculating katz')
     katz = Katz()
     katz.fit_transform(biadjacency)
-    print('katz', len(katz.scores_) ,is_bipartite)
-    if (len(katz.scores_) == 1) | (is_bipartite == False):
+    if (len(katz.scores_) < 3) | (is_bipartite == False):
         values_row = katz.scores_
         values_col = katz.scores_
     else:
@@ -302,23 +301,34 @@ def get_bipartite_link_prediction(edgelist, nodelist, pred_edge, is_bipartite=Tr
     for name, score in zip(names, ji_scores):
         nodelist.loc[nodelist.uri == name, f"link_{col_name}"] = score 
     return nodelist
+
+def get_node_redundancy(graph, nodelist):
+    G = graph.copy()
+    while any(len(G[node]) < 3 for node in G):
+        remove = [node for node in G if len(G[node]) < 3]
+        G.remove_nodes_from(remove)
+    
+    node_red = nx.bipartite.node_redundancy(G)
+    bipartite_red = pd.DataFrame(node_red.items(), columns=['uri', 'redundancy'])
+    nodelist = pd.merge(nodelist, bipartite_red, on='uri', how='left')
+    return nodelist
     
 def update_networkx_nodes(graph, nodelist):
     cols = nodelist.columns
     cols = [c for c in cols if ('global' in c) | ('local' in c)]
-    for d ,v in graph.nodes(data=True):
-        node = nodelist[(nodelist.uri == d)]
-        for c in cols:
-            v[c] = node[c].values[0]
+    for node,attr in graph.nodes(data=True):
+        selected_node = nodelist[(nodelist.uri == node)]
+        for col in cols:
+            attr[col] = selected_node[col].values[0]
 
 
 def update_igraph_nodes(graph, nodelist):
     cols = nodelist.columns
     cols = [c for c in cols if ('global' in c) | ('local' in c)]
-    for v in graph.vs:
-        node = nodelist[(nodelist.uri == v['uri'])]
-        for c in cols:
-            v[c] = node[c].values[0]
+    for node in graph.vs:
+        selected_node = nodelist[(nodelist.uri == node['uri'])]
+        for col in cols:
+            node[col] = selected_node[col].values[0]
 
     
 

@@ -42,7 +42,7 @@ def get_bipartite_edgelist(bipartite_graph):
     for line in generate_nx_edgelist(bipartite_graph, " ", data=edge_cols):
         data = line.split(' ')
 
-        edges.append({'source': data[0], 'target': data[1], 'weight': data[2]})
+        edges.append({'source': data[0], 'target': data[1], 'weight': data[2] if len(data) > 2 else 1})
     return pd.DataFrame(edges)
 
 
@@ -77,3 +77,14 @@ def combine_dataframes(graph_df, sco_df, columns, on_column, how_setting):
     joined_df = pd.merge(
         left=sco_df, right=graph_df[columns], on=on_column, how=how_setting)
     return joined_df
+
+def write_graph(file_name, graph, is_networkx):
+    """Write graph to file"""
+    if is_networkx:
+        nx.write_gexf(graph, f'{file_name}_graph.gexf')
+    else:
+        graph.write_graphml(f'{file_name}s_graph.graphml')
+        graph_gml = nx.read_graphml(f'{file_name}_graph.graphml')
+        nx.write_gexf(graph_gml, f'{file_name}_graph.gexf')
+        if os.path.exists(f'{file_name}_graph.gexf'):
+            os.remove(f'{file_name}_graph.graphml')

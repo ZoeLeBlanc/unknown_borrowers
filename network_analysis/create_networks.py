@@ -66,6 +66,7 @@ def create_unipartite_network(df, graph, node_attrs, edge_attrs, node_col, edge_
     edgelist.apply(add_edges, graph=graph, edge_attrs=edge_attrs, axis=1)
 
 def create_bipartite_network(rows, graph, member_attrs, book_attrs, edge_attrs):
+    
     updated_member_attrs = get_attrs(member_attrs, rows)
     updated_book_attrs = get_attrs(book_attrs, rows)
     updated_edge_attrs = get_attrs(edge_attrs, rows)
@@ -138,6 +139,8 @@ def build_bipartite_graphs(grouped_events_df, member_attrs, book_attrs, edge_att
     if should_process:
         processed_bipartite_graph = get_bipartite_network_metrics(
             bipartite_graph)
+        nx.write_gexf(processed_bipartite_graph, f'{file_name}_graph.gexf')
+        processed_bipartite_graph = bipartite_graph
         processed_bipartite_nodelist, processed_bipartite_edgelist = generate_dataframes(
             processed_bipartite_graph, True, True)
         print(
@@ -172,8 +175,6 @@ def build_bipartite_graphs(grouped_events_df, member_attrs, book_attrs, edge_att
     bipartite_members = bipartite_nodelist[bipartite_nodelist.group == 'members']
 
     bipartite_books = bipartite_nodelist[bipartite_nodelist.group == 'books']
-    members_df['old_uri'] = members_df.uri
-    members_df.uri = members_df.member_id
 
     joined_members = combine_dataframes(
         bipartite_members, members_df, bipartite_members.columns.tolist(), 'uri', 'inner')
@@ -191,9 +192,6 @@ def reload_saved_graphs(file_path, members_df, books_df):
     bipartite_members = bipartite_nodelist[bipartite_nodelist.group == 'members']
 
     bipartite_books = bipartite_nodelist[bipartite_nodelist.group == 'books']
-
-    members_df['old_uri'] = members_df.uri
-    members_df.uri = members_df.member_id
 
     joined_members = combine_dataframes(
         bipartite_members, members_df, bipartite_members.columns.tolist(), 'uri', 'inner')
@@ -252,7 +250,6 @@ def build_unipartite_graphs(grouped_events_df, borrow_events, member_attrs, book
             f"calculating global link members metrics: : {' '.join(link_metrics)}")
         members_nodelist = generate_link_metrics(
             processed_members_graph, processed_members_edgelist, updated_members_nodelist, link_metrics, False)
-        print('link calculations', members_nodelist.columns)
         print(f"calculating global link books metrics: : {' '.join(link_metrics)}")
         books_nodelist = generate_link_metrics(
             processed_books_graph, processed_books_edgelist, updated_books_nodelist, link_metrics, False)
@@ -288,11 +285,6 @@ def build_unipartite_graphs(grouped_events_df, borrow_events, member_attrs, book
         nx.write_gexf(books_gml, f'{file_name}_books_graph.gexf')
         if os.path.exists(f'{file_name}_books_graph.gexf'):
             os.remove(f'{file_name}_books_graph.graphml')
-   
-    
-
-    members_df['old_uri'] = members_df.uri
-    members_df.uri = members_df.member_id
 
     joined_members = combine_dataframes(
         members_nodelist, members_df, members_nodelist.columns.tolist(), 'uri', 'inner')
@@ -310,9 +302,6 @@ def reload_saved_unipartite_graphs(file_path, members_df, books_df):
     books_graph = nx.read_gexf(f'{file_path}_books_graph.gexf')
     books_nodelist = pd.read_csv(f'{file_path}_books_nodelist.csv')
     books_edgelist = pd.read_csv(f'{file_path}_books_edgelist.csv')
-
-    members_df['old_uri'] = members_df.uri
-    members_df.uri = members_df.member_id
 
     joined_members = combine_dataframes(
         members_nodelist, members_df, members_nodelist.columns.tolist(), 'uri', 'inner')
