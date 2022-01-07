@@ -1,26 +1,29 @@
+from bigraph.predict import pa_predict, jc_predict, cn_predict, aa_predict, katz_predict
+from network_analysis.load_datasets import get_updated_shxco_data
+from network_analysis.create_networks import *
+from network_analysis.birankpy import BipartiteNetwork
+from bigraph.evaluation import evaluation
+import sys
+from IPython.display import display, Markdown, HTML
+import warnings
+from tqdm.notebook import trange, tqdm
+import os
+import scipy.sparse as sp
+import numpy as np
+import matplotlib.pyplot as plt
+import altair as alt
+import networkx as nx
 import pandas as pd
 pd.options.mode.chained_assignment = None
 pd.set_option('display.max_columns', None)
-import networkx as nx
-import altair as alt
-import matplotlib.pyplot as plt
-import numpy as np
-import scipy.sparse as sp
-import os
 
-from tqdm.notebook import trange, tqdm
 tqdm.pandas()
-import warnings
 warnings.filterwarnings("ignore")
-from IPython.display import display, Markdown, HTML
-import sys
 sys.path.append("..")
-from bigraph.predict import pa_predict, jc_predict, cn_predict,aa_predict, katz_predict
-from bigraph.evaluation import evaluation
-from network_analysis.birankpy import BipartiteNetwork
 
-bipartite_metrics = ['jc_prediction', 'pa_prediction',
-           'cn_prediction', 'aa_prediction']
+bipartite_metrics = ['jc_prediction',
+                     'pa_prediction', 'cn_prediction', 'aa_prediction']
+
 
 def get_bipartite_link_predictions(graph):
     print('Running jaccard link prediction')
@@ -71,7 +74,74 @@ def get_predictions_by_metric(row, metric, predictions_df, circulation_books, li
     return subset_predictions[['member_id', 'item_uri', f'{metric}']]
 
 
-def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, relative_date, predict_group, output_path):
+def get_specific_predictions(row, number_of_results, limit_to_circulation, events_df, borrow_events, members_df, books_df, relative_date, predict_group, output_path):
+
+    print(
+        f'Processing {row.member_id} with subscription {row.subscription_start}')
+    grouped_col = 'item_uri' if predict_group == 'books' else 'member_id'
+    index_col = 'member_id' if predict_group == 'books' else 'item_uri'
+    seed_data = events_df[(events_df[index_col] == row[index_col]) & (
+        events_df[grouped_col].isna() == False)]
+
+    circulation_events = borrow_events[borrow_events.start_datetime.between(
+        relative_date, row.subscription_endtime) | borrow_events.end_datetime.between(relative_date, row.subscription_endtime)]
+    circulation_events = circulation_events[circulation_events[index_col]
+                                            != row[index_col]]
+
+    circulation_counts = circulation_events.groupby([grouped_col]).size().reset_index(
+        name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
+    circulating_items = circulation_counts[grouped_col].unique().tolist()
+
+    # top_counts = len(circulation_events[(circulation_events[index_col] == row[index_col]) & (circulation_events[grouped_col].isna() == False)])
+
+    graph_data = pd.concat([seed_data, circulation_events], axis=0)
+    member_attrs = {'uri': 'member_id'}
+    book_attrs = {'uri': 'item_uri'}
+    edge_attrs = {'weight': 'counts'}
+    should_process = True
+    write_to_file = False
+    sk_metrics = ['katz', 'louvain']
+    link_metrics = ['HITS', 'CoHITS', 'BiRank', 'BGRM']
+    circulation_events_grouped = graph_data.groupby(
+        ['member_id', 'item_uri']).size().reset_index(name='counts')
+
+    circulation_events_bipartite_graph, circulation_events_bipartite_nodelist, circulation_events_bipartite_edgelist, circulation_events_members, circulation_events_books = check_reload_build_bipartite_graphs(
+        circulation_events_grouped, member_attrs, book_attrs, edge_attrs, should_process, write_to_file, 'test2', sk_metrics, link_metrics, members_df, books_df)
+
+    remove = circulation_events_bipartite_nodelist[circulation_events_bipartite_nodelist.component != 0].uri.tolist(
+    )
+    circulation_events_bipartite_graph.remove_nodes_from(remove)
+
+    predictions_df = get_bipartite_link_predictions(
+        circulation_events_bipartite_graph)
+    identified_top_predictions = {}
+    metrics = ['jc_prediction', 'pa_prediction',
+               'cn_prediction', 'aa_prediction']
+    dfs = []
+    for m in metrics:
+
+        preds = get_predictions_by_metric(
+            row, m, predictions_df, circulating_items, limit_to_circulation)
+        identified_top_predictions[f'{index_col}'] = row[index_col]
+        identified_top_predictions[f'predicted_values'] = preds[0:number_of_results][grouped_col].tolist(
+        )
+
+        identified_top_predictions[f'score'] = preds[0:number_of_results][m].tolist(
+        )
+        identified_top_predictions['metric'] = m
+        dfs.append(pd.DataFrame.from_dict(
+            identified_top_predictions, orient='columns'))
+
+    df_final = pd.concat(dfs)
+
+    if os.path.exists(output_path):
+        df_final.to_csv(output_path, mode='a', header=False, index=False)
+    else:
+        df_final.to_csv(output_path, index=False, header=True)
+    return df_final
+
+
+def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, events_df, relative_date, predict_group, metrics, output_path):
     grouped_col = 'item_uri' if predict_group == 'books' else 'member_id'
     index_col = 'member_id' if predict_group == 'books' else 'item_uri'
     identified_top_predictions = {}
@@ -138,6 +208,7 @@ def sparse_to_tuple(sparse_mx):
     values = sparse_mx.data
     shape = sparse_mx.shape
     return coords, values, shape
+
 
 def mask_test_edges(adj, test_frac=.1, val_frac=.05, prevent_disconnect=True, verbose=False):
     # NOTE: Splits are randomized and results might slightly deviate from reported numbers in the paper.
@@ -207,7 +278,8 @@ def mask_test_edges(adj, test_frac=.1, val_frac=.05, prevent_disconnect=True, ve
     if (len(val_edges) < num_val or len(test_edges) < num_test):
         print("WARNING: not enough removable edges to perform full train-test split!")
         print("Num. (test, val) edges requested: (", num_test, ", ", num_val, ")")
-        print("Num. (test, val) edges returned: (", len(test_edges), ", ", len(val_edges), ")")
+        print("Num. (test, val) edges returned: (", len(
+            test_edges), ", ", len(val_edges), ")")
 
     if prevent_disconnect == True:
         assert nx.number_connected_components(g) == orig_num_cc
@@ -316,3 +388,39 @@ def mask_test_edges(adj, test_frac=.1, val_frac=.05, prevent_disconnect=True, ve
     # NOTE: these edge lists only contain single direction of edge!
     return adj_train, train_edges, train_edges_false, \
         val_edges, val_edges_false, test_edges, test_edges_false
+
+
+def run_link_prediction():
+    members_df, books_df, borrow_events, events_df = get_updated_shxco_data(
+        get_subscription=False)
+    partial_df = pd.read_csv('../dataset_generator/data/partial_borrowers.csv')
+    partial_df['index_col'] = partial_df.index
+    partial_members = ['raphael-france', 'hemingway',
+                       'colens', 'kittredge-eleanor-hayden']
+
+    # parse subscription dates so we can use them to identify circulating books
+    partial_df['subscription_starttime'] = pd.to_datetime(
+        partial_df['subscription_start'], errors='coerce')
+    partial_df['subscription_endtime'] = pd.to_datetime(
+        partial_df['subscription_end'], errors='coerce')
+
+    # all_events = events_df[events_df.item_uri.isna() == False].copy()
+
+    borrow_events = borrow_events[(borrow_events.start_datetime.isna() == False) & (
+        borrow_events.end_datetime.isna() == False)]
+    all_borrows = borrow_events[borrow_events.start_datetime <
+                                '1942-01-01'].copy()
+    metrics = ['jc_prediction', 'pa_prediction',
+               'cn_prediction', 'aa_prediction']
+    start_library = all_borrows.sort_values(
+        by=['start_datetime'])[0:1].start_datetime.values[0]
+
+    output_path = './data/partial_members_bipartite_circulation_events_predictions.csv'
+    if os.path.exists(output_path):
+        os.remove(output_path)
+    partial_df[partial_df.member_id.isin(partial_members)].apply(get_specific_predictions, axis=1, number_of_results=10, limit_to_circulation=True, events_df=events_df,
+                                                                 borrow_events=all_borrows, members_df=members_df, books_df=books_df, relative_date=start_library, predict_group='books', output_path=output_path)
+
+
+if __name__ == '__main__':
+    run_link_prediction()

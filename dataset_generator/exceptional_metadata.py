@@ -12,14 +12,14 @@ def load_data():
     print("loading datasets")
     members_df, books_df, events_df = get_shxco_data()
     events_df['index_col'] = events_df.index
-    # split uris for shared accounts
-    # events_df[['first_member_uri', 'second_member_uri']] = events_df.member_uris.str.split(';', expand=True)
     # calculate borrow count for each member
-    members_df['borrow_count'] = members_df.uri.apply(lambda uri: len(events_df[(
-        events_df.first_member_uri == uri) & (events_df.event_type.str == 'Borrow')]))
+    grouped_borrows = events_df[events_df.event_type == 'Borrow'].groupby(['member_id']).size().reset_index(name='borrow_count')
+    members_df = members_df.merge(grouped_borrows, on='member_id', how='outer')
+    members_df.borrow_count = members_df.borrow_count.fillna(0)
     # calculate subscription count for each member
-    members_df['subscription_count'] = members_df.uri.apply(lambda uri: len(events_df[(
-        events_df.first_member_uri == uri) & (events_df.event_type.isin(['Subscription', 'Renewal', 'Supplement']))]))
+    grouped_subscriptions = events_df[events_df.event_type.isin(['Subscription', 'Renewal', 'Supplement'])].groupby(['member_id']).size().reset_index(name='subscription_count')
+    members_df = members_df.merge(grouped_subscriptions, on='member_id', how='outer')
+    members_df.subscription_count = members_df.subscription_count.fillna(0)
     
     return members_df, books_df, events_df
 
@@ -29,7 +29,7 @@ def sunday_shoppers(events_df):
     # generate dataframe with all dates that would likely have brought a person into the store
     instore_events = events_df.copy()
     # limit to fields needed
-    instore_events = instore_events[['event_type', 'start_date', 'end_date', 'member_uris','member_names', 'subscription_purchase_date', 'index_col', 'item_uri']]
+    instore_events = instore_events[['event_type', 'start_date', 'end_date', 'member_uris','member_names', 'member_id', 'subscription_purchase_date', 'index_col', 'item_uri']]
     # for subscriptions (all types), purchase date is actual in-store date and may be different from subscription start
     # copy subscription purchase date (if set) or start date to date
     instore_events_start = instore_events.copy()
@@ -231,7 +231,7 @@ def calculate_exceptional_categories(write_to_csv):
         event_dfs.append(events)
 
     concat_events = pd.concat(event_dfs)
-    subset_events = concat_events[['index_col', 'item_uri', 'member_uris', 'start_date', 'type', 'books_out','excess_books_out', 'subscription_volumes', 'event_type', 'borrow_duration_days', 'subscription_duration_days', 'first_member_uri', 'second_member_uri']]
+    subset_events = concat_events[['index_col', 'item_uri', 'member_uris', 'start_date', 'type', 'books_out','excess_books_out', 'subscription_volumes', 'event_type', 'borrow_duration_days', 'subscription_duration_days', 'member_id', 'second_member_uri']]
 
     subset_grouped = subset_events.groupby(['index_col'])['type'].transform(
         lambda x: ','.join(x)).reset_index(name='exceptional_types')
@@ -248,31 +248,28 @@ def calculate_exceptional_categories(write_to_csv):
     book_counts = subset_events[subset_events.item_uri.isna() == False][[
         'item_uri', 'type']].groupby(['item_uri', 'type']).size().reset_index(name='counts')
     book_counts = book_counts.rename(
-        columns={'item_uri': 'uri'})
-   
-    grouped_books = book_counts.groupby('uri').apply(group_types)
-    deduped_books = grouped_books[['uri', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
-    books_df['uri'] = books_df.uri.apply(
-        lambda x: x.split("/")[-2] if pd.notna(x) else None
-    )
-    exceptional_books = pd.merge(books_df, deduped_books, on=['uri'], how='outer')
+        columns={'item_uri': 'id'})
+    grouped_books = book_counts.groupby('id').apply(group_types)
+    deduped_books = grouped_books[['id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
+    exceptional_books = pd.merge(books_df, deduped_books, on=['id'], how='outer')
     exceptional_books.exceptional_types.fillna('', inplace=True)
     exceptional_books.exceptional_counts.fillna(0, inplace=True)
+    exceptional_books['original_uri'] = exceptional_books.uri
+    exceptional_books['uri'] = exceptional_books.id
 
     """## Exceptional Members"""
 
-
     subset_members = subset_events.copy()
-    subset_members = subset_members.rename(columns={'first_member_uri': 'uri'})
-    grouped_members = subset_members.groupby(['uri', 'type']).size().reset_index(name='counts')
+    grouped_members = subset_members.groupby(['member_id', 'type']).size().reset_index(name='counts')
 
-    grouped_dupes = grouped_members.groupby('uri').apply(group_types)
+    grouped_dupes = grouped_members.groupby('member_id').apply(group_types)
     grouped_deduped = grouped_dupes[[
-        'uri', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
-
-    exceptional_members = pd.merge(members_df, grouped_deduped, on=['uri'], how='outer')
+        'member_id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
+    exceptional_members = pd.merge(members_df, grouped_deduped, on=['member_id'], how='outer')
     exceptional_members.exceptional_types.fillna('', inplace=True)
     exceptional_members.exceptional_counts.fillna(0, inplace=True)
+    exceptional_members['original_uri'] = exceptional_members.uri
+    exceptional_members['uri'] = exceptional_members.member_id
 
     if write_to_csv:
         exceptional_events.to_csv('./data/SCoData_events_v1.1_2021-01_exceptional.csv', index=False)
@@ -291,5 +288,5 @@ def get_shxco_exceptional_data():
 
 
 if __name__ == "__main__":
-    # calculate_exceptional_categories(True)
-    get_shxco_exceptional_data()
+    calculate_exceptional_categories(True)
+    # get_shxco_exceptional_data()

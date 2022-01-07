@@ -139,7 +139,8 @@ def build_bipartite_graphs(grouped_events_df, member_attrs, book_attrs, edge_att
     if should_process:
         processed_bipartite_graph = get_bipartite_network_metrics(
             bipartite_graph)
-        nx.write_gexf(processed_bipartite_graph, f'{file_name}_graph.gexf')
+        if write_to_file:
+            nx.write_gexf(processed_bipartite_graph, f'{file_name}_graph.gexf')
         processed_bipartite_graph = bipartite_graph
         processed_bipartite_nodelist, processed_bipartite_edgelist = generate_dataframes(
             processed_bipartite_graph, True, True)
