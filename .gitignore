@@ -3,7 +3,7 @@ dataset_generator/data/partial_borrowers.csv
 # local ignores
 network_analysis/drafts/
 network_analysis/data/
-network_analysis/core_periphery_sbm/
+network_analysis/public_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

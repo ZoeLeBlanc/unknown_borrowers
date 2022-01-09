@@ -141,57 +141,75 @@ def get_specific_predictions(row, number_of_results, limit_to_circulation, event
     return df_final
 
 
-def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, events_df, relative_date, predict_group, metrics, output_path):
+def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, borrow_events,relative_date, predict_group, metrics, output_path):
     grouped_col = 'item_uri' if predict_group == 'books' else 'member_id'
     index_col = 'member_id' if predict_group == 'books' else 'item_uri'
     identified_top_predictions = {}
 
-    circulation_start = row.subscription_starttime - relative_date
+    circulation_start = borrow_events.sort_values(
+        by=['start_datetime'])[0:1].start_datetime.values[0]
 
-    all_possible_circulations = events_df[(
-        row.subscription_endtime >= events_df.end_datetime)]
-    circulation_events = events_df[events_df.start_datetime.between(
-        circulation_start, row.subscription_endtime) | events_df.end_datetime.between(circulation_start, row.subscription_endtime)]
+    # all_possible_circulations = events_df[(
+    #     row.subscription_endtime >= events_df.end_datetime)]
+    # circulation_events = events_df[events_df.start_datetime.between(
+    #     circulation_start, row.subscription_endtime) | events_df.end_datetime.between(circulation_start, row.subscription_endtime)]
 
-    popular_all = all_possible_circulations.groupby([grouped_col]).size().reset_index(
+    # popular_all = all_possible_circulations.groupby([grouped_col]).size().reset_index(
+    #     name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
+    # popular_current = circulation_events.groupby([grouped_col]).size().reset_index(
+    #     name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
+
+    # circulation_all = all_possible_circulations[grouped_col].unique().tolist()
+    # circulation_subset = circulation_events[grouped_col].unique().tolist()
+    circulation_events = borrow_events[borrow_events.start_datetime.between(
+        circulation_start, row.subscription_endtime) | borrow_events.end_datetime.between(circulation_start, row.subscription_endtime)]
+    circulation_events = circulation_events[circulation_events[index_col]!= row[index_col]]
+
+    circulation_counts = circulation_events.groupby([grouped_col]).size().reset_index(
         name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
-    popular_current = circulation_events.groupby([grouped_col]).size().reset_index(
-        name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
+    circulating_items = circulation_counts[grouped_col].unique().tolist()
 
-    circulation_all = all_possible_circulations[grouped_col].unique().tolist()
-    circulation_subset = circulation_events[grouped_col].unique().tolist()
-
-    identified_top_predictions[f'popular_all_{predict_group}'] = popular_all[grouped_col].tolist(
-    )
-    identified_top_predictions['popular_all_counts'] = popular_all.counts.tolist(
-    )
-    identified_top_predictions[f'popular_current_{predict_group}'] = popular_current[grouped_col].tolist(
-    )
-    identified_top_predictions['popular_current_counts'] = popular_current.counts.tolist(
-    )
-
+    # identified_top_predictions[f'popular_all_{predict_group}'] = popular_all[grouped_col].tolist(
+    # )
+    # identified_top_predictions['popular_all_counts'] = popular_all.counts.tolist(
+    # )
+    # identified_top_predictions[f'popular_current_{predict_group}'] = popular_current[grouped_col].tolist(
+    # )
+    # identified_top_predictions['popular_current_counts'] = popular_current.counts.tolist(
+    # )
+    dfs = []
     for idx, m in enumerate(metrics):
 
-        subset_all_predictions = get_predictions_by_metric(
-            row, m, predictions_df, circulation_all, limit_to_circulation)
-        subset_predictions = get_predictions_by_metric(
-            row, m, predictions_df, circulation_subset, limit_to_circulation)
-        identified_top_predictions[f'{m}_all'] = subset_all_predictions[0:number_of_results][grouped_col].tolist(
-        )
-        identified_top_predictions[f'{m}_subset'] = subset_predictions[0:number_of_results][grouped_col].tolist(
+        # subset_all_predictions = get_predictions_by_metric(
+        #     row, m, predictions_df, circulation_all, limit_to_circulation)
+        # subset_predictions = get_predictions_by_metric(
+        #     row, m, predictions_df, circulation_subset, limit_to_circulation)
+        # identified_top_predictions[f'{m}_all'] = subset_all_predictions[0:number_of_results][grouped_col].tolist(
+        # )
+        # identified_top_predictions[f'{m}_subset'] = subset_predictions[0:number_of_results][grouped_col].tolist(
+        # )
+
+        # identified_top_predictions[f'{m}_all_scores'] = subset_predictions[0:number_of_results][m].tolist(
+        # )
+        # identified_top_predictions[f'{m}_subset_scores'] = subset_predictions[0:number_of_results][m].tolist(
+        # )
+        preds = get_predictions_by_metric(
+            row, m, predictions_df, circulating_items, limit_to_circulation)
+        identified_top_predictions[f'{index_col}'] = row[index_col]
+        identified_top_predictions[f'predicted_values'] = preds[0:number_of_results][grouped_col].tolist(
         )
 
-        identified_top_predictions[f'{m}_all_scores'] = subset_predictions[0:number_of_results][m].tolist(
+        identified_top_predictions[f'score'] = preds[0:number_of_results][m].tolist(
         )
-        identified_top_predictions[f'{m}_subset_scores'] = subset_predictions[0:number_of_results][m].tolist(
-        )
-    df_final = pd.DataFrame.from_dict(
-        identified_top_predictions, orient='columns')
+        identified_top_predictions['metric'] = m
+        dfs.append(pd.DataFrame.from_dict(
+            identified_top_predictions, orient='columns'))
+    # df_final = pd.DataFrame.from_dict(
+    #     identified_top_predictions, orient='columns')
 
-    df_final[f'{index_col}'] = row[index_col]
-    df_final['subscription_starttime'] = row.subscription_starttime
-    df_final['subscription_endtime'] = row.subscription_endtime
-    df_final['known_borrows'] = row.known_borrows
+    df_final = pd.concat(dfs)
+    row_df = pd.DataFrame([row.to_dict()])
+    df_final = df_final.merge(row_df, on=index_col, how='left')
 
     if os.path.exists(output_path):
         df_final.to_csv(output_path, mode='a', header=False, index=False)
@@ -418,8 +436,7 @@ def run_link_prediction():
     output_path = './data/partial_members_bipartite_circulation_events_predictions.csv'
     if os.path.exists(output_path):
         os.remove(output_path)
-    partial_df[partial_df.member_id.isin(partial_members)].apply(get_specific_predictions, axis=1, number_of_results=10, limit_to_circulation=True, events_df=events_df,
-                                                                 borrow_events=all_borrows, members_df=members_df, books_df=books_df, relative_date=start_library, predict_group='books', output_path=output_path)
+    partial_df[partial_df.member_id.isin(partial_members)].apply(get_specific_predictions, axis=1, number_of_results=10, limit_to_circulation=True, events_df=events_df,borrow_events=all_borrows, members_df=members_df, books_df=books_df, relative_date=start_library, predict_group='books', output_path=output_path)
 
 
 if __name__ == '__main__':
