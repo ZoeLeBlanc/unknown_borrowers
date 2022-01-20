@@ -16,17 +16,25 @@ SOURCE_DATA_DIR = os.path.join(DATA_GENERATOR_DIR, "source_data")
 DATA_DIR = os.path.join(DATA_GENERATOR_DIR, "data")
 
 
-csv_urls = {
+csv_urls_v1_1 = {
     # online version
     # 'members': 'https://dataspace.princeton.edu/bitstream/88435/dsp01b5644v608/2/SCoData_members_v1.1_2021-01.csv',
     # 'books': 'https://dataspace.princeton.edu/bitstream/88435/dsp016d570067j/2/SCoData_books_v1.1_2021-01.csv',
     # 'events': 'https://dataspace.princeton.edu/bitstream/88435/dsp012n49t475g/2/SCoData_events_v1.1_2021-01.csv'
-    # local downloaded copy
-    "members": os.path.join(SOURCE_DATA_DIR, "SCoData_members_v1.1_2021-01.csv"),
-    "books": os.path.join(SOURCE_DATA_DIR, "SCoData_books_v1.1_2021-01.csv"),
-    "events": os.path.join(SOURCE_DATA_DIR, "SCoData_events_v1.1_2021-01.csv"),
+    # local copy
+    "members": "source_data/SCoData_members_v1.1_2021-01.csv",
+    "members": "source_data/SCoData_members_v1.1_2021-01.csv",
+    "books": "source_data/SCoData_books_v1.1_2021-01.csv",
+    "events": "source_data/SCoData_events_v1.1_2021-01.csv",
 }
 
+csv_urls = {
+    # online URLs TBD
+    # local copy
+    "members": "source_data/SCoData_members_v1.2_2022-01.csv",
+    "books": "source_data/SCoData_books_v1.2_2022-01.csv",
+    "events": "source_data/SCoData_events_v1.2_2022-01.csv",
+}
 
 def get_item_features(item, books_genres, books_subjects, wikidata_books_genres):
     # get features for an individual item
