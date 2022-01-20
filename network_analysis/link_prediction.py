@@ -25,41 +25,44 @@ bipartite_metrics = ['jc_prediction',
                      'pa_prediction', 'cn_prediction', 'aa_prediction']
 
 
-def get_bipartite_link_predictions(graph):
-    print('Running jaccard link prediction')
-    jc_preds = jc_predict(graph)
-    jc_preds_df = pd.DataFrame(
-        data=list(jc_preds.values()), index=jc_preds.keys()).reset_index()
-    jc_preds_df.columns = ['member_id', 'item_uri', 'jc_prediction']
-    print('Running preferential attachment link prediction')
-    pa_preds = pa_predict(graph)
-    pa_preds_df = pd.DataFrame(
-        data=list(pa_preds.values()), index=pa_preds.keys()).reset_index()
-    pa_preds_df.columns = ['member_id', 'item_uri', 'pa_prediction']
-    print('Running common neighbors link prediction')
-    cn_preds = cn_predict(graph)
-    cn_preds_df = pd.DataFrame(
-        data=list(cn_preds.values()), index=cn_preds.keys()).reset_index()
-    cn_preds_df.columns = ['member_id', 'item_uri', 'cn_prediction']
-    print('Running adamic adar link prediction')
-    aa_preds = aa_predict(graph)
-    aa_preds_df = pd.DataFrame(
-        data=list(aa_preds.values()), index=aa_preds.keys()).reset_index()
-    aa_preds_df.columns = ['member_id', 'item_uri', 'aa_prediction']
+def get_bipartite_link_predictions(graph, output_path):
+    if os.path.exists(output_path):
+        all_preds = pd.read_csv(output_path)
+    else:
+        print('Running jaccard link prediction')
+        jc_preds = jc_predict(graph)
+        jc_preds_df = pd.DataFrame(
+            data=list(jc_preds.values()), index=jc_preds.keys()).reset_index()
+        jc_preds_df.columns = ['member_id', 'item_uri', 'jc_prediction']
+        print('Running preferential attachment link prediction')
+        pa_preds = pa_predict(graph)
+        pa_preds_df = pd.DataFrame(
+            data=list(pa_preds.values()), index=pa_preds.keys()).reset_index()
+        pa_preds_df.columns = ['member_id', 'item_uri', 'pa_prediction']
+        print('Running common neighbors link prediction')
+        cn_preds = cn_predict(graph)
+        cn_preds_df = pd.DataFrame(
+            data=list(cn_preds.values()), index=cn_preds.keys()).reset_index()
+        cn_preds_df.columns = ['member_id', 'item_uri', 'cn_prediction']
+        print('Running adamic adar link prediction')
+        aa_preds = aa_predict(graph)
+        aa_preds_df = pd.DataFrame(
+            data=list(aa_preds.values()), index=aa_preds.keys()).reset_index()
+        aa_preds_df.columns = ['member_id', 'item_uri', 'aa_prediction']
 
-    # print('Running katz link prediction')
-    # katz_preds = katz_predict(graph)
-    # katz_preds_df = pd.DataFrame(
-    #     data=list(katz_preds.values()), index=katz_preds.keys()).reset_index()
-    # katz_preds_df.columns = ['member_id', 'item_uri', 'katz_prediction']
+        # print('Running katz link prediction')
+        # katz_preds = katz_predict(graph)
+        # katz_preds_df = pd.DataFrame(
+        #     data=list(katz_preds.values()), index=katz_preds.keys()).reset_index()
+        # katz_preds_df.columns = ['member_id', 'item_uri', 'katz_prediction']
 
-    all_preds = pd.merge(jc_preds_df, pa_preds_df, on=[
-                         'member_id', 'item_uri'], how='outer')
-    all_preds = pd.merge(all_preds, cn_preds_df, on=[
-                         'member_id', 'item_uri'], how='outer')
-    all_preds = pd.merge(all_preds, aa_preds_df, on=[
-                         'member_id', 'item_uri'], how='outer')
-    # all_preds = pd.merge(all_preds, katz_preds_df, on=['member_id', 'item_uri'], how='outer')
+        all_preds = pd.merge(jc_preds_df, pa_preds_df, on=[
+                            'member_id', 'item_uri'], how='outer')
+        all_preds = pd.merge(all_preds, cn_preds_df, on=[
+                            'member_id', 'item_uri'], how='outer')
+        all_preds = pd.merge(all_preds, aa_preds_df, on=[
+                            'member_id', 'item_uri'], how='outer')
+        # all_preds = pd.merge(all_preds, katz_preds_df, on=['member_id', 'item_uri'], how='outer')
     return all_preds
 
 
@@ -141,7 +144,8 @@ def get_specific_predictions(row, number_of_results, limit_to_circulation, event
     return df_final
 
 
-def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, borrow_events,relative_date, predict_group, metrics, output_path):
+def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, borrow_events, predict_group, metrics, output_path):
+
     grouped_col = 'item_uri' if predict_group == 'books' else 'member_id'
     index_col = 'member_id' if predict_group == 'books' else 'item_uri'
     identified_top_predictions = {}
@@ -149,18 +153,6 @@ def get_full_predictions(row, number_of_results, limit_to_circulation, predictio
     circulation_start = borrow_events.sort_values(
         by=['start_datetime'])[0:1].start_datetime.values[0]
 
-    # all_possible_circulations = events_df[(
-    #     row.subscription_endtime >= events_df.end_datetime)]
-    # circulation_events = events_df[events_df.start_datetime.between(
-    #     circulation_start, row.subscription_endtime) | events_df.end_datetime.between(circulation_start, row.subscription_endtime)]
-
-    # popular_all = all_possible_circulations.groupby([grouped_col]).size().reset_index(
-    #     name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
-    # popular_current = circulation_events.groupby([grouped_col]).size().reset_index(
-    #     name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
-
-    # circulation_all = all_possible_circulations[grouped_col].unique().tolist()
-    # circulation_subset = circulation_events[grouped_col].unique().tolist()
     circulation_events = borrow_events[borrow_events.start_datetime.between(
         circulation_start, row.subscription_endtime) | borrow_events.end_datetime.between(circulation_start, row.subscription_endtime)]
     circulation_events = circulation_events[circulation_events[index_col]!= row[index_col]]
@@ -169,30 +161,11 @@ def get_full_predictions(row, number_of_results, limit_to_circulation, predictio
         name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
     circulating_items = circulation_counts[grouped_col].unique().tolist()
 
-    # identified_top_predictions[f'popular_all_{predict_group}'] = popular_all[grouped_col].tolist(
-    # )
-    # identified_top_predictions['popular_all_counts'] = popular_all.counts.tolist(
-    # )
-    # identified_top_predictions[f'popular_current_{predict_group}'] = popular_current[grouped_col].tolist(
-    # )
-    # identified_top_predictions['popular_current_counts'] = popular_current.counts.tolist(
-    # )
+
     dfs = []
     for idx, m in enumerate(metrics):
 
-        # subset_all_predictions = get_predictions_by_metric(
-        #     row, m, predictions_df, circulation_all, limit_to_circulation)
-        # subset_predictions = get_predictions_by_metric(
-        #     row, m, predictions_df, circulation_subset, limit_to_circulation)
-        # identified_top_predictions[f'{m}_all'] = subset_all_predictions[0:number_of_results][grouped_col].tolist(
-        # )
-        # identified_top_predictions[f'{m}_subset'] = subset_predictions[0:number_of_results][grouped_col].tolist(
-        # )
 
-        # identified_top_predictions[f'{m}_all_scores'] = subset_predictions[0:number_of_results][m].tolist(
-        # )
-        # identified_top_predictions[f'{m}_subset_scores'] = subset_predictions[0:number_of_results][m].tolist(
-        # )
         preds = get_predictions_by_metric(
             row, m, predictions_df, circulating_items, limit_to_circulation)
         identified_top_predictions[f'{index_col}'] = row[index_col]
