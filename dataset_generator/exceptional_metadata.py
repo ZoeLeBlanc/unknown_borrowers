@@ -7,10 +7,44 @@ import sys
 sys.path.append("..")
 from dataset_generator.dataset import get_shxco_data
 
+def get_longborrow_overides(events_df):
+    borrow_overrides = pd.read_csv("../dataset_generator/data/long_borrow_overrides.csv")
+    borrow_overrides["member_id"] = borrow_overrides.member_uris.apply(
+        lambda x: x.split("/")[-2]
+    )
+    borrow_overrides["item_uri"] = borrow_overrides.item_uri.apply(
+        lambda x: x.split("/")[-2] if pd.notna(x) else None
+    )
+    for borrow in borrow_overrides.itertuples():
+        member_item_borrows = events_df[
+            (events_df.event_type == "Borrow")
+            & (events_df.member_uris == borrow.member_uris)
+            & (events_df.item_uri == borrow.item_uri)
+        ]
+        if borrow.match_date == "start_date":
+            # get the *index* of the row to update
+            update_index = member_item_borrows.index[
+                member_item_borrows.start_date == borrow.start_date
+            ]
+        elif borrow.match_date == "end_date":
+            update_index = member_item_borrows.index[
+                member_item_borrows.end_date == borrow.end_date
+            ]
+
+        # update with correct dates & borrow duration
+        events_df.at[update_index, "start_date"] = borrow.start_date
+        events_df.at[update_index, "end_date"] = borrow.end_date
+        events_df.at[
+            update_index, "borrow_duration_days"
+        ] = borrow.borrow_duration_days
+    return events_df
+
 def load_data():
     """Load in initial datasets"""
     print("loading datasets")
     members_df, books_df, events_df = get_shxco_data()
+
+    events_df = get_longborrow_overides(events_df)
     events_df['index_col'] = events_df.index
     # calculate borrow count for each member
     grouped_borrows = events_df[events_df.event_type == 'Borrow'].groupby(['member_id']).size().reset_index(name='borrow_count')
@@ -272,21 +306,22 @@ def calculate_exceptional_categories(write_to_csv):
     exceptional_members['uri'] = exceptional_members.member_id
 
     if write_to_csv:
-        exceptional_events.to_csv('./data/SCoData_events_v1.1_2021-01_exceptional.csv', index=False)
-        exceptional_books.to_csv('./data/SCoData_books_v1.1_2021-01_exceptional.csv', index=False)
-        exceptional_members.to_csv('./data/SCoData_members_v1.1_2021-01_exceptional.csv', index=False)
+        exceptional_events.to_csv('./data/SCoData_events_v1.2_2022-01_exceptional.csv', index=False)
+        exceptional_books.to_csv('./data/SCoData_books_v1.2_2022-01_exceptional.csv', index=False)
+        exceptional_members.to_csv('./data/SCoData_members_v1.2_2022-01_exceptional.csv', index=False)
     else:
         return (exceptional_members, exceptional_books, exceptional_events)
 
 
 def get_shxco_exceptional_data():
 
-    exceptional_events = pd.read_csv('../dataset_generator/data/SCoData_events_v1.1_2021-01_exceptional.csv')
-    exceptional_books = pd.read_csv('../dataset_generator/data/SCoData_books_v1.1_2021-01_exceptional.csv')
-    exceptional_members = pd.read_csv('../dataset_generator/data/SCoData_members_v1.1_2021-01_exceptional.csv')
+    exceptional_events = pd.read_csv('../dataset_generator/data/SCoData_events_v1.2_2022-01_exceptional.csv')
+    exceptional_books = pd.read_csv('../dataset_generator/data/SCoData_books_v1.2_2022-01_exceptional.csv')
+    exceptional_members = pd.read_csv('../dataset_generator/data/SCoData_members_v1.2_2022-01_exceptional.csv')
     return (exceptional_members, exceptional_books, exceptional_events)
 
 
 if __name__ == "__main__":
+    # load_data()
     calculate_exceptional_categories(True)
     # get_shxco_exceptional_data()

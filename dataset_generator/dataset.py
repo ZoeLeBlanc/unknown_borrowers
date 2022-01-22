@@ -31,9 +31,9 @@ csv_urls_v1_1 = {
 csv_urls = {
     # online URLs TBD
     # local copy
-    "members": "source_data/SCoData_members_v1.2_2022-01.csv",
-    "books": "source_data/SCoData_books_v1.2_2022-01.csv",
-    "events": "source_data/SCoData_events_v1.2_2022-01.csv",
+    "members": "../dataset_generator/source_data/SCoData_members_v1.2_2022-01.csv",
+    "books": "../dataset_generator/source_data/SCoData_books_v1.2_2022-01.csv",
+    "events": "../dataset_generator/source_data/SCoData_events_v1.2_2022-01.csv",
 }
 
 def get_item_features(item, books_genres, books_subjects, wikidata_books_genres):
