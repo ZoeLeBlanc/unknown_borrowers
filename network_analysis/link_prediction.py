@@ -63,6 +63,7 @@ def get_bipartite_link_predictions(graph, output_path):
         all_preds = pd.merge(all_preds, aa_preds_df, on=[
                             'member_id', 'item_uri'], how='outer')
         # all_preds = pd.merge(all_preds, katz_preds_df, on=['member_id', 'item_uri'], how='outer')
+        all_preds.to_csv(output_path, index=False)
     return all_preds
 
 
@@ -144,35 +145,38 @@ def get_specific_predictions(row, number_of_results, limit_to_circulation, event
     return df_final
 
 
-def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, borrow_events, predict_group, metrics, output_path):
+def get_full_predictions(row, number_of_results, limit_to_circulation, predictions_df, events_df, predict_group, metrics, output_path):
 
     grouped_col = 'item_uri' if predict_group == 'books' else 'member_id'
     index_col = 'member_id' if predict_group == 'books' else 'item_uri'
     identified_top_predictions = {}
 
-    circulation_start = borrow_events.sort_values(
-        by=['start_datetime'])[0:1].start_datetime.values[0]
+    # circulation_start = borrow_events.sort_values(by=['start_datetime'])[0:1].start_datetime.values[0]
 
-    circulation_events = borrow_events[borrow_events.start_datetime.between(
-        circulation_start, row.subscription_endtime) | borrow_events.end_datetime.between(circulation_start, row.subscription_endtime)]
-    circulation_events = circulation_events[circulation_events[index_col]!= row[index_col]]
+    # circulation_events = borrow_events[borrow_events.start_datetime.between(
+    #     circulation_start, row.subscription_endtime) | borrow_events.end_datetime.between(circulation_start, row.subscription_endtime)]
+    # circulation_events = circulation_events[circulation_events[index_col]!= row[index_col]]
+    circulation_events = events_df[(events_df.start_datetime < row.subscription_end) | (events_df.end_datetime < row.subscription_end)]
 
     circulation_counts = circulation_events.groupby([grouped_col]).size().reset_index(
-        name='counts').sort_values(['counts'], ascending=False)[0:number_of_results]
-    circulating_items = circulation_counts[grouped_col].unique().tolist()
-
+        name='counts').sort_values(['counts'], ascending=False)
+        # [0:number_of_results]
+    # circulating_items = circulation_counts[grouped_col].unique().tolist()
+    query_books = circulation_events.item_id.unique().tolist()
+    member_book_ids = events_df[(events_df.item_id.notna()) & (events_df.member_id == row.member_id)].item_id.unique()
+    query_books = list(set(query_books) - set(member_book_ids))
 
     dfs = []
     for idx, m in enumerate(metrics):
 
 
         preds = get_predictions_by_metric(
-            row, m, predictions_df, circulating_items, limit_to_circulation)
+            row, m, predictions_df, query_books, limit_to_circulation)
         identified_top_predictions[f'{index_col}'] = row[index_col]
-        identified_top_predictions[f'predicted_values'] = preds[0:number_of_results][grouped_col].tolist(
+        identified_top_predictions[f'predicted_values'] = preds[grouped_col].tolist(
         )
 
-        identified_top_predictions[f'score'] = preds[0:number_of_results][m].tolist(
+        identified_top_predictions[f'score'] = preds[m].tolist(
         )
         identified_top_predictions['metric'] = m
         dfs.append(pd.DataFrame.from_dict(
@@ -384,10 +388,10 @@ def mask_test_edges(adj, test_frac=.1, val_frac=.05, prevent_disconnect=True, ve
 def run_link_prediction():
     members_df, books_df, borrow_events, events_df = get_updated_shxco_data(
         get_subscription=False)
-    partial_df = pd.read_csv('../dataset_generator/data/partial_borrowers.csv')
+    partial_df = pd.read_csv('../dataset_generator/data/partial_borrowers_collapsed.csv')
     partial_df['index_col'] = partial_df.index
-    partial_members = ['raphael-france', 'hemingway',
-                       'colens', 'kittredge-eleanor-hayden']
+    partial_members = ['raphael-france', 'hemingway-ernest',
+                       'colens-fernand', 'kittredge-eleanor-hayden']
 
     # parse subscription dates so we can use them to identify circulating books
     partial_df['subscription_starttime'] = pd.to_datetime(

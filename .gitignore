@@ -4,6 +4,11 @@ dataset_generator/data/partial_borrowers.csv
 network_analysis/drafts/
 network_analysis/data/
 network_analysis/public_data/
+network_analysis/network_experiments/
+network_analysis/visualizations/
+unknown_borrowers_updated_env/
+
+.vscode/settings.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

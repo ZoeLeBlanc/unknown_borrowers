@@ -49,17 +49,30 @@ def get_columns(df):
 
 def get_correlation_df(df):
     columns = get_columns(df)
-    df_corr = df[columns].corr()
+    df_copied = df[columns].copy()
+    named_cols = [ 'BGRM', 'CoHITS', 'HITS', 'BiRank']
+    final_cols = []
+    for col in df_copied.columns.tolist():
+        split_cols = col.split('_')
+        remove_val = 'local' if 'local' in col else 'global'
+        split_cols = [c for c in split_cols if (c != remove_val)]
+        selected_cols = [string.capitalize() if string not in named_cols else string for string in split_cols] 
+        selected_cols = ' '.join(selected_cols)
+        final_cols.append(selected_cols)
+        df_copied.rename(columns={col: selected_cols}, inplace=True)
+    df_corr = df_copied.corr()
     
-    return df_corr
+    return df_corr, final_cols
 
 def generate_corr_chart(df, title):
     # data preparation
-    corr_df = get_correlation_df(df)
+    corr_df, _ = get_correlation_df(df)
     pivot_cols = list(corr_df.columns)
     corr_df['cat'] = corr_df.index
     base = alt.Chart(corr_df).transform_fold(pivot_cols).encode(
-        x="cat:N",  y='key:N').properties(height=300, width=300, title=title)
+        x=alt.X("cat:N", axis=alt.Axis(title='', labelAngle=-45)),  
+        y=alt.Y('key:N', axis=alt.Axis(title=''))
+    ).properties(height=300, width=300, title=title)
     boxes = base.mark_rect().encode(color=alt.Color(
         "value:Q", scale=alt.Scale(scheme="redyellowblue")))
     labels = base.mark_text(size=5, color="grey").encode(
@@ -68,29 +81,30 @@ def generate_corr_chart(df, title):
     return chart
 
 
-def get_melted_corr(df, df_type):
-    corr_df = get_correlation_df(df)
+def get_melted_corr(df, df_type, node_type):
+    corr_df, final_cols = get_correlation_df(df)
     corr_df['cat'] = corr_df.index
-    columns = get_columns(df)
-    melted_df = pd.melt(corr_df, id_vars=['cat'], value_vars=columns)
+    melted_df = pd.melt(corr_df, id_vars=['cat'], value_vars=final_cols)
     melted_df['updated_variable'] = melted_df['cat'] + ' / ' + melted_df['variable']
     melted_df['type'] = df_type
+    melted_df['node_type'] = node_type
     return melted_df
 
 
-def compare_corr_chart(melted_df, melted_df2, df_type, df_type2):
+def compare_corr_chart(melted_df, melted_df2, x_type, y_type):
     concat_corr = pd.concat([melted_df, melted_df2])
 
     pivot_corr = pd.pivot(concat_corr, index=[
-                          'updated_variable', 'cat', 'variable'], columns='type', values='value').reset_index()
+                          'updated_variable', 'cat', 'variable', 'node_type'], columns=['type'], values='value').reset_index()
     selection = alt.selection_multi(fields=['cat'], bind='legend')
-    chart = alt.Chart(pivot_corr).mark_circle().encode(
-        x=f'{df_type}:Q',
-        y=f'{df_type2}:Q',
-        color=alt.Color('cat:N', scale=alt.Scale(scheme="redyellowblue")),
+    chart = alt.Chart(pivot_corr).mark_point(filled=True).encode(
+        x=f'{x_type}:Q',
+        y=f'{y_type}:Q',
+        color=alt.Color('cat:N', scale=alt.Scale(scheme="redyellowblue"), legend=alt.Legend(title='Metric')),
         tooltip=['updated_variable', 'cat',
-                 'variable', f'{df_type2}:Q', f'{df_type}:Q'],
-        opacity=alt.condition(selection, alt.value(1), alt.value(0.1))
+                    'variable', f'{y_type}:Q', f'{x_type}:Q'],
+        opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
+        shape='node_type:N'
     ).add_selection(
         selection
     ).resolve_scale(color='independent')
@@ -131,11 +145,11 @@ def compare_node_variability(df, cols):
     ).add_selection(selection).properties(width=200).resolve_scale(x='independent', y='independent')
     return ranked_exploded, chart
 
-def generate_scatter_regression_chart(df, x_type, y_type, color_col, facet_col, title):
+def generate_scatter_regression_chart(df, x_type, y_type, color_col, facet_col, shape_col, title):
     selector = alt.selection_single(empty='all', fields=['uri'])
     base = alt.Chart(df).encode(
-    x=f'{x_type}:Q',
-    y=f'{y_type}:Q',
+        x=alt.X(f'{x_type}:Q', axis=alt.Axis(title='')),
+        y=alt.Y(f'{y_type}:Q', axis=alt.Axis(title='')),
     ).properties(
         height=150,
         width=200,
@@ -143,15 +157,16 @@ def generate_scatter_regression_chart(df, x_type, y_type, color_col, facet_col, 
 
     chart = alt.layer(
         base.mark_circle().encode(
-            color=alt.Color(color_col, scale=alt.Scale(scheme='plasma')),
+            color=alt.Color(shape_col, scale=alt.Scale(
+            scheme='set1'), sort=['members', 'books', 'killen', 'raphael-france']),
             tooltip=['uri', f'{x_type}:Q', f'{y_type}:Q'],
-            opacity=alt.condition(selector, alt.value(1), alt.value(0.1))
+            opacity=alt.condition(selector, alt.value(1), alt.value(0.1)),
         ).add_selection(selector),
         base.transform_regression(f'{x_type}', f'{y_type}').mark_line(color='black', opacity=0.5)
     ).facet(facet=facet_col, columns=3).properties(title=title).resolve_scale(y='independent', x='independent')
     return chart
 
-def visualize_node_variability(df, df1, df_type, df1_type, scaling, cols, index_col, subset_component, title, facet_col, color_col):
+def visualize_node_variability(df, df1, df_type, df1_type, scaling, cols, index_col, subset_component, title, facet_col, color_col, shape_col):
     
     df_subset = df[df.component == 0][cols + index_col] if subset_component else df[cols + index_col]
     if scaling:
@@ -166,7 +181,10 @@ def visualize_node_variability(df, df1, df_type, df1_type, scaling, cols, index_
     comparison_df = pd.merge(df_subset, df1_subset, on=index_col, how='outer')
     subset_df = comparison_df[(comparison_df[f'{df_type}_metric'].str.split('_').str[1] == comparison_df[f'{df1_type}_metric'].str.split('_').str[1])]
     subset_df['metric'] = subset_df[f'{df_type}_metric'].str.split('_').str[1]
-    chart = generate_scatter_regression_chart(subset_df, f'{df1_type}_value', f'{df_type}_value', color_col, facet_col, title)
+    random_df = subset_df.sample(frac=0.5, random_state=42)
+    random_df.loc[random_df.uri == 'killen', 'group'] = 'killen'
+    random_df.loc[random_df.uri == 'raphael-france', 'group'] = 'raphael-france'
+    chart = generate_scatter_regression_chart(random_df, f'{df1_type}_value', f'{df_type}_value', color_col, facet_col, shape_col, title)
     return chart
 
 def final_network_stability_graph(melted_df, melted_df2, df_type, df_type2):

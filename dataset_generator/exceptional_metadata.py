@@ -246,6 +246,8 @@ def group_types(row):
     row['exceptional_types'] = ','.join(row.type.values.tolist())
     row['exceptional_counts'] = ','.join(
         row.counts.astype(str).values.tolist())
+    # row['exceptional_types'] = row.type.values.tolist()
+    # row['exceptional_counts'] = row.counts.astype(str).values.tolist()
     return row
 
 def calculate_exceptional_categories(write_to_csv):
@@ -267,8 +269,10 @@ def calculate_exceptional_categories(write_to_csv):
     concat_events = pd.concat(event_dfs)
     subset_events = concat_events[['index_col', 'item_uri', 'member_uris', 'start_date', 'type', 'books_out','excess_books_out', 'subscription_volumes', 'event_type', 'borrow_duration_days', 'subscription_duration_days', 'member_id', 'second_member_uri']]
 
-    subset_grouped = subset_events.groupby(['index_col'])['type'].transform(
-        lambda x: ','.join(x)).reset_index(name='exceptional_types')
+    # subset_grouped = subset_events.groupby(['index_col'])['type'].transform(
+    #     lambda x: ','.join(x)).reset_index(name='exceptional_types')
+
+    subset_grouped = subset_events.groupby(['index_col'])['type'].apply(list).reset_index(name='exceptional_types')
 
     subset_grouped = subset_grouped.rename(columns={'index': 'index_col'})
     subset_merged = pd.merge(subset_events, subset_grouped, on=['index_col'], how='outer')
@@ -283,9 +287,13 @@ def calculate_exceptional_categories(write_to_csv):
         'item_uri', 'type']].groupby(['item_uri', 'type']).size().reset_index(name='counts')
     book_counts = book_counts.rename(
         columns={'item_uri': 'id'})
-    grouped_books = book_counts.groupby('id').apply(group_types)
-    deduped_books = grouped_books[['id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
-    exceptional_books = pd.merge(books_df, deduped_books, on=['id'], how='outer')
+    # book_counts.to_csv('book_counts.csv')
+    # grouped_books = book_counts.groupby('id').apply(group_types)
+    grouped_books = book_counts.groupby('id').apply(lambda x: [list(x['type']), list(x['counts'])]).apply(pd.Series).reset_index()
+    # grouped_books.to_csv('grouped_books.csv')
+    grouped_books.columns = ['id', 'exceptional_types', 'exceptional_counts']
+    # deduped_books = grouped_books[['id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
+    exceptional_books = pd.merge(books_df, grouped_books, on=['id'], how='outer')
     exceptional_books.exceptional_types.fillna('', inplace=True)
     exceptional_books.exceptional_counts.fillna(0, inplace=True)
     exceptional_books['original_uri'] = exceptional_books.uri
@@ -296,10 +304,12 @@ def calculate_exceptional_categories(write_to_csv):
     subset_members = subset_events.copy()
     grouped_members = subset_members.groupby(['member_id', 'type']).size().reset_index(name='counts')
 
-    grouped_dupes = grouped_members.groupby('member_id').apply(group_types)
-    grouped_deduped = grouped_dupes[[
-        'member_id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
-    exceptional_members = pd.merge(members_df, grouped_deduped, on=['member_id'], how='outer')
+    # grouped_dupes = grouped_members.groupby('member_id').apply(group_types)
+    grouped_dupes = grouped_members.groupby('member_id').apply(lambda x: [list(x['type']), list(x['counts'])]).apply(pd.Series).reset_index()
+    grouped_dupes.columns = ['member_id', 'exceptional_types', 'exceptional_counts']
+    # grouped_deduped = grouped_dupes[[
+    #     'member_id', 'exceptional_types', 'exceptional_counts']].drop_duplicates()
+    exceptional_members = pd.merge(members_df, grouped_dupes, on=['member_id'], how='outer')
     exceptional_members.exceptional_types.fillna('', inplace=True)
     exceptional_members.exceptional_counts.fillna(0, inplace=True)
     exceptional_members['original_uri'] = exceptional_members.uri

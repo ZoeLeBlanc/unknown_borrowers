@@ -329,6 +329,3 @@ def update_igraph_nodes(graph, nodelist):
         selected_node = nodelist[(nodelist.uri == node['uri'])]
         for col in cols:
             node[col] = selected_node[col].values[0]
-
-    
-
